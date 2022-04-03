@@ -1,0 +1,29 @@
+NOMBRE : Toy 
+COMENTARIO :  Toy instance for the Windy Postman Problem (WPP)
+VERTICES : 14
+ARISTAS_REQ : 21
+ARISTAS_NOREQ :    0
+LISTA_ARISTAS_REQ :
+( 1, 2)   coste      17       16
+( 1,13)   coste      35       15
+( 2, 3)   coste      11        8
+( 2,14)   coste      18        3
+( 3, 4)   coste       1        3
+( 3, 5)   coste       4        3
+( 4, 5)   coste       7        5
+( 5, 6)   coste       2        1
+( 5, 7)   coste       3        2
+( 6, 7)   coste       2        2
+( 6,14)   coste      14       11
+( 7, 8)   coste      12        8
+( 8, 9)   coste       6        2
+( 8,12)   coste      18       20
+( 9,10)   coste       6        7
+( 9,11)   coste      26       30
+( 9,12)   coste       8       14
+(10,11)   coste      11        5
+(12,13)   coste       9       15
+(12,14)   coste       6        9
+(13,14)   coste       7        5
+
+LISTA_ARISTAS_NOREQ :
