@@ -121,10 +121,10 @@ def main():
         for edge in x:
             if (edge.i == vertice):
                 cs = cs + edge.ij - edge.ji
-                print(vertice + ':' + edge.i  + ' - ' + edge.j)
+                # print(vertice + ':' + edge.i  + ' - ' + edge.j)
             elif (edge.j == vertice):
                 cs = cs + edge.ji - edge.ij
-                print(vertice + ':' + edge.j  + ' - ' + edge.i)
+                # print(vertice + ':' + edge.j  + ' - ' + edge.i)
 
         model.Add(cs == 0)
     # cs2-end 
