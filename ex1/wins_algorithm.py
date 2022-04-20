@@ -69,7 +69,7 @@ class ArcVertice:
 
 
 def euler_tour(arcsPrimePrime, startNode):
-    arcsStack = copy.copy(arcsPrimePrime)
+    arcsStack = (arcsPrimePrime)
     curNode = startNode
     tour = [curNode] 
 
@@ -105,24 +105,27 @@ def euler_tour(arcsPrimePrime, startNode):
                     break
 
             if (curCurNode < 0):
-                print("CRITICAL FAILURE (2)")
-
                 print("<<<<<<<<<<Start node: " + str(startNode) + ">>>>>>>>>>>>")
                 print(arcsStack)
                 print(tour)
                 print(curStack)
                 print(curCurNode)
                 print("<<<<<<<<<<>>>>>>>>>>")
-                exit(1)
-
-            print("<<<<<<<<<<Start node: " + str(startNode) + ">>>>>>>>>>>>")
-            print(tour)
-            print(curStack)
-            print(curCurNode)
-            print("<<<<<<<<<<>>>>>>>>>>")
-            return tour + euler_tour(arcsStack, curCurNode) + curStack
+                return tour + curStack
+            else:   
+                print("<<<<<<<<<<Start node: " + str(startNode) + ">>>>>>>>>>>>")
+                print(tour)
+                print(curStack)
+                print(curCurNode)
+                print("<<<<<<<<<<>>>>>>>>>>")
+                return tour + euler_tour(arcsStack, curCurNode) + curStack
 
     return tour
+
+def parse_output_file(edges):
+    print("PARSE_TO_FILE")
+    # TODO!!!
+    # Idea: To write to a file, which saves the ''eulerian graphs'' (step 2.x) -> after this step the algorithm is fast!
 
 def parse_input_file():
     def parse_input_line(line, edgeList):
@@ -188,17 +191,17 @@ def parse_input_file():
 
 def is_eulerian(graph):
     isEulerian = True
+    """
     for vertice in graph[0]:
         print(vertice.show())
+    """
    
     oddVertices = [] 
     for vertice in graph[0]:
         if (len(vertice.getEdges()) % 2 == 1):
             isEulerian = False
             oddVertices.append(vertice)
-            print(vertice.show())
-    
-            
+            # print(vertice.show())
 
     return (isEulerian, oddVertices)
 
@@ -283,7 +286,8 @@ def to_eulerian_proc(graph, oddVertices):
     print("2.(b) complete")
     #------------------------------------------------------------------------------------
     # 2.(c): Find minimum cost perfect matching (or-tools cp_model):
-
+    
+    startTime = time.time()
     model = cp_model.CpModel()
     x = []
     for solution in solutions:
@@ -303,9 +307,16 @@ def to_eulerian_proc(graph, oddVertices):
         cs = cs + (xij[3] * xij[2])
     model.Minimize(cs)
 
+    endTime = time.time()
+    print(endTime-startTime)
+    startTime = time.time()
+    print("<<<Solver Init complete, now starting solver>>")
+
     solver = cp_model.CpSolver()
     status = solver.Solve(model)
 
+    endTime = time.time()
+    print(endTime - startTime)    
     print("2.(c) complete")
     #------------------------------------------------------------------------------------
     # 2.(d): Add to original path set
@@ -318,6 +329,8 @@ def to_eulerian_proc(graph, oddVertices):
         print(str(solver.Value(xij[2])))
     """
     
+    startTime = time.time()
+   
     index = 0
     for xij in x:
         if (solver.Value(xij[2]) == 1):
@@ -356,6 +369,9 @@ def to_eulerian_proc(graph, oddVertices):
                     print("NEW EDGE IS NONE!(2)")
         index = index + 1
 
+    endTime = time.time()
+    print(endTime - startTime)    
+ 
     print("2.(d) - complete")
     print("Eulerian conversion complete")
     return (orVertices, orEdges)
@@ -363,6 +379,9 @@ def to_eulerian_proc(graph, oddVertices):
     
    
 def wins_algorithm(graph):
+
+    print("3.(0) - Starting wins_algorithm")
+    startTime = time.time()
     
     arcsVertices = []
     arcs = []
@@ -408,9 +427,14 @@ def wins_algorithm(graph):
             if vertexFound == False:
                 arcsVertices.append(ArcVertice(int(edge.i), 0, 1, 0))
 
+    endTime = time.time()
+    print(endTime - startTime)    
+ 
     print("3.(1) - complete")
     #----------------------------------------------------------------------------
     # 3.(2) - Construct digraph with cost flows
+    startTime = time.time()
+    
     arcsPrime = []
     for arc in arcs:
         arcij = (arc[0],arc[1],arc[2],arc[3])
@@ -424,42 +448,53 @@ def wins_algorithm(graph):
     for vertice in arcsVertices:
         vertice.recalcDemand()
 
+    endTime = time.time()
+    print(endTime - startTime)    
     print("3.(2) - complete")
     #----------------------------------------------------------------------------
     # 3.(3) - Solve cost flow
-
+    startTime = time.time()
 
     min_cost_flow = pywrapgraph.SimpleMinCostFlow()
     
     for arc in arcsPrime:
         # Note: I think the arc[2] should not be an int! -> but float is not accepted here!?!
-        print(arc)
+        # print(arc)
         min_cost_flow.AddArcWithCapacityAndUnitCost(arc[0], arc[1], arc[3], int(arc[2] * 100))
 
     for vertice in arcsVertices:
-        print("<<" + str(vertice.name) + "::" + str((-1) * vertice.demand) + ">>")
+        # print("<<" + str(vertice.name) + "::" + str((-1) * vertice.demand) + ">>")
         min_cost_flow.SetNodeSupply(vertice.name, (-1) * vertice.demand)
 
     status = min_cost_flow.Solve()
     
+    endTime = time.time()
+    print(endTime - startTime)   
+
     if status != min_cost_flow.OPTIMAL:
         print('There was an issue with the min cost flow input.')
         print(f'Status: {status}')
         exit(1)
-    print('Minimum cost: ', min_cost_flow.OptimalCost())
+ 
+    print('Minimum Flow cost: ', min_cost_flow.OptimalCost())
+    """
     print('')
     print(' Arc   Flow / Capacity  Cost')
+    """
 
    
     print("3.(3) - complete")
     #----------------------------------------------------------------------------
     # 3.(4) - Construct another digraph and make an euler tour
-
+    
+    """
     for i in range(min_cost_flow.NumArcs()):
         cost = min_cost_flow.Flow(i) * min_cost_flow.UnitCost(i)
         print('%1s -> %1s    %3s   / %3s   %3s' %
               (min_cost_flow.Tail(i), min_cost_flow.Head(i),
                min_cost_flow.Flow(i), min_cost_flow.Capacity(i), cost))
+    """
+    startTime = time.time()
 
     arcsPrimePrime = []
     
@@ -476,9 +511,12 @@ def wins_algorithm(graph):
             arcsPrimePrime.append((min_cost_flow.Tail(i-1), min_cost_flow.Head(i-1)))
             for j in range(yji):
                 arcsPrimePrime.append((min_cost_flow.Tail(i-1), min_cost_flow.Head(i-1)))
-            
+    
+    """           
     for arc in arcsPrimePrime:
         print(arc)
+    """
+
 
     verticesPrime = []
     for arc in arcsPrimePrime:
@@ -500,13 +538,28 @@ def wins_algorithm(graph):
         if (foundJ == False):
             verticesPrime.append(ArcVertice(arc[1], 0, 1, 0))
 
+    isEulerian = True
     for vertice in verticesPrime:
         vertice.recalcDemand()
         if (vertice.demand != 0):
             print("DEMAND IS NOT 0, IT IS: " + str(vertice.demand))
-    
+            isEulerian = False
+
+    endTime = time.time() 
+    print(endTime - startTime)
+    print("Final digraph constructed")
+
+    if (isEulerian == False):
+        print("<<<<CRITICAL-FAILURE (3)>>>>>>")
+        exit(1)
+
+    startTime = time.time()
     
     wpp_tour = (euler_tour(arcsPrimePrime, arcsPrimePrime[0][0]))
+
+    endTime = time.time()
+    print(endTime - startTime)
+    print("<<<<EULER-TOUR-COMPLETE>>>>")
     return wpp_tour
 
 def checkWpp(graph,wpp_tour):
