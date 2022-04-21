@@ -91,6 +91,7 @@ def euler_tour(arcsPrimePrime, startNode):
             curStack = []           
             curCurNode = -1
             for i in range(len(tour)-1, -1, -1):
+
                 curArcIndex = -1
                 for j in range(len(arcsStack)):
                     if(arcsStack[j][0] == tour[i]):
@@ -98,34 +99,61 @@ def euler_tour(arcsPrimePrime, startNode):
                         break
 
                 if (curArcIndex < 0):
-                    curStack.append(tour.pop(i))
+                    curStack = [tour.pop(i)] + curStack
                 else:
                     curCurNode = tour[i]
                     tour.pop(i)
-                    break
-
-            if (curCurNode < 0):
-                print("<<<<<<<<<<Start node: " + str(startNode) + ">>>>>>>>>>>>")
-                print(arcsStack)
-                print(tour)
-                print(curStack)
-                print(curCurNode)
-                print("<<<<<<<<<<>>>>>>>>>>")
-                return tour + curStack
-            else:   
-                print("<<<<<<<<<<Start node: " + str(startNode) + ">>>>>>>>>>>>")
-                print(tour)
-                print(curStack)
-                print(curCurNode)
-                print("<<<<<<<<<<>>>>>>>>>>")
-                return tour + euler_tour(arcsStack, curCurNode) + curStack
-
+                    curStack = euler_tour(arcsStack, curCurNode) + curStack
+            """
+            print("<<<<<<<<<<Start node: " + str(startNode) + ">>>>>>>>>>>>")
+            print(arcsStack)
+            print(tour)
+            print(curStack)
+            print("<<<<<<<<<<>>>>>>>>>>")
+            """
+ 
+            return (tour + curStack)
+    
+    """
+    print("<<<<<<<<<<Start node: " + str(startNode) + ">>>>>>>>>>>>")
+    print(tour)
+    print(curNode)
+    print("<<<<<<<<<<>>>>>>>>>>")
+    """
     return tour
 
 def parse_output_file(edges):
     print("PARSE_TO_FILE")
-    # TODO!!!
-    # Idea: To write to a file, which saves the ''eulerian graphs'' (step 2.x) -> after this step the algorithm is fast!
+
+    input_file_path = sys.argv[1]
+    input_file_name = input_file_path.split('/')
+    if (input_file_name[len(input_file_name) - 2] == 'eulerian'):
+        # NO NEED TO WRITE IF ALREADY EULERIAN
+        return
+
+    input_file_name = input_file_name[len(input_file_name) - 1]
+    
+    output_file_path = 'eulerian/' + input_file_name + '_e'
+
+
+    f = open(output_file_path, 'w')
+
+    fin = open(input_file_path)
+    for i in range(3):
+        f.write(fin.readline())
+
+    f.write('ARISTAS_REQ : ' + str(len(edges)) + '\n')
+    f.write('ARISTAS_NOREQ : 0\n')
+    f.write('LISTA_ARISTAS_REQ :\n')
+
+    for edge in edges:
+        f.write('(' + str(edge.i) + ',' + str(edge.j) + ')   coste   ' + str(edge.ij) + '    ' + str(edge.ji) + '\n')
+
+    f.write('\nLISTA_ARISTAS_NOREQ :\n')
+    
+    fin.close()
+    f.close()
+    
 
 def parse_input_file():
     def parse_input_line(line, edgeList):
@@ -555,7 +583,7 @@ def wins_algorithm(graph):
 
     startTime = time.time()
     
-    wpp_tour = (euler_tour(arcsPrimePrime, arcsPrimePrime[0][0]))
+    wpp_tour = (euler_tour(copy.deepcopy(arcsPrimePrime), arcsPrimePrime[0][0]))
 
     endTime = time.time()
     print(endTime - startTime)
@@ -600,6 +628,18 @@ def checkWpp(graph,wpp_tour):
     print(wpp_tour)
     print("Total cost of: " + str(cost))
 
+    input_file_path = sys.argv[1]
+    input_file_name = input_file_path.split('/')
+
+    input_file_name = input_file_name[len(input_file_name) - 1]
+    
+    output_file_path = 'tours/' + input_file_name + '_tour'
+
+    f = open(output_file_path, 'w')
+    
+    f.write(str(wpp_tour) + '\n')
+
+    f.close()
 
             
         
@@ -616,11 +656,12 @@ if (isEulerian[0] == False):
     if (isEulerian[0] == False):
         print("Cricital failure while converting to eulerian!")
         exit(1)
-    
+    parse_output_file(res_graph[1])   
     wpp_tour = wins_algorithm(res_graph) 
    
 
 else:
+    parse_output_file(graph[1])   
     wpp_tour = wins_algorithm(graph) 
     print("Graph is eulerian! - Starting eulerian solver")
 
