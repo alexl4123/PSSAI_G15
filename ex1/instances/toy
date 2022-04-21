@@ -26,4 +26,3 @@ LISTA_ARISTAS_REQ :
 (12,14)   coste       6        9
 (13,14)   coste       7        5
 
-LISTA_ARISTAS_NOREQ :

@@ -314,7 +314,7 @@ LISTA_ARISTAS_REQ :
 ( 109, 424)   coste     931      795
 ( 110, 146)   coste     871      888
 ( 110, 191)   coste     264      284
-( 110, 213)   coste     201      326
+( 111, 213)   coste     201      326
 ( 111, 149)   coste     221      251
 ( 111, 364)   coste     192      160
 ( 111, 415)   coste     853      890
@@ -1323,4 +1323,3 @@ LISTA_ARISTAS_NOREQ :
         499          65         377                   
         500         569         509                   
  ===========================================          
-componentes conexas (antes de a¤adir):  22            

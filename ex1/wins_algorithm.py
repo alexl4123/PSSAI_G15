@@ -5,6 +5,8 @@ import copy
 from ortools.graph import pywrapgraph
 from ortools.sat.python import cp_model
 
+import multiprocessing
+
 class Edge:
     def __init__(self, i, j, ij, ji):
         self.i = i
@@ -233,6 +235,76 @@ def is_eulerian(graph):
 
     return (isEulerian, oddVertices)
 
+
+def parallel_shortest_path(item):
+    def costs(i,j):
+        verticeI = vertices[i]
+        verticesJ = vertices[j]
+
+        for edge in verticeI.edges:
+            if edge.j == verticesJ.name:
+                return edge.ij
+            if edge.i == verticesJ.name:
+                return edge.ji
+        return 999999
+
+
+    oddVertices = item[2]
+    vertices = item[3]
+    oddVerticesIndexes = item[4]
+
+    solution = pywrapgraph.DijkstraShortestPath(len(vertices), oddVerticesIndexes[item[0]], oddVerticesIndexes[item[1]], costs, 888888)
+    solutionCost = 0
+    for solutionIndex in range(1,len(solution[1])):
+        curCost = costs(solution[1][solutionIndex-1], solution[1][solutionIndex])
+        solutionCost = solutionCost + curCost
+    return ((oddVerticesIndexes[item[0]], oddVerticesIndexes[item[1]], solution[1], solutionCost ))
+
+def parallel_shortest_path_helper(oddVertices, vertices, oddVerticesIndexes, solutions):
+    
+    
+    allIndexes = []
+    for startIndex in range(len(oddVertices)):
+        for endIndex in range(startIndex + 1, len(oddVertices)):
+            allIndexes.append((startIndex,endIndex, oddVertices, vertices, oddVerticesIndexes))
+
+    pool = multiprocessing.Pool(processes=4)
+    outputs = pool.map(parallel_shortest_path, allIndexes)
+    for output in outputs:
+        solutions.append(output)
+ 
+def serial_shortest_path(oddVertices, vertices, oddVerticesIndexes, solutions):
+    def costs(i,j):
+        verticeI = vertices[i]
+        verticesJ = vertices[j]
+
+        for edge in verticeI.edges:
+            if edge.j == verticesJ.name:
+                return edge.ij
+            if edge.i == verticesJ.name:
+                return edge.ji
+        return 999999
+
+    curCount = 0
+    for startIndex in range(len(oddVertices)):
+
+        startTime = time.time()
+
+        for endIndex in range(startIndex+1,len(oddVertices)):
+            solution = pywrapgraph.DijkstraShortestPath(len(vertices), oddVerticesIndexes[startIndex], oddVerticesIndexes[endIndex], costs, 888888)
+            solutionCost = 0
+            for solutionIndex in range(1,len(solution[1])):
+                curCost = costs(solution[1][solutionIndex-1], solution[1][solutionIndex])
+                solutionCost = solutionCost + curCost
+            solutions.append((oddVerticesIndexes[startIndex], oddVerticesIndexes[endIndex], solution[1], solutionCost ))
+        curCount = curCount + 1
+
+        endTime = time.time()
+        print(endTime-startTime)
+        print("Progress: " + str(curCount) + "/" + str(len(oddVertices)))
+
+
+
 def to_eulerian_proc(graph, oddVertices):
     print("Graph is NOT eulerian! - Starting the conversion to eulerian proc")
    
@@ -262,17 +334,7 @@ def to_eulerian_proc(graph, oddVertices):
     print("2.(a) complete")
     #------------------------------------------------------------------------------------
     # 2.(b): Find shortest paths between odd vertices (using or-tools dijkstra) 
-    def costs(i,j):
-        verticeI = vertices[i]
-        verticesJ = vertices[j]
 
-        for edge in verticeI.edges:
-            if edge.j == verticesJ.name:
-                return edge.ij
-            if edge.i == verticesJ.name:
-                return edge.ji
-        
-        return 999999
         
     oddVerticesIndexes = []
     count = 0
@@ -287,24 +349,11 @@ def to_eulerian_proc(graph, oddVertices):
 
     print("2.(b) - first part complete, we have: " + str(len(oddVertices)) + " odd vertices")
     print("this gives us in total: " + str(len(oddVertices) * (len(oddVertices) - 1) / 2) + " comparisons")
-    curCount = 0
-    for startIndex in range(len(oddVertices)):
-
-        startTime = time.time()
-
-        for endIndex in range(startIndex+1,len(oddVerticesIndexes)):
-            solution = pywrapgraph.DijkstraShortestPath(len(vertices), oddVerticesIndexes[startIndex], oddVerticesIndexes[endIndex], costs, 888888)
-            solutionCost = 0
-            for solutionIndex in range(1,len(solution[1])):
-                curCost = costs(solution[1][solutionIndex-1], solution[1][solutionIndex])
-                solutionCost = solutionCost + curCost
-            solutions.append((oddVerticesIndexes[startIndex], oddVerticesIndexes[endIndex], solution[1], solutionCost ))
-        curCount = curCount + 1
-
-        endTime = time.time()
-        print(endTime-startTime)
-        print("Progress: " + str(curCount) + "/" + str(len(oddVertices)))
-
+    startTime = time.time()
+    # serial_shortest_path(oddVertices, vertices, oddVerticesIndexes, solutions)
+    parallel_shortest_path_helper(oddVertices, vertices, oddVerticesIndexes, solutions)
+    endTime = time.time()
+    print("<<TOTAL-TIME-FOR-SHORTEST-PATH: " + str(endTime - startTime) + ">>>>>>>>>>>")
     # Print shortest paths:
     """
     for solution in solutions:
