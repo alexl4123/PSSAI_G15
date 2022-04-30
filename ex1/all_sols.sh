@@ -7,6 +7,7 @@ do
     else
         now=$(date +"%T")
         echo "---The current starting time is: $now"
-        time (python wins_algorithm.py "$entry" > log2.txt)
+        (echo "---The current starting time is: $now") >> log.txt
+        (time (python wins_algorithm.py "$entry" >> log.txt)) >> log.txt
     fi
 done

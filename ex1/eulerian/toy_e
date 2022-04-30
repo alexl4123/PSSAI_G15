@@ -25,10 +25,10 @@ LISTA_ARISTAS_REQ :
 (12,13)   coste   9    15
 (12,14)   coste   6    9
 (13,14)   coste   7    5
-(13,14)   coste   7    5
 (2,14)   coste   18    3
-(5,6)   coste   2    1
+(13,14)   coste   7    5
 (3,5)   coste   4    3
+(5,6)   coste   2    1
 (7,8)   coste   12    8
 
 LISTA_ARISTAS_NOREQ :

@@ -4,8 +4,13 @@ import time
 import copy
 from ortools.graph import pywrapgraph
 from ortools.sat.python import cp_model
+from ortools.linear_solver import pywraplp
 
 import multiprocessing
+
+# Other graph library - for shortest paths
+import networkx as nx
+import matplotlib.pyplot as plt
 
 class Edge:
     def __init__(self, i, j, ij, ji):
@@ -235,6 +240,117 @@ def is_eulerian(graph):
 
     return (isEulerian, oddVertices)
 
+def networkX_shortest_path(oddVertices, vertices, oddVerticesIndexes, solutions):
+
+    costDataStruct = []
+    max_ = 0
+    for i in range(len(vertices)):
+        if (int(vertices[i].name) > max_):
+            max_ = int(vertices[i].name)
+
+    if (max_ != len(vertices)):
+        print("CRITICAL - MAX NUMBER OF VERTICE DOES NOT CORRESPOND TO VERTICES LENGTH")
+        exit(1)
+
+
+    # We assume a sparse graph
+    for i in range(len(vertices)):
+        costDataStruct.append([])
+        
+    for i in range(len(vertices)):
+        for edge in vertices[i].edges:
+            costDataStruct[int(edge.i)-1].append((int(edge.j), edge.ij))
+            costDataStruct[int(edge.j)-1].append((int(edge.i), edge.ji))
+
+    oddIndexSet = {}
+    for index in range(len(oddVertices)):
+        oddIndexSet[int(oddVertices[index].name)] = oddVerticesIndexes[index]
+
+    vertexIndexSet = {}
+    for index in range(len(vertices)):
+        vertexIndexSet[int(vertices[index].name)] = index
+
+
+    def costs(i,j):
+        verticeI = vertices[i]
+        verticesJ = vertices[j]
+
+        for edge in verticeI.edges:
+            if edge.j == verticesJ.name:
+                return edge.ij
+            if edge.i == verticesJ.name:
+                return edge.ji
+        return 999999
+
+    def costs2(i,j):
+
+        edgesTuples = costDataStruct[i-1]
+        for edgeTuple in edgesTuples:
+            if j == edgeTuple[0]:
+                return edgeTuple[1]
+
+        return 999999
+
+    G = nx.Graph()
+    for vertice in vertices:
+        for edge in vertice.getEdges():
+            G.add_edge(int(edge.i), int(edge.j), weight=edge.ij)
+
+    nx.draw(G, with_labels=True, font_weight='bold')
+    # plt.savefig('foo.png')
+
+    
+    curCount = 0
+    for startIndex in range(len(oddVertices)):
+        startTime = time.time()
+        
+        solution = nx.single_source_dijkstra(G, int(oddVertices[startIndex].name), weight = 'weight')
+        for endIndex in range(startIndex + 1, len(oddVertices)):
+            cost = solution[0][int(oddVertices[endIndex].name)]
+            if (cost > 999999):
+                print("edge not found!")
+            path = solution[1][int(oddVertices[endIndex].name)]
+            transformed_path = []
+            for vertex in path:
+                transformed_path.append(vertexIndexSet[vertex])
+
+            solutions.append((oddVerticesIndexes[startIndex], oddVerticesIndexes[endIndex], transformed_path, cost))
+        endTime = time.time()
+        
+    """
+    curCount = 0
+    for startIndex in range(len(oddVertices)):
+
+        startTime = time.time()
+
+        for endIndex in range(startIndex+1,len(oddVertices)):
+            print("<<<<>>>>>>>")
+            solution = nx.shortest_path(G, int(oddVertices[startIndex].name), int(oddVertices[endIndex].name), weight='weight')
+            solutionCost = 0
+            for solutionIndex in range(1, len(solution)):
+                solutionCost = solutionCost + costs2(solution[solutionIndex-1], solution[solutionIndex])
+            solutions.append((oddVerticesIndexes[startIndex], oddVerticesIndexes[endIndex], solution, solutionCost))
+                
+            solutionOR = pywrapgraph.DijkstraShortestPath(len(vertices), oddVerticesIndexes[startIndex], oddVerticesIndexes[endIndex], costs, 888888)
+            solutionCostOR = 0
+            for solutionIndex in range(1,len(solutionOR[1])):
+                curCost = costs(solutionOR[1][solutionIndex-1], solutionOR[1][solutionIndex])
+                solutionCostOR = solutionCostOR + curCost
+            # solutions.append((oddVerticesIndexes[startIndex], oddVerticesIndexes[endIndex], solution[1], solutionCost ))
+
+           
+            print(solution)
+            print(solutionCost)
+
+            print(solutionOR)
+            print(solutionCostOR)
+        curCount = curCount + 1
+
+        endTime = time.time()
+        print(endTime-startTime)
+        print("Progress: " + str(curCount) + "/" + str(len(oddVertices)))
+    """
+
 
 def parallel_shortest_path(item):
     def costs(i,j):
@@ -268,7 +384,7 @@ def parallel_shortest_path_helper(oddVertices, vertices, oddVerticesIndexes, sol
         for endIndex in range(startIndex + 1, len(oddVertices)):
             allIndexes.append((startIndex,endIndex, oddVertices, vertices, oddVerticesIndexes))
 
-    pool = multiprocessing.Pool(processes=4)
+    pool = multiprocessing.Pool(processes=12)
     outputs = pool.map(parallel_shortest_path, allIndexes)
     for output in outputs:
         solutions.append(output)
@@ -351,7 +467,8 @@ def to_eulerian_proc(graph, oddVertices):
     print("this gives us in total: " + str(len(oddVertices) * (len(oddVertices) - 1) / 2) + " comparisons")
     startTime = time.time()
     # serial_shortest_path(oddVertices, vertices, oddVerticesIndexes, solutions)
-    parallel_shortest_path_helper(oddVertices, vertices, oddVerticesIndexes, solutions)
+    # parallel_shortest_path_helper(oddVertices, vertices, oddVerticesIndexes, solutions)
+    networkX_shortest_path(oddVertices, vertices, oddVerticesIndexes, solutions)
     endTime = time.time()
     print("<<TOTAL-TIME-FOR-SHORTEST-PATH: " + str(endTime - startTime) + ">>>>>>>>>>>")
     # Print shortest paths:
@@ -365,10 +482,16 @@ def to_eulerian_proc(graph, oddVertices):
     # 2.(c): Find minimum cost perfect matching (or-tools cp_model):
     
     startTime = time.time()
-    model = cp_model.CpModel()
+    # model = cp_model.CpModel()
+    model = pywraplp.Solver.CreateSolver('SCIP')
+
     x = []
     for solution in solutions:
-        x.append((solution[0], solution[1], model.NewIntVar(0,1000, 'x' + str(solution[0]) + str(solution[1])), solution[3]))
+        # for CP-SAT-SOLVER
+        # x.append((solution[0], solution[1], model.NewIntVar(0,1000, 'x' + str(solution[0]) + str(solution[1])), solution[3]))
+
+        # for GLOP-SOLVER
+        x.append((solution[0], solution[1], model.IntVar(0,1000, 'x' + str(solution[0]) + str(solution[1])), solution[3]))
 
     for oddIndex in oddVerticesIndexes:
         cs = 0
@@ -389,8 +512,17 @@ def to_eulerian_proc(graph, oddVertices):
     startTime = time.time()
     print("<<<Solver Init complete, now starting solver>>")
 
-    solver = cp_model.CpSolver()
-    status = solver.Solve(model)
+    # FOR CP-SAT-SOLVER
+    # solver = cp_model.CpSolver()
+    # status = solver.Solve(model)
+    
+    solver = model
+    status = solver.Solve()
+    if status == pywraplp.Solver.OPTIMAL:
+        print('Solution:')
+    else:
+        print('The problem does not have an optimal solution.')
+        exit(1)
 
     endTime = time.time()
     print(endTime - startTime)    
@@ -403,14 +535,20 @@ def to_eulerian_proc(graph, oddVertices):
 
     """
     for xij in x:
-        print(str(solver.Value(xij[2])))
+        print(str((xij[2].solution_value())))
+    """
+
+    """
+    for xij in x:
+        print(solver.Value(xij[2]))
     """
     
     startTime = time.time()
    
     index = 0
     for xij in x:
-        if (solver.Value(xij[2]) == 1):
+        # if (solver.Value(xij[2]) == 1):
+        if (int(xij[2].solution_value()) == 1):
             # Use path  
             solution = solutions[index]
             path = solution[2]
