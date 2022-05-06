@@ -12,6 +12,8 @@ import multiprocessing
 import networkx as nx
 import matplotlib.pyplot as plt
 
+from hierholzer import *
+
 class Edge:
     def __init__(self, i, j, ij, ji):
         self.i = i
@@ -75,6 +77,7 @@ class ArcVertice:
 
 
 
+"""
 def euler_tour(arcsPrimePrime, startNode):
     arcsStack = (arcsPrimePrime)
     curNode = startNode
@@ -111,23 +114,11 @@ def euler_tour(arcsPrimePrime, startNode):
                     curCurNode = tour[i]
                     tour.pop(i)
                     curStack = euler_tour(arcsStack, curCurNode) + curStack
-            """
-            print("<<<<<<<<<<Start node: " + str(startNode) + ">>>>>>>>>>>>")
-            print(arcsStack)
-            print(tour)
-            print(curStack)
-            print("<<<<<<<<<<>>>>>>>>>>")
-            """
- 
+
             return (tour + curStack)
     
-    """
-    print("<<<<<<<<<<Start node: " + str(startNode) + ">>>>>>>>>>>>")
-    print(tour)
-    print(curNode)
-    print("<<<<<<<<<<>>>>>>>>>>")
-    """
-    return tour
+   return tour
+"""
 
 def parse_output_file(edges):
     print("PARSE_TO_FILE")
@@ -769,7 +760,9 @@ def wins_algorithm(graph):
         exit(1)
 
     startTime = time.time()
-    
+   
+    print("ARCSPRIMEPRIME:")
+    print(arcsPrimePrime)
     wpp_tour = (euler_tour(copy.deepcopy(arcsPrimePrime), arcsPrimePrime[0][0]))
 
     endTime = time.time()

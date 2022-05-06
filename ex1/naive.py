@@ -4,6 +4,7 @@ import sys
 import time
 from ortools.sat.python import cp_model
 
+from hierholzer import *
 
 class Edge:
     def __init__(self, i, j, ij, ji):
@@ -56,9 +57,8 @@ def create_data_model():
     return data
 
 
-
+"""
 class NQueenSolutionPrinter(cp_model.CpSolverSolutionCallback):
-    """Print intermediate solutions."""
 
     def __init__(self, queens):
         cp_model.CpSolverSolutionCallback.__init__(self)
@@ -85,7 +85,7 @@ class NQueenSolutionPrinter(cp_model.CpSolverSolutionCallback):
                     print('_', end=' ')
             print()
         print()
-
+"""
 
 
 def main():
@@ -99,7 +99,7 @@ def main():
     # cs0-begin Adds constraint xij, xji >= 0
     x = []
     for edge in edges:
-        x.append(Edge(edge.i, edge.j,  model.NewIntVar(0, 1, 'x' + edge.i + edge.j), model.NewIntVar(0, 10000, 'x' + edge.j + edge.i)))
+        x.append(Edge(edge.i, edge.j,  model.NewIntVar(0, 2, 'x' + edge.i + edge.j), model.NewIntVar(0, 2, 'x' + edge.j + edge.i)))
     # cs0-end
 
 
@@ -149,6 +149,32 @@ def main():
         print(f'Minimum of objective function: {solver.ObjectiveValue()}\n')
         for edge in x:
             print('For edge ' + edge.i + ':' + edge.j + ' we got (ij):' + str(solver.Value(edge.ij)) + ' and (ji):' + str(solver.Value(edge.ji)))
+
+        solverValuesCopy = []
+        for edge in x:
+            for i in range(0, solver.Value(edge.ij)):
+                solverValuesCopy.append((int(edge.i), int(edge.j)))
+            for i in range(0, solver.Value(edge.ji)):
+                solverValuesCopy.append((int(edge.j), int(edge.i)))
+
+        wpp_tour = euler_tour(solverValuesCopy.copy(), solverValuesCopy[0][0])
+        print("<<<<<<POSSIBLE_TOUR>>>>>>>>>>>")
+        print(wpp_tour)
+        print("<<<<<<POSSIBLE_TOUR_END>>>>>>>>>>>")
+
+        input_file_path = sys.argv[1]
+        input_file_name = input_file_path.split('/')
+
+        input_file_name = input_file_name[len(input_file_name) - 1]
+    
+        output_file_path = 'tours/' + input_file_name + '_naive_tour'
+
+        f = open(output_file_path, 'w')
+    
+        f.write(str(wpp_tour) + '\n')
+
+        f.close()
+                
     else:
         print('No solution found')
     # Statistics.
