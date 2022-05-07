@@ -1,7 +1,7 @@
 NOMBRE : WB3042 
 COMENTARIO :  Chino Windy aleatorio grafico
 VERTICES : 3000
-ARISTAS_REQ : 7418
+ARISTAS_REQ : 7416
 ARISTAS_NOREQ : 0
 LISTA_ARISTAS_REQ :
 (1,258)   coste   18    19
@@ -6816,7 +6816,7 @@ LISTA_ARISTAS_REQ :
 (1433,2902)   coste   20    20
 (1323,1433)   coste   7    6
 (1323,1368)   coste   24    29
-(1368,2610)   coste   1    1
+(1368,2287)   coste   3    4
 (1182,2601)   coste   8    7
 (1202,2859)   coste   7    1
 (1107,1989)   coste   11    15
@@ -7081,9 +7081,7 @@ LISTA_ARISTAS_REQ :
 (331,2377)   coste   10    5
 (632,1094)   coste   27    27
 (2698,2914)   coste   9    10
-(337,746)   coste   6    4
-(746,2076)   coste   9    6
-(389,1013)   coste   17    20
+(337,389)   coste   21    21
 (339,2979)   coste   7    7
 (1608,2580)   coste   7    5
 (1135,1678)   coste   5    5
@@ -7130,6 +7128,8 @@ LISTA_ARISTAS_REQ :
 (386,2367)   coste   2    8
 (863,2367)   coste   14    9
 (638,2401)   coste   11    11
+(1013,2215)   coste   8    12
+(551,2215)   coste   1    1
 (612,1199)   coste   12    17
 (1199,2189)   coste   23    22
 (2189,2996)   coste   9    9
@@ -7138,9 +7138,7 @@ LISTA_ARISTAS_REQ :
 (394,2571)   coste   4    1
 (861,2639)   coste   8    11
 (1655,2400)   coste   4    1
-(403,1466)   coste   16    13
-(1466,2215)   coste   8    6
-(551,2215)   coste   1    1
+(403,2076)   coste   22    21
 (804,1337)   coste   27    26
 (804,2984)   coste   12    14
 (409,775)   coste   21    21
@@ -7184,9 +7182,9 @@ LISTA_ARISTAS_REQ :
 (1940,2223)   coste   4    4
 (938,1278)   coste   18    24
 (897,1920)   coste   5    4
-(1288,1920)   coste   3    3
 (483,1920)   coste   11    10
 (483,2159)   coste   16    14
+(1288,1920)   coste   3    3
 (1244,2186)   coste   26    23
 (1219,2650)   coste   11    13
 (1219,1485)   coste   23    20
@@ -7220,7 +7218,7 @@ LISTA_ARISTAS_REQ :
 (1802,1875)   coste   19    19
 (528,2078)   coste   6    2
 (700,1595)   coste   11    15
-(700,2287)   coste   17    20
+(700,2610)   coste   18    14
 (529,899)   coste   4    2
 (899,2098)   coste   20    19
 (980,1891)   coste   8    6

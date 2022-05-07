@@ -1,7 +1,7 @@
 NOMBRE : WB1062 
 COMENTARIO :  Chino Windy aleatorio grafico
 VERTICES : 1000
-ARISTAS_REQ : 3388
+ARISTAS_REQ : 3386
 ARISTAS_NOREQ : 0
 LISTA_ARISTAS_REQ :
 (1,49)   coste   33    32
@@ -3313,9 +3313,8 @@ LISTA_ARISTAS_REQ :
 (134,207)   coste   25    25
 (712,879)   coste   32    30
 (135,727)   coste   34    35
-(266,850)   coste   19    27
-(344,781)   coste   19    28
-(422,781)   coste   13    4
+(266,344)   coste   42    34
+(422,850)   coste   15    19
 (231,877)   coste   30    32
 (425,717)   coste   8    9
 (425,847)   coste   13    22
@@ -3336,11 +3335,9 @@ LISTA_ARISTAS_REQ :
 (461,690)   coste   27    29
 (449,878)   coste   39    29
 (161,500)   coste   37    34
-(279,301)   coste   4    1
-(279,314)   coste   36    38
-(450,748)   coste   11    7
+(181,301)   coste   16    16
 (181,749)   coste   8    9
-(181,279)   coste   10    17
+(450,748)   coste   11    7
 (815,935)   coste   7    6
 (520,637)   coste   19    21
 (637,715)   coste   18    13
@@ -3348,6 +3345,7 @@ LISTA_ARISTAS_REQ :
 (285,554)   coste   12    13
 (176,695)   coste   19    20
 (444,699)   coste   16    16
+(279,314)   coste   36    38
 (350,974)   coste   2    6
 (245,811)   coste   10    17
 (245,664)   coste   47    41

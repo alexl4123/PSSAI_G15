@@ -2794,7 +2794,6 @@ LISTA_ARISTAS_REQ :
 (433,607)   coste   69    66
 (254,392)   coste   14    26
 (423,497)   coste   13    12
-(423,992)   coste   1    3
 (169,414)   coste   9    31
 (51,367)   coste   27    28
 (109,905)   coste   19    2
@@ -2863,7 +2862,7 @@ LISTA_ARISTAS_REQ :
 (395,409)   coste   34    35
 (909,956)   coste   65    56
 (280,812)   coste   43    59
-(339,812)   coste   9    1
+(268,812)   coste   1    3
 (116,635)   coste   71    59
 (215,635)   coste   1    23
 (91,516)   coste   13    10
@@ -2933,7 +2932,7 @@ LISTA_ARISTAS_REQ :
 (188,243)   coste   12    34
 (303,313)   coste   43    21
 (349,560)   coste   33    18
-(268,812)   coste   1    3
+(339,812)   coste   9    1
 (197,818)   coste   35    16
 (225,844)   coste   16    20
 (887,948)   coste   1    1
@@ -2982,6 +2981,7 @@ LISTA_ARISTAS_REQ :
 (519,819)   coste   6    18
 (296,946)   coste   17    21
 (328,357)   coste   15    1
+(423,992)   coste   1    3
 (423,915)   coste   30    7
 (523,902)   coste   15    1
 (774,852)   coste   16    12

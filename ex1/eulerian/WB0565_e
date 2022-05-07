@@ -1532,9 +1532,9 @@ LISTA_ARISTAS_REQ :
 (494,499)   coste   81    89
 (1,163)   coste   10    22
 (114,442)   coste   5    5
+(311,442)   coste   36    37
 (157,442)   coste   37    10
 (95,157)   coste   20    1
-(311,442)   coste   36    37
 (2,233)   coste   27    30
 (2,459)   coste   1    9
 (309,454)   coste   15    6

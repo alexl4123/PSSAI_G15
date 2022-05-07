@@ -1,7 +1,7 @@
 NOMBRE : WB2051 
 COMENTARIO :  Chino Windy aleatorio grafico
 VERTICES : 2000
-ARISTAS_REQ : 5921
+ARISTAS_REQ : 5920
 ARISTAS_NOREQ : 0
 LISTA_ARISTAS_REQ :
 (1,367)   coste   20    22
@@ -5508,7 +5508,7 @@ LISTA_ARISTAS_REQ :
 (592,1453)   coste   15    17
 (1301,1716)   coste   27    31
 (319,1946)   coste   8    10
-(360,375)   coste   1    1
+(360,903)   coste   12    12
 (1334,1626)   coste   15    15
 (94,158)   coste   25    25
 (400,913)   coste   28    26
@@ -5820,8 +5820,7 @@ LISTA_ARISTAS_REQ :
 (833,1515)   coste   19    16
 (754,1588)   coste   9    6
 (754,1843)   coste   14    14
-(612,903)   coste   8    9
-(612,1848)   coste   8    8
+(375,1848)   coste   5    6
 (1712,1920)   coste   17    17
 (855,1252)   coste   14    18
 (378,865)   coste   27    31
@@ -5834,8 +5833,8 @@ LISTA_ARISTAS_REQ :
 (387,999)   coste   14    13
 (623,1018)   coste   27    29
 (1374,1503)   coste   23    24
-(398,1646)   coste   20    21
-(725,1552)   coste   9    11
+(398,1552)   coste   27    29
+(725,1646)   coste   2    3
 (449,1336)   coste   10    9
 (553,1336)   coste   3    5
 (895,1277)   coste   15    19

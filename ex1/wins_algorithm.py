@@ -1,7 +1,9 @@
 # coding=utf-8
 import sys
+import os
 import time
 import copy
+
 from ortools.graph import pywrapgraph
 from ortools.sat.python import cp_model
 from ortools.linear_solver import pywraplp
@@ -442,7 +444,8 @@ def to_eulerian_proc(graph, oddVertices):
     #------------------------------------------------------------------------------------
     # 2.(b): Find shortest paths between odd vertices (using or-tools dijkstra) 
 
-        
+    
+    # Index of odd vertices in the vertices list
     oddVerticesIndexes = []
     count = 0
     for vertice in vertices:
@@ -472,17 +475,19 @@ def to_eulerian_proc(graph, oddVertices):
     #------------------------------------------------------------------------------------
     # 2.(c): Find minimum cost perfect matching (or-tools cp_model):
     
+
     startTime = time.time()
-    # model = cp_model.CpModel()
+    """
+    #model = cp_model.CpModel()
     model = pywraplp.Solver.CreateSolver('SCIP')
 
     x = []
     for solution in solutions:
         # for CP-SAT-SOLVER
-        # x.append((solution[0], solution[1], model.NewIntVar(0,1000, 'x' + str(solution[0]) + str(solution[1])), solution[3]))
+        #x.append((solution[0], solution[1], model.NewIntVar(0,1, 'x' + str(solution[0]) + str(solution[1])), solution[3]))
 
         # for GLOP-SOLVER
-        x.append((solution[0], solution[1], model.IntVar(0,1000, 'x' + str(solution[0]) + str(solution[1])), solution[3]))
+        x.append((solution[0], solution[1], model.IntVar(0,1, 'x' + str(solution[0]) + str(solution[1])), solution[3]))
 
     for oddIndex in oddVerticesIndexes:
         cs = 0
@@ -504,16 +509,53 @@ def to_eulerian_proc(graph, oddVertices):
     print("<<<Solver Init complete, now starting solver>>")
 
     # FOR CP-SAT-SOLVER
-    # solver = cp_model.CpSolver()
-    # status = solver.Solve(model)
+    #solver = cp_model.CpSolver()
+    #status = solver.Solve(model)
     
+    # FOR MIP/SCIP Solver
     solver = model
     status = solver.Solve()
-    if status == pywraplp.Solver.OPTIMAL:
-        print('Solution:')
-    else:
-        print('The problem does not have an optimal solution.')
-        exit(1)
+    """
+
+    oddVertexIndexIndexSet = {}
+    for index in range(len(oddVerticesIndexes)):
+        oddVertexIndexIndexSet[oddVerticesIndexes[index]] = index
+
+    oddIndexVertexIndexSet = {}
+    for index in range(len(oddVerticesIndexes)):
+        oddIndexVertexIndexSet[index] = oddVerticesIndexes[index]
+    
+    output_file_path = 'mcpm/tmp'
+
+    f = open(output_file_path, 'w')
+    
+    f.write(str(len(oddVerticesIndexes)) + "\n")
+    f.write(str(len(solutions)) + "\n")
+    solutionIndexes = {}
+    solutionCurIndex = 0
+    for solution in solutions:
+        solutionIndexes[(oddVertexIndexIndexSet[solution[0]],oddVertexIndexIndexSet[solution[1]])] = solutionCurIndex
+        f.write(str(oddVertexIndexIndexSet[solution[0]]) + " " + str(oddVertexIndexIndexSet[solution[1]]) + " " + str(solution[3]) + "\n")
+        solutionCurIndex = solutionCurIndex + 1
+
+    f.close()   
+    
+    # Invoke polynomial solver of minimum-cost-perfect-matching
+    stream = os.popen('mcpm/example -f ' + output_file_path + ' --minweight')
+    output = stream.read()
+
+    inSolution = []
+    lines = output.splitlines()
+    for index in range(len(lines)):
+        if (index > 1):
+            line = lines[index]
+            splits = line.split(' ')
+            inSolution.append((int(splits[0]), int(splits[1])))
+
+    """
+    for sols in inSolution:
+        print(str(sols) + "::" + str(solutionIndexes[(sols[0],sols[1])]))
+    """
 
     endTime = time.time()
     print(endTime - startTime)    
@@ -537,10 +579,15 @@ def to_eulerian_proc(graph, oddVertices):
     startTime = time.time()
    
     index = 0
-    for xij in x:
+    #for xij in x:
+        # SAT-SOLVER:
         # if (solver.Value(xij[2]) == 1):
-        if (int(xij[2].solution_value()) == 1):
+        # MIP/SCIP Solver:
+        #if (int(xij[2].solution_value()) == 1):
             # Use path  
+    for sols in inSolution:
+        if (True):
+            index = solutionIndexes[(sols[0],sols[1])]
             solution = solutions[index]
             path = solution[2]
             
@@ -761,8 +808,6 @@ def wins_algorithm(graph):
 
     startTime = time.time()
    
-    print("ARCSPRIMEPRIME:")
-    print(arcsPrimePrime)
     wpp_tour = (euler_tour(copy.deepcopy(arcsPrimePrime), arcsPrimePrime[0][0]))
 
     endTime = time.time()

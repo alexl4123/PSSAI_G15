@@ -1,7 +1,7 @@
 NOMBRE : WB1561 
 COMENTARIO :  Chino Windy aleatorio grafico
 VERTICES : 1500
-ARISTAS_REQ : 5004
+ARISTAS_REQ : 5002
 ARISTAS_NOREQ : 0
 LISTA_ARISTAS_REQ :
 (1,10)   coste   5    3
@@ -4623,12 +4623,11 @@ LISTA_ARISTAS_REQ :
 (881,1453)   coste   17    17
 (1005,1170)   coste   34    36
 (1005,1442)   coste   7    11
-(72,523)   coste   34    34
-(523,810)   coste   34    32
-(148,991)   coste   7    10
-(272,1367)   coste   16    16
-(1243,1332)   coste   11    13
+(72,991)   coste   32    33
+(148,1243)   coste   13    16
 (1243,1254)   coste   2    2
+(272,1367)   coste   16    16
+(1174,1332)   coste   42    38
 (16,898)   coste   11    12
 (369,1472)   coste   3    3
 (570,958)   coste   15    16
@@ -4809,8 +4808,9 @@ LISTA_ARISTAS_REQ :
 (141,608)   coste   15    15
 (472,1022)   coste   35    36
 (1197,1371)   coste   29    32
-(232,994)   coste   14    16
-(1174,1351)   coste   40    40
+(232,1351)   coste   13    13
+(825,994)   coste   31    31
+(788,825)   coste   26    25
 (978,1046)   coste   18    16
 (769,1096)   coste   15    19
 (626,831)   coste   24    24
@@ -4823,8 +4823,8 @@ LISTA_ARISTAS_REQ :
 (128,194)   coste   4    7
 (194,1000)   coste   34    35
 (1333,1357)   coste   7    6
-(899,1345)   coste   30    34
-(429,899)   coste   17    15
+(782,1345)   coste   35    34
+(681,782)   coste   24    23
 (236,1305)   coste   32    31
 (131,728)   coste   33    30
 (1122,1131)   coste   7    6
@@ -4852,6 +4852,7 @@ LISTA_ARISTAS_REQ :
 (151,667)   coste   10    12
 (276,1455)   coste   29    29
 (375,496)   coste   3    5
+(429,810)   coste   41    40
 (852,1240)   coste   33    33
 (725,1308)   coste   7    5
 (614,742)   coste   11    15
@@ -4937,9 +4938,8 @@ LISTA_ARISTAS_REQ :
 (246,900)   coste   24    27
 (589,1117)   coste   6    7
 (317,410)   coste   4    6
-(320,645)   coste   3    4
-(364,1146)   coste   35    33
-(613,1438)   coste   32    34
+(320,1438)   coste   31    33
+(364,645)   coste   17    21
 (664,936)   coste   21    25
 (259,651)   coste   25    24
 (1077,1389)   coste   4    4
@@ -4972,16 +4972,15 @@ LISTA_ARISTAS_REQ :
 (481,735)   coste   39    40
 (1007,1431)   coste   19    20
 (316,1482)   coste   20    23
+(613,1198)   coste   24    25
 (660,989)   coste   15    11
 (467,1452)   coste   16    13
 (467,995)   coste   1    1
 (358,894)   coste   3    3
 (395,1341)   coste   34    34
+(392,1146)   coste   10    12
 (379,1048)   coste   2    3
 (988,1144)   coste   6    8
-(392,762)   coste   12    10
-(439,762)   coste   26    25
-(439,681)   coste   9    9
 (519,1064)   coste   7    9
 (948,1182)   coste   1    3
 (813,1228)   coste   14    11
@@ -5003,7 +5002,6 @@ LISTA_ARISTAS_REQ :
 (515,546)   coste   26    28
 (612,625)   coste   8    10
 (1192,1266)   coste   14    11
-(788,1198)   coste   35    35
 (946,1073)   coste   12    12
 (722,1439)   coste   10    13
 (724,1079)   coste   40    41

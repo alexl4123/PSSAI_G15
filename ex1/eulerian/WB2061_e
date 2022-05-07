@@ -1,7 +1,7 @@
 NOMBRE : WB2061 
 COMENTARIO :  Chino Windy aleatorio grafico
 VERTICES : 2000
-ARISTAS_REQ : 6672
+ARISTAS_REQ : 6673
 ARISTAS_NOREQ : 0
 LISTA_ARISTAS_REQ :
 (1,261)   coste   24    21
@@ -6305,7 +6305,9 @@ LISTA_ARISTAS_REQ :
 (1576,1877)   coste   17    16
 (91,865)   coste   12    10
 (748,984)   coste   6    4
-(1564,1740)   coste   18    19
+(1564,1571)   coste   6    5
+(1307,1571)   coste   7    7
+(1416,1740)   coste   31    31
 (92,1498)   coste   19    20
 (1519,1810)   coste   9    8
 (93,1869)   coste   9    10
@@ -6496,7 +6498,6 @@ LISTA_ARISTAS_REQ :
 (1761,1784)   coste   2    3
 (935,1784)   coste   33    32
 (227,457)   coste   28    30
-(861,1416)   coste   35    36
 (1431,1799)   coste   8    11
 (1431,1817)   coste   4    7
 (229,927)   coste   17    14
@@ -6654,7 +6655,7 @@ LISTA_ARISTAS_REQ :
 (1437,1886)   coste   6    8
 (1227,1291)   coste   9    11
 (1227,1327)   coste   24    25
-(1307,1536)   coste   6    4
+(861,1536)   coste   15    16
 (693,1600)   coste   17    17
 (629,1584)   coste   15    17
 (1223,1246)   coste   24    27

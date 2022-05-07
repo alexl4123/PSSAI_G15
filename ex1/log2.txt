@@ -1,8 +1,0 @@
-NOMBRE : WA1042 
-
-COMENTARIO :  Chino Windy aleatorio puro
-
-Graph is NOT eulerian! - Starting the conversion to eulerian proc
-2.(a) complete
-2.(b) - first part complete, we have: 514 odd vertices
-this gives us in total: 131841.0 comparisons

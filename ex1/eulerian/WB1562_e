@@ -1,7 +1,7 @@
 NOMBRE : WB1562 
 COMENTARIO :  Chino Windy aleatorio grafico
 VERTICES : 1500
-ARISTAS_REQ : 5089
+ARISTAS_REQ : 5090
 ARISTAS_NOREQ : 0
 LISTA_ARISTAS_REQ :
 (1,78)   coste   26    22
@@ -4997,6 +4997,7 @@ LISTA_ARISTAS_REQ :
 (606,1099)   coste   24    31
 (384,1304)   coste   24    23
 (730,1085)   coste   15    21
+(1085,1386)   coste   6    1
 (221,345)   coste   8    10
 (438,1125)   coste   15    11
 (438,1063)   coste   28    26
@@ -5016,7 +5017,7 @@ LISTA_ARISTAS_REQ :
 (747,1224)   coste   8    12
 (353,1224)   coste   6    7
 (353,605)   coste   25    21
-(987,1457)   coste   49    50
+(1272,1457)   coste   19    24
 (247,514)   coste   1    1
 (468,484)   coste   18    23
 (460,484)   coste   13    15
@@ -5050,6 +5051,8 @@ LISTA_ARISTAS_REQ :
 (954,1227)   coste   1    1
 (1227,1232)   coste   17    19
 (332,558)   coste   27    22
+(987,1367)   coste   39    41
+(837,1367)   coste   20    22
 (396,513)   coste   10    9
 (826,983)   coste   33    41
 (705,1112)   coste   24    25
@@ -5079,10 +5082,8 @@ LISTA_ARISTAS_REQ :
 (681,905)   coste   20    18
 (452,797)   coste   9    3
 (900,1208)   coste   9    6
-(1085,1386)   coste   6    1
 (486,1085)   coste   1    1
 (531,1039)   coste   4    11
-(837,1272)   coste   29    37
 (936,1470)   coste   29    31
 (745,770)   coste   20    25
 (881,1461)   coste   36    34

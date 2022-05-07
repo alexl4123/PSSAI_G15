@@ -1,0 +1,618 @@
+<<<<<<<<<<NOW-DOING-instances/toy>>>>>>>>>>>>>>
+
+real	0m0,176s
+user	0m0,160s
+sys	0m0,034s
+<<<<<<<<<<NOW-DOING-instances/WA0531>>>>>>>>>>>>>>
+
+real	12m2,457s
+user	47m23,964s
+sys	0m0,929s
+<<<<<<<<<<NOW-DOING-instances/WA0532>>>>>>>>>>>>>>
+
+real	9m25,599s
+user	37m30,668s
+sys	0m0,733s
+<<<<<<<<<<NOW-DOING-instances/WA0535>>>>>>>>>>>>>>
+
+real	10m4,749s
+user	39m45,930s
+sys	0m0,830s
+<<<<<<<<<<NOW-DOING-instances/WA0541>>>>>>>>>>>>>>
+
+real	11m41,228s
+user	46m16,347s
+sys	0m0,720s
+<<<<<<<<<<NOW-DOING-instances/WA0542>>>>>>>>>>>>>>
+
+real	10m37,404s
+user	42m6,283s
+sys	0m0,745s
+<<<<<<<<<<NOW-DOING-instances/WA0545>>>>>>>>>>>>>>
+
+real	9m31,698s
+user	37m40,845s
+sys	0m0,737s
+<<<<<<<<<<NOW-DOING-instances/WA0551>>>>>>>>>>>>>>
+
+real	12m33,605s
+user	49m14,491s
+sys	0m0,573s
+<<<<<<<<<<NOW-DOING-instances/WA0552>>>>>>>>>>>>>>
+
+real	13m42,692s
+user	54m14,208s
+sys	0m1,125s
+<<<<<<<<<<NOW-DOING-instances/WA0555>>>>>>>>>>>>>>
+
+real	12m16,015s
+user	48m19,416s
+sys	0m0,748s
+<<<<<<<<<<NOW-DOING-instances/WA0561>>>>>>>>>>>>>>
+
+real	13m29,368s
+user	53m41,331s
+sys	0m0,544s
+<<<<<<<<<<NOW-DOING-instances/WA0562>>>>>>>>>>>>>>
+
+real	12m38,242s
+user	50m33,011s
+sys	0m0,801s
+<<<<<<<<<<NOW-DOING-instances/WA0565>>>>>>>>>>>>>>
+
+real	11m51,773s
+user	46m45,812s
+sys	0m0,816s
+<<<<<<<<<<NOW-DOING-instances/WA1031>>>>>>>>>>>>>>
+
+real	160m35,151s
+user	630m48,063s
+sys	0m36,427s
+real	94m57,139s
+user	1101m8,857s
+sys	0m40,281s
+
+
+
+
+
+
+
+
+-----------------------------MISSING----------------------------------------------
+
+
+
+
+
+
+<<<<<<<<<<NOW-DOING-WA1045>>>>>>>>>>>>>>
+---The current starting time is: 13:09:43
+
+real	0m39,497s
+user	3m51,295s
+sys	0m2,478s
+<<<<<<<<<<NOW-DOING-WA1051>>>>>>>>>>>>>>
+---The current starting time is: 13:10:23
+
+real	0m39,279s
+user	3m29,748s
+sys	0m2,651s
+<<<<<<<<<<NOW-DOING-WA1052>>>>>>>>>>>>>>
+---The current starting time is: 13:11:02
+
+real	0m51,131s
+user	5m40,287s
+sys	0m3,183s
+<<<<<<<<<<NOW-DOING-WA1055>>>>>>>>>>>>>>
+---The current starting time is: 13:11:53
+
+real	0m41,748s
+user	3m57,304s
+sys	0m2,868s
+<<<<<<<<<<NOW-DOING-WA1061>>>>>>>>>>>>>>
+---The current starting time is: 13:12:35
+
+real	0m34,224s
+user	2m22,553s
+sys	0m2,478s
+<<<<<<<<<<NOW-DOING-WA1062>>>>>>>>>>>>>>
+---The current starting time is: 13:13:09
+
+real	0m35,803s
+user	2m44,078s
+sys	0m2,970s
+<<<<<<<<<<NOW-DOING-WA1065>>>>>>>>>>>>>>
+---The current starting time is: 13:13:45
+
+real	0m40,423s
+user	3m34,912s
+sys	0m2,813s
+<<<<<<<<<<NOW-DOING-WA1531>>>>>>>>>>>>>>
+---The current starting time is: 13:14:25
+
+real	1m52,005s
+user	12m25,614s
+sys	0m7,270s
+<<<<<<<<<<NOW-DOING-WA1532>>>>>>>>>>>>>>
+---The current starting time is: 13:16:17
+
+real	2m57,943s
+user	24m28,800s
+sys	0m8,605s
+<<<<<<<<<<NOW-DOING-WA1535>>>>>>>>>>>>>>
+---The current starting time is: 13:19:15
+
+real	2m40,711s
+user	21m50,412s
+sys	0m9,923s
+<<<<<<<<<<NOW-DOING-WA1541>>>>>>>>>>>>>>
+---The current starting time is: 13:21:56
+
+real	1m48,034s
+user	11m48,645s
+sys	0m6,946s
+<<<<<<<<<<NOW-DOING-WA1542>>>>>>>>>>>>>>
+---The current starting time is: 13:23:44
+
+real	1m50,545s
+user	12m28,847s
+sys	0m6,700s
+<<<<<<<<<<NOW-DOING-WA1545>>>>>>>>>>>>>>
+---The current starting time is: 13:25:35
+
+real	2m0,303s
+user	15m17,300s
+sys	0m6,021s
+<<<<<<<<<<NOW-DOING-WA1551>>>>>>>>>>>>>>
+---The current starting time is: 13:27:35
+
+real	3m4,185s
+user	25m28,636s
+sys	0m10,776s
+<<<<<<<<<<NOW-DOING-WA1552>>>>>>>>>>>>>>
+---The current starting time is: 13:30:39
+
+real	3m19,120s
+user	29m47,093s
+sys	0m10,389s
+<<<<<<<<<<NOW-DOING-WA1555>>>>>>>>>>>>>>
+---The current starting time is: 13:33:58
+
+real	2m5,857s
+user	15m34,649s
+sys	0m6,705s
+<<<<<<<<<<NOW-DOING-WA1561>>>>>>>>>>>>>>
+---The current starting time is: 13:36:04
+
+real	1m15,133s
+user	5m7,958s
+sys	0m5,602s
+<<<<<<<<<<NOW-DOING-WA1562>>>>>>>>>>>>>>
+---The current starting time is: 13:37:19
+
+real	2m21,572s
+user	18m2,986s
+sys	0m7,755s
+<<<<<<<<<<NOW-DOING-WA1565>>>>>>>>>>>>>>
+---The current starting time is: 13:39:41
+
+real	3m9,216s
+user	27m26,190s
+sys	0m9,105s
+<<<<<<<<<<NOW-DOING-WA2031>>>>>>>>>>>>>>
+---The current starting time is: 13:42:50
+
+real	8m23,983s
+user	76m51,864s
+sys	0m33,917s
+<<<<<<<<<<NOW-DOING-WA2032>>>>>>>>>>>>>>
+---The current starting time is: 13:51:14
+
+real	8m6,635s
+user	73m16,719s
+sys	0m33,122s
+<<<<<<<<<<NOW-DOING-WA2035>>>>>>>>>>>>>>
+---The current starting time is: 13:59:21
+
+real	6m6,444s
+user	52m3,960s
+sys	0m23,796s
+<<<<<<<<<<NOW-DOING-WA2041>>>>>>>>>>>>>>
+---The current starting time is: 14:05:27
+
+real	4m56,914s
+user	37m40,496s
+sys	0m19,140s
+<<<<<<<<<<NOW-DOING-WA2042>>>>>>>>>>>>>>
+---The current starting time is: 14:10:24
+
+real	5m41,219s
+user	47m12,061s
+sys	0m19,559s
+<<<<<<<<<<NOW-DOING-WA2045>>>>>>>>>>>>>>
+---The current starting time is: 14:16:05
+
+real	5m18,313s
+user	44m27,741s
+sys	0m15,800s
+<<<<<<<<<<NOW-DOING-WA2051>>>>>>>>>>>>>>
+---The current starting time is: 14:21:24
+
+real	8m16,854s
+user	78m9,517s
+sys	0m36,306s
+<<<<<<<<<<NOW-DOING-WA2052>>>>>>>>>>>>>>
+---The current starting time is: 14:29:41
+
+real	3m58,373s
+user	27m39,371s
+sys	0m16,574s
+<<<<<<<<<<NOW-DOING-WA2055>>>>>>>>>>>>>>
+---The current starting time is: 14:33:39
+
+real	5m58,700s
+user	52m35,956s
+sys	0m17,898s
+<<<<<<<<<<NOW-DOING-WA2061>>>>>>>>>>>>>>
+---The current starting time is: 14:39:38
+
+real	2m45,863s
+user	13m45,303s
+sys	0m10,011s
+<<<<<<<<<<NOW-DOING-WA2062>>>>>>>>>>>>>>
+---The current starting time is: 14:42:23
+
+real	4m29,493s
+user	34m24,768s
+sys	0m15,866s
+<<<<<<<<<<NOW-DOING-WA2065>>>>>>>>>>>>>>
+---The current starting time is: 14:46:53
+
+real	6m13,160s
+user	52m55,068s
+sys	0m28,355s
+<<<<<<<<<<NOW-DOING-WA3031>>>>>>>>>>>>>>
+---The current starting time is: 16:02:03
+
+real	9m9,352s
+user	9m25,904s
+sys	0m2,823s
+<<<<<<<<<<NOW-DOING-WA3032>>>>>>>>>>>>>>
+---The current starting time is: 16:12:45
+
+real	8m49,375s
+user	9m5,061s
+sys	0m2,563s
+<<<<<<<<<<NOW-DOING-WA3035>>>>>>>>>>>>>>
+---The current starting time is: 16:21:34
+
+real	8m40,886s
+user	8m57,724s
+sys	0m2,723s
+<<<<<<<<<<NOW-DOING-WA3041>>>>>>>>>>>>>>
+---The current starting time is: 16:30:15
+
+real	7m17,787s
+user	7m34,241s
+sys	0m2,483s
+<<<<<<<<<<NOW-DOING-WA3042>>>>>>>>>>>>>>
+---The current starting time is: 16:37:33
+
+real	6m56,283s
+user	7m12,190s
+sys	0m2,403s
+<<<<<<<<<<NOW-DOING-WA3045>>>>>>>>>>>>>>
+---The current starting time is: 16:44:29
+
+real	7m20,060s
+user	7m36,939s
+sys	0m2,735s
+<<<<<<<<<<NOW-DOING-WA3051>>>>>>>>>>>>>>
+---The current starting time is: 16:51:49
+
+real	7m53,089s
+user	8m10,127s
+sys	0m2,568s
+<<<<<<<<<<NOW-DOING-WA3052>>>>>>>>>>>>>>
+---The current starting time is: 16:59:42
+
+real	8m8,769s
+user	8m25,666s
+sys	0m2,656s
+<<<<<<<<<<NOW-DOING-WA3055>>>>>>>>>>>>>>
+---The current starting time is: 17:07:51
+
+real	7m40,073s
+user	7m56,403s
+sys	0m2,567s
+<<<<<<<<<<NOW-DOING-WA3061>>>>>>>>>>>>>>
+---The current starting time is: 17:15:31
+Traceback (most recent call last):
+  File "wins_algorithm.py", line 835, in <module>
+    graph = parse_input_file()
+  File "wins_algorithm.py", line 196, in parse_input_file
+    vertices = int(vertice_line.split(':')[1])
+IndexError: list index out of range
+
+real	0m0,753s
+user	0m0,716s
+sys	0m0,036s
+<<<<<<<<<<NOW-DOING-WA3062>>>>>>>>>>>>>>
+---The current starting time is: 17:15:32
+
+real	7m38,607s
+user	7m55,569s
+sys	0m2,655s
+<<<<<<<<<<NOW-DOING-WA3065>>>>>>>>>>>>>>
+---The current starting time is: 17:23:10
+
+real	7m54,423s
+user	8m10,056s
+sys	0m3,294s
+<<<<<<<<<<NOW-DOING-WB0531>>>>>>>>>>>>>>
+---The current starting time is: 17:31:05
+
+real	0m16,285s
+user	0m16,053s
+sys	0m0,196s
+<<<<<<<<<<NOW-DOING-WB0532>>>>>>>>>>>>>>
+---The current starting time is: 17:31:21
+
+real	0m10,137s
+user	0m9,926s
+sys	0m0,180s
+<<<<<<<<<<NOW-DOING-WB0535>>>>>>>>>>>>>>
+---The current starting time is: 17:31:31
+
+real	5m19,638s
+user	5m18,949s
+sys	0m0,456s
+<<<<<<<<<<NOW-DOING-WB0541>>>>>>>>>>>>>>
+---The current starting time is: 17:36:51
+
+real	0m8,062s
+user	0m7,911s
+sys	0m0,125s
+<<<<<<<<<<NOW-DOING-WB0542>>>>>>>>>>>>>>
+---The current starting time is: 17:36:59
+
+real	0m8,022s
+user	0m7,847s
+sys	0m0,148s
+<<<<<<<<<<NOW-DOING-WB0545>>>>>>>>>>>>>>
+---The current starting time is: 17:37:07
+
+real	0m9,776s
+user	0m9,619s
+sys	0m0,128s
+<<<<<<<<<<NOW-DOING-WB0551>>>>>>>>>>>>>>
+---The current starting time is: 17:37:17
+
+real	0m9,758s
+user	0m9,542s
+sys	0m0,189s
+<<<<<<<<<<NOW-DOING-WB0552>>>>>>>>>>>>>>
+---The current starting time is: 17:37:27
+
+real	0m9,447s
+user	0m9,250s
+sys	0m0,168s
+<<<<<<<<<<NOW-DOING-WB0555>>>>>>>>>>>>>>
+---The current starting time is: 17:37:36
+
+real	0m11,918s
+user	0m11,687s
+sys	0m0,196s
+<<<<<<<<<<NOW-DOING-WB0561>>>>>>>>>>>>>>
+---The current starting time is: 17:37:48
+
+real	0m8,363s
+user	0m8,184s
+sys	0m0,153s
+<<<<<<<<<<NOW-DOING-WB0562>>>>>>>>>>>>>>
+---The current starting time is: 17:37:56
+
+real	0m6,861s
+user	0m6,687s
+sys	0m0,148s
+<<<<<<<<<<NOW-DOING-WB0565>>>>>>>>>>>>>>
+---The current starting time is: 17:38:03
+
+real	0m8,693s
+user	0m8,533s
+sys	0m0,132s
+<<<<<<<<<<NOW-DOING-WB1031>>>>>>>>>>>>>>
+---The current starting time is: 17:38:12
+
+real	1m5,190s
+user	1m4,616s
+sys	0m0,516s
+<<<<<<<<<<NOW-DOING-WB1032>>>>>>>>>>>>>>
+---The current starting time is: 17:39:17
+
+real	0m59,736s
+user	0m59,119s
+sys	0m0,564s
+<<<<<<<<<<NOW-DOING-WB1035>>>>>>>>>>>>>>
+---The current starting time is: 17:40:17
+
+real	1m8,767s
+user	1m8,176s
+sys	0m0,529s
+<<<<<<<<<<NOW-DOING-WB1041>>>>>>>>>>>>>>
+---The current starting time is: 17:41:26
+
+real	0m36,780s
+user	0m36,434s
+sys	0m0,300s
+<<<<<<<<<<NOW-DOING-WB1042>>>>>>>>>>>>>>
+---The current starting time is: 17:42:02
+
+real	0m28,398s
+user	0m27,968s
+sys	0m0,392s
+<<<<<<<<<<NOW-DOING-WB1045>>>>>>>>>>>>>>
+---The current starting time is: 17:42:31
+
+real	0m30,083s
+user	0m29,755s
+sys	0m0,272s
+<<<<<<<<<<NOW-DOING-WB1051>>>>>>>>>>>>>>
+---The current starting time is: 17:43:01
+
+real	0m29,904s
+user	0m29,536s
+sys	0m0,328s
+<<<<<<<<<<NOW-DOING-WB1052>>>>>>>>>>>>>>
+---The current starting time is: 17:43:31
+
+real	0m36,954s
+user	0m36,443s
+sys	0m0,452s
+<<<<<<<<<<NOW-DOING-WB1055>>>>>>>>>>>>>>
+---The current starting time is: 17:44:08
+
+real	1m4,572s
+user	1m3,994s
+sys	0m0,517s
+<<<<<<<<<<NOW-DOING-WB1061>>>>>>>>>>>>>>
+---The current starting time is: 17:45:12
+
+real	0m55,713s
+user	0m55,239s
+sys	0m0,424s
+<<<<<<<<<<NOW-DOING-WB1062>>>>>>>>>>>>>>
+---The current starting time is: 17:46:08
+
+real	0m58,267s
+user	0m57,812s
+sys	0m0,404s
+<<<<<<<<<<NOW-DOING-WB1065>>>>>>>>>>>>>>
+---The current starting time is: 17:47:06
+
+real	0m32,495s
+user	0m32,111s
+sys	0m0,346s
+<<<<<<<<<<NOW-DOING-WB1531>>>>>>>>>>>>>>
+---The current starting time is: 17:47:39
+
+real	32m55,588s
+user	32m52,864s
+sys	0m1,399s
+<<<<<<<<<<NOW-DOING-WB1532>>>>>>>>>>>>>>
+---The current starting time is: 18:20:34
+s
+real	88m27,421s
+user	88m20,016s
+sys	0m2,878s
+<<<<<<<<<<NOW-DOING-WB1535>>>>>>>>>>>>>>
+---The current starting time is: 19:49:02
+
+real	22m2,935s
+user	22m0,899s
+sys	0m1,261s
+<<<<<<<<<<NOW-DOING-WB1541>>>>>>>>>>>>>>
+---The current starting time is: 20:11:05
+
+real	42m5,263s
+user	42m3,126s
+sys	0m0,665s
+<<<<<<<<<<NOW-DOING-WB1542>>>>>>>>>>>>>>
+---The current starting time is: 20:53:10
+
+real	1m6,440s
+user	1m5,742s
+sys	0m0,644s
+<<<<<<<<<<NOW-DOING-WB1545>>>>>>>>>>>>>>
+---The current starting time is: 20:54:16
+
+real	1m3,959s
+user	1m3,349s
+sys	0m0,556s
+<<<<<<<<<<NOW-DOING-WB1551>>>>>>>>>>>>>>
+---The current starting time is: 20:55:20
+
+real	2m47,422s
+user	2m46,287s
+sys	0m1,019s
+<<<<<<<<<<NOW-DOING-WB1552>>>>>>>>>>>>>>
+---The current starting time is: 20:58:08
+
+real	2m11,130s
+user	2m10,213s
+sys	0m0,828s
+<<<<<<<<<<NOW-DOING-WB1555>>>>>>>>>>>>>>
+---The current starting time is: 21:00:19
+
+real	1m51,116s
+user	1m50,166s
+sys	0m0,872s
+<<<<<<<<<<NOW-DOING-WB1561>>>>>>>>>>>>>>
+---The current starting time is: 21:02:10
+
+real	1m17,873s
+user	1m17,133s
+sys	0m0,684s
+<<<<<<<<<<NOW-DOING-WB1562>>>>>>>>>>>>>>
+---The current starting time is: 21:03:28
+
+real	2m25,215s
+user	2m24,416s
+sys	0m0,700s
+<<<<<<<<<<NOW-DOING-WB1565>>>>>>>>>>>>>>
+---The current starting time is: 21:05:53
+
+real	2m20,862s
+user	2m20,006s
+sys	0m0,760s
+<<<<<<<<<<NOW-DOING-WB2031>>>>>>>>>>>>>>
+---The current starting time is: 21:08:14
+
+real	50m14,081s
+user	50m10,731s
+sys	0m1,719s
+<<<<<<<<<<NOW-DOING-WB2032>>>>>>>>>>>>>>
+---The current starting time is: 21:58:28
+
+real	43m3,238s
+user	42m58,143s
+sys	0m2,448s
+<<<<<<<<<<NOW-DOING-WB2035>>>>>>>>>>>>>>
+---The current starting time is: 22:41:31
+
+real	41m55,518s
+user	41m50,255s
+sys	0m2,383s
+<<<<<<<<<<NOW-DOING-WB2041>>>>>>>>>>>>>>
+---The current starting time is: 23:23:27
+
+real	3m11,000s
+user	3m9,720s
+sys	0m1,075s
+<<<<<<<<<<NOW-DOING-WB2042>>>>>>>>>>>>>>
+---The current starting time is: 23:26:38
+
+real	3m2,387s
+user	3m1,040s
+sys	0m1,129s
+<<<<<<<<<<NOW-DOING-WB2045>>>>>>>>>>>>>>
+---The current starting time is: 23:29:40
+
+real	35m21,234s
+user	35m18,889s
+sys	0m1,171s
+<<<<<<<<<<NOW-DOING-WB2051>>>>>>>>>>>>>>
+---The current starting time is: 00:05:01
+
+real	3m2,842s
+user	3m1,708s
+sys	0m1,048s
+
+<<<<<<<<<<NOW-DOING-WB3042>>>>>>>>>>>>>>
+---The current starting time is: 11:57:33
+
+real	21m29,222s
+user	21m42,622s
+sys	0m3,363s
+

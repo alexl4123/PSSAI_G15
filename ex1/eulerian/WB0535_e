@@ -1,7 +1,7 @@
 NOMBRE : WB0535 
 COMENTARIO :  Chino Windy aleatorio grafico
 VERTICES :  500
-ARISTAS_REQ : 1095
+ARISTAS_REQ : 1094
 ARISTAS_NOREQ : 0
 LISTA_ARISTAS_REQ :
 (1,112)   coste   28    33
@@ -992,9 +992,7 @@ LISTA_ARISTAS_REQ :
 (50,280)   coste   5    1
 (117,280)   coste   21    15
 (52,281)   coste   40    36
-(52,98)   coste   19    4
-(98,489)   coste   15    5
-(356,439)   coste   44    43
+(52,439)   coste   24    9
 (53,290)   coste   61    57
 (111,290)   coste   61    83
 (78,199)   coste   37    29
@@ -1023,7 +1021,8 @@ LISTA_ARISTAS_REQ :
 (73,485)   coste   11    21
 (352,430)   coste   12    25
 (123,195)   coste   52    59
-(195,304)   coste   24    24
+(195,356)   coste   57    29
+(304,489)   coste   38    21
 (275,483)   coste   14    1
 (275,359)   coste   55    45
 (81,478)   coste   11    11
