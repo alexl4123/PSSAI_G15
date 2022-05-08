@@ -711,7 +711,7 @@ def wins_algorithm(graph):
     min_cost_flow = pywrapgraph.SimpleMinCostFlow()
     
     for arc in arcsPrime:
-        # Note: I think the arc[2] should not be an int! -> but float is not accepted here!?!
+        # Note: I think the arc[2] should not be an int! -> but float is not accepted here!?! -> therefore * 100
         # print(arc)
         min_cost_flow.AddArcWithCapacityAndUnitCost(arc[0], arc[1], arc[3], int(arc[2] * 100))
 
@@ -819,7 +819,6 @@ def checkWpp(graph,wpp_tour):
     cost = 0
 
     edges = graph[1]
-    edgeStack = copy.deepcopy(edges)
 
     if(wpp_tour[0] != wpp_tour[len(wpp_tour) - 1]):
         print("<<<<<CRITICAL-STARTING-POINT-IS-NOT-END-POINT - START: " + str(wpp_tour[0]) + "::END::" + str(wpp_tour[len(wpp_tour) - 1]))
@@ -841,13 +840,6 @@ def checkWpp(graph,wpp_tour):
         if (edgeFound == False):
             print("<<<<CRITICAL-EDGE-NOT-FOUND: " + str(i) + "::" + str(j))
 
-        for edgeIndex in range(len(edgeStack)):
-            if(int(edgeStack[edgeIndex].i) == i and int(edgeStack[edgeIndex].j) == j):
-                edgeStack.pop(edgeIndex)
-                break
-            elif(int(edgeStack[edgeIndex].j) == i and int(edgeStack[edgeIndex].i) == j):
-                edgeStack.pop(edgeIndex)
-                break
     
     print("<<<<WPP-TOUR>>>>")
     print(wpp_tour)
@@ -865,7 +857,6 @@ def checkWpp(graph,wpp_tour):
     f.write(str(wpp_tour) + '\n')
 
     f.close()
-
             
         
 
