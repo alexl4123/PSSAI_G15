@@ -147,8 +147,8 @@ def main():
 
     if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
         print(f'Minimum of objective function: {solver.ObjectiveValue()}\n')
-        for edge in x:
-            print('For edge ' + edge.i + ':' + edge.j + ' we got (ij):' + str(solver.Value(edge.ij)) + ' and (ji):' + str(solver.Value(edge.ji)))
+  #      for edge in x:
+  #          print('For edge ' + edge.i + ':' + edge.j + ' we got (ij):' + str(solver.Value(edge.ij)) + ' and (ji):' + str(solver.Value(edge.ji)))
 
         solverValuesCopy = []
         for edge in x:
