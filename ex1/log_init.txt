@@ -1,0 +1,4536 @@
+---The current starting time is: 20:37:11
+NOMBRE : Toy 
+
+COMENTARIO :  Toy instance for the Windy Postman Problem (WPP)
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 6 odd vertices
+this gives us in total: 150 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 006317806243896484>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+0002052783966064453
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  6
+VARIABLES:  15
+Solution:
+00013680458068847656
+2(c) complete
+6771087646484375e-05
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+8726119995117188e-05
+3(1) - complete
+1621246337890625e-05
+3(2) - complete
+000013256072998046875
+Minimum Flow cost:  3800
+3(3) - complete
+6699562072753906e-05
+Final digraph constructed
+8034706115722656e-05
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 222
+---The current starting time is: 20:37:11
+NOMBRE : WA0531 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 284 odd vertices
+this gives us in total: 401860 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17748692035675049>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+1413226842880249
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  284
+VARIABLES:  40186
+Solution:
+12688775062561035
+2(c) complete
+0013289451599121094
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+008064985275268555
+3(1) - complete
+00005977153778076172
+3(2) - complete
+0003820657730102539
+Minimum Flow cost:  988800
+3(3) - complete
+002966761589050293
+Final digraph constructed
+0012815475463867188
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 530782
+---The current starting time is: 20:37:17
+NOMBRE : WA0532 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 252 odd vertices
+this gives us in total: 316260 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 16523809432983398>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+10048267841339111
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  252
+VARIABLES:  31626
+Solution:
+14333915710449219
+2(c) complete
+0010824203491210938
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+007914876937866211
+3(1) - complete
+00005371570587158203
+3(2) - complete
+00034008026123046875
+Minimum Flow cost:  1989700
+3(3) - complete
+003031134605407715
+Final digraph constructed
+0014367818832397461
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 497704
+---The current starting time is: 20:37:22
+NOMBRE : WA0535 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 262 odd vertices
+this gives us in total: 341910 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17367088794708252>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+12480952739715576
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  262
+VARIABLES:  34191
+Solution:
+15146288871765137
+2(c) complete
+0012511491775512695
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+008004307746887207
+3(1) - complete
+00006029605865478516
+3(2) - complete
+00032558441162109375
+Minimum Flow cost:  4741700
+3(3) - complete
+0031672000885009766
+Final digraph constructed
+0013332605361938477
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 481554
+---The current starting time is: 20:37:28
+NOMBRE : WA0541 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 264 odd vertices
+this gives us in total: 347160 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17849781513214111>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+121341872215271
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  264
+VARIABLES:  34716
+Solution:
+11991002559661865
+2(c) complete
+0011856794357299805
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+009752631187438965
+3(1) - complete
+00006282329559326172
+3(2) - complete
+0004151344299316406
+Minimum Flow cost:  886500
+3(3) - complete
+003658723831176758
+Final digraph constructed
+0016216039657592773
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 591697
+---The current starting time is: 20:37:33
+NOMBRE : WA0542 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 250 odd vertices
+this gives us in total: 311250 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1741640329360962>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+10043044090270996
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  250
+VARIABLES:  31125
+Solution:
+11189026832580566
+2(c) complete
+0010606765747070312
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+009922361373901367
+3(1) - complete
+00005557537078857422
+3(2) - complete
+00031125545501708984
+Minimum Flow cost:  1746900
+3(3) - complete
+003658890724182129
+Final digraph constructed
+0015628814697265625
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 582057
+---The current starting time is: 20:37:38
+NOMBRE : WA0545 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 234 odd vertices
+this gives us in total: 272610 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 16166839599609375>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+08784244060516357
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  234
+VARIABLES:  27261
+Solution:
+09166433811187744
+2(c) complete
+0009723663330078125
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+009822869300842285
+3(1) - complete
+00005562305450439453
+3(2) - complete
+0003316640853881836
+Minimum Flow cost:  4425700
+3(3) - complete
+003684353828430176
+Final digraph constructed
+0016154050827026367
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 577557
+---The current starting time is: 20:37:43
+NOMBRE : WA0551 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 250 odd vertices
+this gives us in total: 311250 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17013647556304932>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+1047060489654541
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  250
+VARIABLES:  31125
+Solution:
+18443799018859863
+2(c) complete
+0011815071105957031
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+011785721778869629
+3(1) - complete
+00007314682006835938
+3(2) - complete
+00042345523834228516
+Minimum Flow cost:  824200
+3(3) - complete
+00458979606628418
+Final digraph constructed
+0019613981246948242
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 681537
+---The current starting time is: 20:37:49
+NOMBRE : WA0552 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 262 odd vertices
+this gives us in total: 341910 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17715647220611572>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+11507596969604492
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  262
+VARIABLES:  34191
+Solution:
+10798072814941406
+2(c) complete
+0011962175369262695
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+011977195739746094
+3(1) - complete
+00006482601165771484
+3(2) - complete
+00036611557006835938
+Minimum Flow cost:  1671300
+3(3) - complete
+004349708557128906
+Final digraph constructed
+0017984867095947266
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 704183
+---The current starting time is: 20:37:54
+NOMBRE : WA0555 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 258 odd vertices
+this gives us in total: 331530 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17548089027404785>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+11122727394104004
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  258
+VARIABLES:  33153
+Solution:
+1936736822128296
+2(c) complete
+0011486291885375977
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+013076376914978027
+3(1) - complete
+00006628036499023438
+3(2) - complete
+0003746509552001953
+Minimum Flow cost:  3680700
+3(3) - complete
+004441690444946289
+Final digraph constructed
+00198976993560791
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 649785
+---The current starting time is: 20:38:00
+NOMBRE : WA0561 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 246 odd vertices
+this gives us in total: 301350 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17179234027862549>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+09656052589416504
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  246
+VARIABLES:  30135
+Solution:
+07151741981506348
+2(c) complete
+0010103464126586914
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+014646029472351074
+3(1) - complete
+00007588863372802734
+3(2) - complete
+0004601240158081055
+Minimum Flow cost:  810600
+3(3) - complete
+005069684982299805
+Final digraph constructed
+002203679084777832
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 813768
+---The current starting time is: 20:38:05
+NOMBRE : WA0562 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 250 odd vertices
+this gives us in total: 311250 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 18095440864562988>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+10037076473236084
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  250
+VARIABLES:  31125
+Solution:
+10824596881866455
+2(c) complete
+001067352294921875
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+014596986770629883
+3(1) - complete
+00006885528564453125
+3(2) - complete
+00042877197265625
+Minimum Flow cost:  1637900
+3(3) - complete
+005301070213317871
+Final digraph constructed
+002440190315246582
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 799331
+---The current starting time is: 20:38:11
+NOMBRE : WA0565 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 238 odd vertices
+this gives us in total: 282030 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17502915859222412>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+09094138145446777
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  238
+VARIABLES:  28203
+Solution:
+0866145133972168
+2(c) complete
+0009781122207641602
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+014141297340393066
+3(1) - complete
+00007421970367431641
+3(2) - complete
+0004439830780029297
+Minimum Flow cost:  3727300
+3(3) - complete
+0051998138427734375
+Final digraph constructed
+0022548198699951172
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 760773
+---The current starting time is: 20:38:16
+NOMBRE : WA1031 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 522 odd vertices
+this gives us in total: 1359810 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 4781901836395264>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+6725959539413452
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  522
+VARIABLES:  135981
+Solution:
+6691230535507202
+2(c) complete
+004372978210449219
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+03300356864929199
+3(1) - complete
+00011508464813232422
+3(2) - complete
+000766754150390625
+Minimum Flow cost:  1884400
+3(3) - complete
+011926078796386719
+Final digraph constructed
+004924821853637695
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1041834
+---The current starting time is: 20:38:36
+NOMBRE : WA1032 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 530 odd vertices
+this gives us in total: 1401850 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 48618323802948>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+6914382696151733
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  530
+VARIABLES:  140185
+Solution:
+913282322883606
+2(c) complete
+0042960405349731445
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+031241679191589355
+3(1) - complete
+0001046895980834961
+3(2) - complete
+0007999658584594727
+Minimum Flow cost:  3843700
+3(3) - complete
+011821579933166504
+Final digraph constructed
+00511174201965332
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1018219
+---The current starting time is: 20:39:00
+NOMBRE : WA1035 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 540 odd vertices
+this gives us in total: 1455300 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 4911553859710693>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+7199721813201904
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  540
+VARIABLES:  145530
+Solution:
+13041277170181274
+2(c) complete
+004548764228820801
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+03255124092102051
+3(1) - complete
+00011968612670898438
+3(2) - complete
+00066165924072265625
+Minimum Flow cost:  9184800
+3(3) - complete
+01288914680480957
+Final digraph constructed
+005497860908508301
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 946390
+---The current starting time is: 20:39:28
+NOMBRE : WA1041 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 504 odd vertices
+this gives us in total: 1267560 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5240641832351685>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+6169682025909424
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  504
+VARIABLES:  126756
+Solution:
+6891757488250732
+2(c) complete
+004004931449890137
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+038907933235168457
+3(1) - complete
+00012946128845214844
+3(2) - complete
+000787043571472168
+Minimum Flow cost:  1832900
+3(3) - complete
+014353442192077637
+Final digraph constructed
+005643486976623535
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1184835
+---The current starting time is: 20:39:49
+NOMBRE : WA1042 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 514 odd vertices
+this gives us in total: 1318410 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 4931864023208618>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+638527250289917
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  514
+VARIABLES:  131841
+Solution:
+6312655210494995
+2(c) complete
+0041587114334106445
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+040020179748535156
+3(1) - complete
+00014753341674804688
+3(2) - complete
+0008394479751586914
+Minimum Flow cost:  3561400
+3(3) - complete
+014327502250671387
+Final digraph constructed
+005762624740600586
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1172511
+---The current starting time is: 20:40:09
+NOMBRE : WA1045 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 498 odd vertices
+this gives us in total: 1237530 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 49868004322052>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+5996821641921997
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  498
+VARIABLES:  123753
+Solution:
+6020428657531738
+2(c) complete
+0039704322814941406
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+039989519119262695
+3(1) - complete
+00011584758758544922
+3(2) - complete
+0008101463317871094
+Minimum Flow cost:  8442700
+3(3) - complete
+01403505802154541
+Final digraph constructed
+005819368362426758
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1102635
+---The current starting time is: 20:40:29
+NOMBRE : WA1051 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 512 odd vertices
+this gives us in total: 1308160 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5221561908721924>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+623845100402832
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  512
+VARIABLES:  130816
+Solution:
+71587913036346436
+2(c) complete
+0040836334228515625
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+044479918479919434
+3(1) - complete
+00014624595642089844
+3(2) - complete
+0008527994155883789
+Minimum Flow cost:  1730100
+3(3) - complete
+01661818027496338
+Final digraph constructed
+00693209171295166
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1426686
+---The current starting time is: 20:40:51
+NOMBRE : WA1052 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 512 odd vertices
+this gives us in total: 1308160 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 52223992347717285>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+600215744972229
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  512
+VARIABLES:  130816
+Solution:
+7975201845169067
+2(c) complete
+004160475730895996
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+04875659942626953
+3(1) - complete
+00012853145599365234
+3(2) - complete
+0009698629379272461
+Minimum Flow cost:  3529800
+3(3) - complete
+01747596263885498
+Final digraph constructed
+007237458229064941
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1391149
+---The current starting time is: 20:41:14
+NOMBRE : WA1055 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 514 odd vertices
+this gives us in total: 1318410 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5262232780456543>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+6241403102874756
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  514
+VARIABLES:  131841
+Solution:
+622774600982666
+2(c) complete
+004146981239318848
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+04847090244293213
+3(1) - complete
+00014934539794921875
+3(2) - complete
+0007695674896240234
+Minimum Flow cost:  8346200
+3(3) - complete
+016635704040527344
+Final digraph constructed
+006947445869445801
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1295398
+---The current starting time is: 20:41:35
+NOMBRE : WA1061 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 504 odd vertices
+this gives us in total: 1267560 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 523644495010376>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+57486891746521
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  504
+VARIABLES:  126756
+Solution:
+4889268159866333
+2(c) complete
+004239296913146973
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+05476288795471191
+3(1) - complete
+0001458883285522461
+3(2) - complete
+0011654138565063477
+Minimum Flow cost:  1613100
+3(3) - complete
+019826245307922363
+Final digraph constructed
+00878593921661377
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1641859
+---The current starting time is: 20:41:55
+NOMBRE : WA1062 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 506 odd vertices
+this gives us in total: 1277650 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5257798433303833>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+60286338329315186
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  506
+VARIABLES:  127765
+Solution:
+4322917222976685
+2(c) complete
+004002976417541504
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+054927659034729
+3(1) - complete
+0001987457275390625
+3(2) - complete
+0011240005493164062
+Minimum Flow cost:  3097400
+3(3) - complete
+01968855857849121
+Final digraph constructed
+008866477012634277
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1561330
+---The current starting time is: 20:42:14
+NOMBRE : WA1065 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 506 odd vertices
+this gives us in total: 1277650 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 54961442947387695>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+5996770620346069
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  506
+VARIABLES:  127765
+Solution:
+5711458921432495
+2(c) complete
+0040525197982788086
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+05742764472961426
+3(1) - complete
+00016369819641113281
+3(2) - complete
+0009405851364135742
+Minimum Flow cost:  7413500
+3(3) - complete
+020438098907470703
+Final digraph constructed
+009127521514892578
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1418177
+---The current starting time is: 20:42:35
+NOMBRE : WA1531 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 784 odd vertices
+this gives us in total: 3069360 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 9825346231460571>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+1955943536758423
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  784
+VARIABLES:  306936
+Solution:
+24407451391220093
+2(c) complete
+009082484245300293
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+07475943565368652
+3(1) - complete
+00014934539794921875
+3(2) - complete
+0015018939971923828
+Minimum Flow cost:  3013500
+3(3) - complete
+02699108123779297
+Final digraph constructed
+01159510612487793
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1546268
+---The current starting time is: 20:43:34
+NOMBRE : WA1532 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 832 odd vertices
+this gives us in total: 3456960 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 10279751777648926>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+22971422910690308
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  832
+VARIABLES:  345696
+Solution:
+4857739186286926
+2(c) complete
+010453057289123535
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+08055260181427002
+3(1) - complete
+00015056133270263672
+3(2) - complete
+0014139890670776367
+Minimum Flow cost:  6150200
+3(3) - complete
+02740650177001953
+Final digraph constructed
+011574292182922363
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1556745
+---The current starting time is: 20:45:01
+NOMBRE : WA1535 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 786 odd vertices
+this gives us in total: 3085050 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 10039937734603882>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+19898780345916748
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  786
+VARIABLES:  308505
+Solution:
+2670609736442566
+2(c) complete
+009501767158508301
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+07283601760864258
+3(1) - complete
+00016627311706542969
+3(2) - complete
+0010678529739379883
+Minimum Flow cost:  14581200
+3(3) - complete
+02738955020904541
+Final digraph constructed
+011735963821411133
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1483608
+---The current starting time is: 20:46:03
+NOMBRE : WA1541 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 760 odd vertices
+this gives us in total: 2884200 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 10102756261825562>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+1800835657119751
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  760
+VARIABLES:  288420
+Solution:
+20319626808166504
+2(c) complete
+00887300968170166
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+08999466896057129
+3(1) - complete
+0001912832260131836
+3(2) - complete
+0013896703720092773
+Minimum Flow cost:  2739500
+3(3) - complete
+03478219509124756
+Final digraph constructed
+013866567611694336
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1836289
+---The current starting time is: 20:46:57
+NOMBRE : WA1542 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 764 odd vertices
+this gives us in total: 2914660 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 10154810905456543>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+1839311170578003
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  764
+VARIABLES:  291466
+Solution:
+2368473482131958
+2(c) complete
+008692812919616699
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+08965530395507812
+3(1) - complete
+00017173290252685547
+3(2) - complete
+0012047290802001953
+Minimum Flow cost:  5442400
+3(3) - complete
+032668137550354004
+Final digraph constructed
+012901949882507324
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1790071
+---The current starting time is: 20:47:54
+NOMBRE : WA1545 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 720 odd vertices
+this gives us in total: 2588400 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 10102127075195312>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+16081133127212524
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  720
+VARIABLES:  258840
+Solution:
+2148025894165039
+2(c) complete
+007520842552185059
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+08826069831848145
+3(1) - complete
+00016133785247802734
+3(2) - complete
+0011356592178344727
+Minimum Flow cost:  12897600
+3(3) - complete
+03213951587677002
+Final digraph constructed
+01285409927368164
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1610525
+---The current starting time is: 20:48:47
+NOMBRE : WA1551 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 782 odd vertices
+this gives us in total: 3053710 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1099104619026184>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+20074506044387817
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  782
+VARIABLES:  305371
+Solution:
+20772961854934692
+2(c) complete
+009197092056274414
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+10927977561950684
+3(1) - complete
+00018658638000488281
+3(2) - complete
+001642632484436035
+Minimum Flow cost:  2491900
+3(3) - complete
+039313840866088867
+Final digraph constructed
+01692976951599121
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2122400
+---The current starting time is: 20:49:46
+NOMBRE : WA1552 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 754 odd vertices
+this gives us in total: 2838810 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 10684605598449707>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+21474544763565063
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  754
+VARIABLES:  283881
+Solution:
+23460397958755493
+2(c) complete
+008725261688232422
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+10726978778839111
+3(1) - complete
+00018563270568847656
+3(2) - complete
+0015259981155395508
+Minimum Flow cost:  5019500
+3(3) - complete
+03762500286102295
+Final digraph constructed
+015032601356506348
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2089055
+---The current starting time is: 20:50:48
+NOMBRE : WA1555 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 740 odd vertices
+this gives us in total: 2734300 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 10489821434020996>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+16724955320358276
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  740
+VARIABLES:  273430
+Solution:
+16480939388275146
+2(c) complete
+008130049705505371
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+10696384906768799
+3(1) - complete
+00018138885498046875
+3(2) - complete
+0013661861419677734
+Minimum Flow cost:  11233200
+3(3) - complete
+03872561454772949
+Final digraph constructed
+016199660301208496
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1937021
+---The current starting time is: 20:51:38
+NOMBRE : WA1561 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 728 odd vertices
+this gives us in total: 2646280 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 11169171571731567>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+16326013326644897
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  728
+VARIABLES:  264628
+Solution:
+1747624969482422
+2(c) complete
+007963895797729492
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+12680282592773438
+3(1) - complete
+0002026081085205078
+3(2) - complete
+001591777801513672
+Minimum Flow cost:  2315400
+3(3) - complete
+04426848888397217
+Final digraph constructed
+01987314224243164
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2431303
+---The current starting time is: 20:52:31
+NOMBRE : WA1562 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 750 odd vertices
+this gives us in total: 2808750 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 11356831312179565>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+17479323148727417
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  750
+VARIABLES:  280875
+Solution:
+1966372013092041
+2(c) complete
+00822896957397461
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+12417287826538086
+3(1) - complete
+0002133607864379883
+3(2) - complete
+001476430892944336
+Minimum Flow cost:  4900000
+3(3) - complete
+043371152877807617
+Final digraph constructed
+01876387596130371
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2383793
+---The current starting time is: 20:53:27
+NOMBRE : WA1565 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 746 odd vertices
+this gives us in total: 2778850 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 11023163080215454>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+1757476019859314
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  746
+VARIABLES:  277885
+Solution:
+35808692932128906
+2(c) complete
+008246111869812012
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+12698090076446533
+3(1) - complete
+00021338462829589844
+3(2) - complete
+0018494367599487305
+Minimum Flow cost:  11332000
+3(3) - complete
+04410841464996338
+Final digraph constructed
+02011585235595703
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2211740
+---The current starting time is: 20:54:39
+NOMBRE : WA2031 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1048 odd vertices
+this gives us in total: 5486280 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 16728137493133545>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+4122714352607727
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1048
+VARIABLES:  548628
+Solution:
+8188198018074036
+2(c) complete
+017860007286071777
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+1341806173324585
+3(1) - complete
+0001990795135498047
+3(2) - complete
+003027057647705078
+Minimum Flow cost:  3944300
+3(3) - complete
+047390079498291016
+Final digraph constructed
+019966530799865723
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2035232
+---The current starting time is: 20:57:06
+NOMBRE : WA2032 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1116 odd vertices
+this gives us in total: 6221700 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17567772388458252>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+50368271827697754
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1116
+VARIABLES:  622170
+Solution:
+6704772996902466
+2(c) complete
+01772449016571045
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+13239820003509521
+3(1) - complete
+0002114534378051758
+3(2) - complete
+0020379304885864258
+Minimum Flow cost:  7857400
+3(3) - complete
+04465017318725586
+Final digraph constructed
+020833921432495117
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2045536
+---The current starting time is: 20:59:29
+NOMBRE : WA2035 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1094 odd vertices
+this gives us in total: 5978710 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17138612270355225>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+4987054252624512
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1094
+VARIABLES:  597871
+Solution:
+6513260436058044
+2(c) complete
+017830634117126465
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+13402032852172852
+3(1) - complete
+00020761489868164062
+3(2) - complete
+0015819072723388672
+Minimum Flow cost:  19261900
+3(3) - complete
+04717373847961426
+Final digraph constructed
+020940399169921875
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 1921347
+---The current starting time is: 21:01:49
+NOMBRE : WA2041 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 998 odd vertices
+this gives us in total: 4975030 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17035391092300415>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+3755868411064148
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  998
+VARIABLES:  497503
+Solution:
+51711562633514404
+2(c) complete
+01442413330078125
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+15902163982391357
+3(1) - complete
+00022339820861816406
+3(2) - complete
+0021060466766357422
+Minimum Flow cost:  3673000
+3(3) - complete
+05680601596832275
+Final digraph constructed
+02330179214477539
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2430625
+---The current starting time is: 21:03:45
+NOMBRE : WA2042 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1002 odd vertices
+this gives us in total: 5015010 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17264849424362183>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+3827654147148132
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1002
+VARIABLES:  501501
+Solution:
+4400364589691162
+2(c) complete
+015066957473754883
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+16185169219970703
+3(1) - complete
+00022034645080566406
+3(2) - complete
+001856541633605957
+Minimum Flow cost:  7613000
+3(3) - complete
+057425856590271
+Final digraph constructed
+023157835006713867
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2345151
+---The current starting time is: 21:05:34
+NOMBRE : WA2045 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 996 odd vertices
+this gives us in total: 4955100 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17105263710021973>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+3763763403892517
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  996
+VARIABLES:  495510
+Solution:
+4652129888534546
+2(c) complete
+01458437442779541
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+1548952341079712
+3(1) - complete
+00020105838775634766
+3(2) - complete
+0016980886459350586
+Minimum Flow cost:  17870500
+3(3) - complete
+05634477138519287
+Final digraph constructed
+024485325813293457
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2213670
+---The current starting time is: 21:07:24
+NOMBRE : WA2051 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1036 odd vertices
+this gives us in total: 5361300 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 18324329614639282>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+4210030674934387
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1036
+VARIABLES:  536130
+Solution:
+58515926361083984
+2(c) complete
+015415406227111816
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+18765645027160645
+3(1) - complete
+00023431777954101562
+3(2) - complete
+0024138212203979492
+Minimum Flow cost:  3359100
+3(3) - complete
+06641840934753418
+Final digraph constructed
+02793700695037842
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2780377
+---The current starting time is: 21:09:34
+NOMBRE : WA2052 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1052 odd vertices
+this gives us in total: 5528260 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1883276653289795>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+4439764595031738
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1052
+VARIABLES:  552826
+Solution:
+5157867097854614
+2(c) complete
+017084407806396484
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+20788941383361816
+3(1) - complete
+0002427339553833008
+3(2) - complete
+0020035982131958008
+Minimum Flow cost:  6859000
+3(3) - complete
+07037177085876465
+Final digraph constructed
+028885912895202637
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2752968
+---The current starting time is: 21:11:40
+NOMBRE : WA2055 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1010 odd vertices
+this gives us in total: 5095450 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1897405481338501>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+40387155532836914
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1010
+VARIABLES:  509545
+Solution:
+7884999394416809
+2(c) complete
+015257596969604492
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+207580304145813
+3(1) - complete
+0002577066421508789
+3(2) - complete
+001951742172241211
+Minimum Flow cost:  15964800
+3(3) - complete
+06967415809631348
+Final digraph constructed
+03155522346496582
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2550447
+---The current starting time is: 21:14:09
+NOMBRE : WA2061 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1010 odd vertices
+this gives us in total: 5095450 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 184326274394989>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+3771247625350952
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1010
+VARIABLES:  509545
+Solution:
+46360893964767456
+2(c) complete
+015491724014282227
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+2285069465637207
+3(1) - complete
+00029015541076660156
+3(2) - complete
+0023501873016357422
+Minimum Flow cost:  3268600
+3(3) - complete
+07874584197998047
+Final digraph constructed
+037175679206848145
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 3266063
+---The current starting time is: 21:16:05
+NOMBRE : WA2062 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 996 odd vertices
+this gives us in total: 4955100 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 18670178174972534>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+39618277072906494
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  996
+VARIABLES:  495510
+Solution:
+4728208780288696
+2(c) complete
+014951276779174805
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+22938315868377686
+3(1) - complete
+0002963542938232422
+3(2) - complete
+002104949951171875
+Minimum Flow cost:  6696000
+3(3) - complete
+08049731254577637
+Final digraph constructed
+03543822765350342
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 3230047
+---The current starting time is: 21:18:03
+NOMBRE : WA2065 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1036 odd vertices
+this gives us in total: 5361300 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1920785880088806>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+4195846366882324
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1036
+VARIABLES:  536130
+Solution:
+8062132930755615
+2(c) complete
+016247010231018066
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+23395121097564697
+3(1) - complete
+00030417442321777344
+3(2) - complete
+0020372867584228516
+Minimum Flow cost:  16204400
+3(3) - complete
+08103675842285156
+Final digraph constructed
+04014465808868408
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 3007948
+---The current starting time is: 21:20:37
+NOMBRE : WA3031 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1588 odd vertices
+this gives us in total: 12600780 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 36257080078125>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+13703213453292847
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1588
+VARIABLES:  1260078
+Solution:
+28607170939445496
+2(c) complete
+04347379207611084
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+30378952026367188
+3(1) - complete
+00027244091033935547
+3(2) - complete
+00412297248840332
+Minimum Flow cost:  5621500
+3(3) - complete
+10746843814849854
+Final digraph constructed
+046339845657348633
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 3091897
+---The current starting time is: 21:28:34
+NOMBRE : WA3032 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1570 odd vertices
+this gives us in total: 12316650 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 36945284605026245>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+12914416027069092
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1570
+VARIABLES:  1231665
+Solution:
+2669478268623352
+2(c) complete
+040393900871276855
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+30226633548736572
+3(1) - complete
+00027272701263427734
+3(2) - complete
+002745223045349121
+Minimum Flow cost:  11987900
+3(3) - complete
+10642271041870117
+Final digraph constructed
+047894716262817383
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 3052082
+---The current starting time is: 21:36:04
+NOMBRE : WA3035 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1568 odd vertices
+this gives us in total: 12285280 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 35690507888793945>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+13457559609413147
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1568
+VARIABLES:  1228528
+Solution:
+2652928442955017
+2(c) complete
+03864614963531494
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+3094365119934082
+3(1) - complete
+00027685165405273438
+3(2) - complete
+003937363624572754
+Minimum Flow cost:  27649200
+3(3) - complete
+10691728591918945
+Final digraph constructed
+047467875480651855
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 2846944
+---The current starting time is: 21:43:36
+NOMBRE : WA3041 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1502 odd vertices
+this gives us in total: 11272510 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 3655709457397461>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+11432130312919617
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1502
+VARIABLES:  1127251
+Solution:
+22072405910491943
+2(c) complete
+033915185928344727
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+3632392644882202
+3(1) - complete
+00031495094299316406
+3(2) - complete
+003953409194946289
+Minimum Flow cost:  5521700
+3(3) - complete
+1279219627380371
+Final digraph constructed
+0499769926071167
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 3613772
+---The current starting time is: 21:50:08
+NOMBRE : WA3042 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1448 odd vertices
+this gives us in total: 10476280 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 407657732963562>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+11061898756027222
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1448
+VARIABLES:  1047628
+Solution:
+2182652027606964
+2(c) complete
+032209253311157227
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+3730358600616455
+3(1) - complete
+00032804012298583984
+3(2) - complete
+002662515640258789
+Minimum Flow cost:  10555900
+3(3) - complete
+12969543933868408
+Final digraph constructed
+0535926103591919
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 3467172
+---The current starting time is: 21:56:37
+NOMBRE : WA3045 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1512 odd vertices
+this gives us in total: 11423160 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 40419509172439575>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+12042580986022949
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1512
+VARIABLES:  1142316
+Solution:
+21345109152793884
+2(c) complete
+03344419002532959
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+36451809406280518
+3(1) - complete
+00035552978515625
+3(2) - complete
+0027199268341064453
+Minimum Flow cost:  25888000
+3(3) - complete
+13179028034210205
+Final digraph constructed
+0549030065536499
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 3331703
+---The current starting time is: 22:03:10
+NOMBRE : WA3051 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1522 odd vertices
+this gives us in total: 11574810 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 3896160531044006>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+12211010932922363
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1522
+VARIABLES:  1157481
+Solution:
+2201684432029724
+2(c) complete
+03388659954071045
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+44253294467926025
+3(1) - complete
+0003947734832763672
+3(2) - complete
+003629803657531738
+Minimum Flow cost:  5126000
+3(3) - complete
+1542896032333374
+Final digraph constructed
+0664961576461792
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 4238096
+---The current starting time is: 22:09:55
+NOMBRE : WA3052 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1550 odd vertices
+this gives us in total: 12004750 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 41722410440444946>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+13024871277809143
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1550
+VARIABLES:  1200475
+Solution:
+22450504422187805
+2(c) complete
+039231252670288086
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+4467627763748169
+3(1) - complete
+0003890514373779297
+3(2) - complete
+003196072578430176
+Minimum Flow cost:  10277100
+3(3) - complete
+15841810703277588
+Final digraph constructed
+07041454315185547
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 4142221
+---The current starting time is: 22:16:55
+NOMBRE : WA3055 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1504 odd vertices
+this gives us in total: 11302560 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 4075996446609497>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+11680581951141357
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1504
+VARIABLES:  1130256
+Solution:
+2009996542930603
+2(c) complete
+03409090042114258
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+4421066522598267
+3(1) - complete
+0003683805465698242
+3(2) - complete
+00286102294921875
+Minimum Flow cost:  23723700
+3(3) - complete
+1539097785949707
+Final digraph constructed
+06288139820098877
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 3821113
+---The current starting time is: 22:23:18
+NOMBRE : WA3062 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1504 odd vertices
+this gives us in total: 11302560 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 45380313873291016>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+12347017431259155
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1504
+VARIABLES:  1130256
+Solution:
+21038905310630798
+2(c) complete
+03429279327392578
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+5427806377410889
+3(1) - complete
+00040628910064697266
+3(2) - complete
+0037673234939575195
+Minimum Flow cost:  10288000
+3(3) - complete
+18145148754119873
+Final digraph constructed
+08520503044128418
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 4764824
+---The current starting time is: 22:30:06
+NOMBRE : WA3065 
+
+COMENTARIO :  Chino Windy aleatorio puro
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1490 odd vertices
+this gives us in total: 11093050 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 4511960577964783>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+11792791366577148
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1490
+VARIABLES:  1109305
+Solution:
+2357623255252838
+2(c) complete
+0719372034072876
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+5314327716827393
+3(1) - complete
+0004425048828125
+3(2) - complete
+0047071218490600586
+Minimum Flow cost:  24202600
+3(3) - complete
+1820514440536499
+Final digraph constructed
+08675596714019775
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 4424015
+---The current starting time is: 22:37:13
+NOMBRE : WB0531 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 290 odd vertices
+this gives us in total: 419050 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1786334753036499>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+14800357818603516
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  290
+VARIABLES:  41905
+Solution:
+1000487732887268
+2(c) complete
+0014072656631469727
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+008601903915405273
+3(1) - complete
+00004782676696777344
+3(2) - complete
+00047872066497802734
+Minimum Flow cost:  63900
+3(3) - complete
+0029767274856567383
+Final digraph constructed
+0026633501052856445
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 37972
+---The current starting time is: 22:37:28
+NOMBRE : WB0532 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 296 odd vertices
+this gives us in total: 436600 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17775733470916748>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+1594987154006958
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  296
+VARIABLES:  43660
+Solution:
+41164774894714355
+2(c) complete
+0014061689376831055
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+008556938171386719
+3(1) - complete
+00005228519439697266
+3(2) - complete
+00040493011474609375
+Minimum Flow cost:  132900
+3(3) - complete
+003199124336242676
+Final digraph constructed
+003307008743286133
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 37934
+---The current starting time is: 22:37:36
+NOMBRE : WB0535 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 306 odd vertices
+this gives us in total: 466650 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17678334712982178>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+16851954460144043
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  306
+VARIABLES:  46665
+Solution:
+2955436489582062
+2(c) complete
+0015172719955444336
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+008369016647338867
+3(1) - complete
+00005135536193847656
+3(2) - complete
+0003759622573852539
+Minimum Flow cost:  319700
+3(3) - complete
+0031241655349731445
+Final digraph constructed
+003237462043762207
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 35504
+---The current starting time is: 22:42:36
+NOMBRE : WB0541 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 208 odd vertices
+this gives us in total: 215280 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 15924098491668701>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+06341466903686523
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  208
+VARIABLES:  21528
+Solution:
+30739450454711914
+2(c) complete
+0007976531982421875
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+010034322738647461
+3(1) - complete
+00005545616149902344
+3(2) - complete
+0005012035369873047
+Minimum Flow cost:  51700
+3(3) - complete
+003435468673706055
+Final digraph constructed
+0029988527297973633
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 47791
+---The current starting time is: 22:42:43
+NOMBRE : WB0542 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 222 odd vertices
+this gives us in total: 245310 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 16452522277832031>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+07135529518127441
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  222
+VARIABLES:  24531
+Solution:
+28537983894348145
+2(c) complete
+0009094953536987305
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+01053323745727539
+3(1) - complete
+00005555152893066406
+3(2) - complete
+00048065185546875
+Minimum Flow cost:  144200
+3(3) - complete
+0037308454513549805
+Final digraph constructed
+0027221202850341797
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 48275
+---The current starting time is: 22:42:49
+NOMBRE : WB0545 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 216 odd vertices
+this gives us in total: 232200 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 16595344543457031>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+06901886463165283
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  216
+VARIABLES:  23220
+Solution:
+4486084938049316
+2(c) complete
+0008417367935180664
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+010364317893981934
+3(1) - complete
+00005571842193603516
+3(2) - complete
+00032045841217041016
+Minimum Flow cost:  293200
+3(3) - complete
+003654289245605469
+Final digraph constructed
+003733992576599121
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 44180
+---The current starting time is: 22:42:57
+NOMBRE : WB0551 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 284 odd vertices
+this gives us in total: 401860 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 18071568012237549>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+1410240888595581
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  284
+VARIABLES:  40186
+Solution:
+3432814836502075
+2(c) complete
+0013234615325927734
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+012853789329528809
+3(1) - complete
+00006413459777832031
+3(2) - complete
+0004898786544799805
+Minimum Flow cost:  68600
+3(3) - complete
+004228711128234863
+Final digraph constructed
+003242349624633789
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 62791
+---The current starting time is: 22:43:05
+NOMBRE : WB0552 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 268 odd vertices
+this gives us in total: 357780 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17540383338928223>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+11819286346435547
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  268
+VARIABLES:  35778
+Solution:
+33555383682250977
+2(c) complete
+0012388229370117188
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+012218046188354492
+3(1) - complete
+00006721019744873047
+3(2) - complete
+0004374980926513672
+Minimum Flow cost:  127300
+3(3) - complete
+0041870832443237305
+Final digraph constructed
+00431065559387207
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 59593
+---The current starting time is: 22:43:13
+NOMBRE : WB0555 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 272 odd vertices
+this gives us in total: 368560 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 18998825550079346>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+1381169080734253
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  272
+VARIABLES:  36856
+Solution:
+5807830333709717
+2(c) complete
+0012720108032226562
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+012843632698059082
+3(1) - complete
+00008361339569091797
+3(2) - complete
+00040094852447509766
+Minimum Flow cost:  301000
+3(3) - complete
+0046762704849243164
+Final digraph constructed
+0049013614654541016
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 55408
+---The current starting time is: 22:43:24
+NOMBRE : WB0561 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 252 odd vertices
+this gives us in total: 316260 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1799903154373169>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+0974005937576294
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  252
+VARIABLES:  31626
+Solution:
+23902313709259033
+2(c) complete
+0011354207992553711
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+014656782150268555
+3(1) - complete
+00007658004760742188
+3(2) - complete
+0004922151565551758
+Minimum Flow cost:  69300
+3(3) - complete
+00492405891418457
+Final digraph constructed
+0048438310623168945
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 78091
+---The current starting time is: 22:43:30
+NOMBRE : WB0562 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 220 odd vertices
+this gives us in total: 240900 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 16651620864868164>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+06942198276519775
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  220
+VARIABLES:  24090
+Solution:
+14861533641815186
+2(c) complete
+0008569955825805664
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+014594531059265137
+3(1) - complete
+00007691383361816406
+3(2) - complete
+00048923492431640625
+Minimum Flow cost:  139400
+3(3) - complete
+004875612258911133
+Final digraph constructed
+0034975290298461914
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 71678
+---The current starting time is: 22:43:35
+NOMBRE : WB0565 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 236 odd vertices
+this gives us in total: 277300 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 18454697132110596>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+08959777355194092
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  236
+VARIABLES:  27730
+Solution:
+2997130870819092
+2(c) complete
+0009695053100585938
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+014434361457824707
+3(1) - complete
+00007445812225341797
+3(2) - complete
+0005003213882446289
+Minimum Flow cost:  348600
+3(3) - complete
+005225110054016113
+Final digraph constructed
+0044817209243774414
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 66556
+---The current starting time is: 22:43:43
+NOMBRE : WB1031 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 580 odd vertices
+this gives us in total: 1679100 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5218944549560547>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+867781114578247
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  580
+VARIABLES:  167910
+Solution:
+51081974267959595
+2(c) complete
+0051595449447631836
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+03347043991088867
+3(1) - complete
+00009975433349609375
+3(2) - complete
+0008763790130615234
+Minimum Flow cost:  81800
+3(3) - complete
+012466263771057129
+Final digraph constructed
+013377809524536133
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 53076
+---The current starting time is: 22:44:50
+NOMBRE : WB1032 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 616 odd vertices
+this gives us in total: 1894200 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5448379993438721>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+10271591424942017
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  616
+VARIABLES:  189420
+Solution:
+3899061107635498
+2(c) complete
+005632781982421875
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+033977556228637695
+3(1) - complete
+00010228157043457031
+3(2) - complete
+0008688211441040039
+Minimum Flow cost:  188500
+3(3) - complete
+012003779411315918
+Final digraph constructed
+012630414962768555
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 51984
+---The current starting time is: 22:45:48
+NOMBRE : WB1035 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 618 odd vertices
+this gives us in total: 1906530 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5390166282653809>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+10351187705993652
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  618
+VARIABLES:  190653
+Solution:
+47392765522003174
+2(c) complete
+005614781379699707
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+033284997940063477
+3(1) - complete
+0000995635986328125
+3(2) - complete
+0006898403167724609
+Minimum Flow cost:  417800
+3(3) - complete
+011956024169921875
+Final digraph constructed
+014391732215881348
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 49319
+---The current starting time is: 22:46:53
+NOMBRE : WB1041 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 454 odd vertices
+this gives us in total: 1028310 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 4883198976516724>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+4577526569366455
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  454
+VARIABLES:  102831
+Solution:
+20196492433547974
+2(c) complete
+003248476982116699
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+0409848690032959
+3(1) - complete
+00010418891906738281
+3(2) - complete
+001067352294921875
+Minimum Flow cost:  70800
+3(3) - complete
+014890813827514648
+Final digraph constructed
+013200664520263672
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 69837
+---The current starting time is: 22:47:26
+NOMBRE : WB1042 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 458 odd vertices
+this gives us in total: 1046530 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 4813972473144531>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+4605164051055908
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  458
+VARIABLES:  104653
+Solution:
+11455981254577637
+2(c) complete
+003202652931213379
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+039369702339172363
+3(1) - complete
+00011174678802490234
+3(2) - complete
+0008056163787841797
+Minimum Flow cost:  171300
+3(3) - complete
+01420755386352539
+Final digraph constructed
+01596512794494629
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 66871
+---The current starting time is: 22:47:49
+NOMBRE : WB1045 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 430 odd vertices
+this gives us in total: 922350 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 4831326723098755>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+4018438816070557
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  430
+VARIABLES:  92235
+Solution:
+1378993034362793
+2(c) complete
+0029119014739990234
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+041661953926086426
+3(1) - complete
+00010919570922851562
+3(2) - complete
+0008966445922851562
+Minimum Flow cost:  411600
+3(3) - complete
+014772534370422363
+Final digraph constructed
+013541769981384277
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 63277
+---The current starting time is: 22:48:15
+NOMBRE : WB1051 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 544 odd vertices
+this gives us in total: 1476960 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5311300992965698>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+752699875831604
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  544
+VARIABLES:  147696
+Solution:
+9861619234085083
+2(c) complete
+0044879913330078125
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+049303603172302246
+3(1) - complete
+00011658668518066406
+3(2) - complete
+0014676332473754883
+Minimum Flow cost:  100600
+3(3) - complete
+016861677169799805
+Final digraph constructed
+013718962669372559
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 86468
+---The current starting time is: 22:48:41
+NOMBRE : WB1052 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 524 odd vertices
+this gives us in total: 1370260 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5367948532104492>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+6908415794372559
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  524
+VARIABLES:  137026
+Solution:
+17600553274154663
+2(c) complete
+0043488502502441406
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+05037140846252441
+3(1) - complete
+0001210927963256836
+3(2) - complete
+000894784927368164
+Minimum Flow cost:  203000
+3(3) - complete
+016887307167053223
+Final digraph constructed
+015688228607177734
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 85397
+---The current starting time is: 22:49:14
+NOMBRE : WB1055 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 560 odd vertices
+this gives us in total: 1565200 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5456909656524658>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+793867039680481
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  560
+VARIABLES:  156520
+Solution:
+46224483489990234
+2(c) complete
+0047785043716430664
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+049682140350341797
+3(1) - complete
+00011949539184570312
+3(2) - complete
+0009622573852539062
+Minimum Flow cost:  450800
+3(3) - complete
+01716766357421875
+Final digraph constructed
+01852738857269287
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 78180
+---The current starting time is: 22:50:17
+NOMBRE : WB1061 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 480 odd vertices
+this gives us in total: 1149600 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 515309476852417>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+535450553894043
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  480
+VARIABLES:  114960
+Solution:
+3458751940727234
+2(c) complete
+003455376625061035
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+05487439632415771
+3(1) - complete
+00014481544494628906
+3(2) - complete
+0013493776321411133
+Minimum Flow cost:  97800
+3(3) - complete
+018857431411743164
+Final digraph constructed
+016614246368408203
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 105959
+---The current starting time is: 22:51:06
+NOMBRE : WB1062 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 492 odd vertices
+this gives us in total: 1207860 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5308415412902832>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+5799100399017334
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  492
+VARIABLES:  120786
+Solution:
+3423158121109009
+2(c) complete
+003677010536193848
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+05822362899780273
+3(1) - complete
+00015017986297607422
+3(2) - complete
+0011890172958374023
+Minimum Flow cost:  201000
+3(3) - complete
+018900609016418457
+Final digraph constructed
+017318153381347656
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 104550
+---The current starting time is: 22:51:55
+NOMBRE : WB1065 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 456 odd vertices
+this gives us in total: 1037400 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 5087423324584961>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+4621194839477539
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  456
+VARIABLES:  103740
+Solution:
+13402098894119263
+2(c) complete
+0034070730209350586
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+06292831897735596
+3(1) - complete
+0001477956771850586
+3(2) - complete
+0009950637817382812
+Minimum Flow cost:  493100
+3(3) - complete
+019427847862243652
+Final digraph constructed
+016936922073364258
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 94464
+---The current starting time is: 22:52:22
+NOMBRE : WB1531 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 906 odd vertices
+this gives us in total: 4099650 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 11401737451553345>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+2977458095550537
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  906
+VARIABLES:  409965
+Solution:
+22474765079021454
+2(c) complete
+012478995323181152
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+08133900165557861
+3(1) - complete
+00018947124481201172
+3(2) - complete
+001925063133239746
+Minimum Flow cost:  125300
+3(3) - complete
+02695653438568115
+Final digraph constructed
+031730198860168457
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 63324
+---The current starting time is: 23:30:37
+NOMBRE : WB1532 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 880 odd vertices
+this gives us in total: 3867600 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 12120408058166504>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+28574846744537354
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  880
+VARIABLES:  386760
+Solution:
+5577533696174622
+2(c) complete
+011258769035339355
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+07728826999664307
+3(1) - complete
+00013992786407470703
+3(2) - complete
+0014072418212890625
+Minimum Flow cost:  240500
+3(3) - complete
+02740001678466797
+Final digraph constructed
+0310760498046875
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 63868
+---The current starting time is: 01:04:21
+NOMBRE : WB1535 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 942 odd vertices
+this gives us in total: 4432110 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 11301737546920776>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+31245076894760132
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  942
+VARIABLES:  443211
+Solution:
+12442028419971466
+2(c) complete
+01276721954345703
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+07769858837127686
+3(1) - complete
+00014967918395996094
+3(2) - complete
+0013863086700439453
+Minimum Flow cost:  550700
+3(3) - complete
+02625279426574707
+Final digraph constructed
+03019735813140869
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 60200
+---The current starting time is: 01:25:54
+NOMBRE : WB1541 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 612 odd vertices
+this gives us in total: 1869660 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 9160016775131226>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+9606688261032104
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  612
+VARIABLES:  186966
+Solution:
+26374175243377686
+2(c) complete
+005637240409851074
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+09046797752380371
+3(1) - complete
+00015995502471923828
+3(2) - complete
+0018430709838867188
+Minimum Flow cost:  113100
+3(3) - complete
+031233716011047363
+Final digraph constructed
+03175535202026367
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 83148
+---The current starting time is: 02:10:16
+NOMBRE : WB1542 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 662 odd vertices
+this gives us in total: 2187910 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 9641678094863892>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+12188321113586426
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  662
+VARIABLES:  218791
+Solution:
+29662440299987793
+2(c) complete
+006416583061218262
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+09040205478668213
+3(1) - complete
+00014071464538574219
+3(2) - complete
+0014400959014892578
+Minimum Flow cost:  212500
+3(3) - complete
+031948137283325195
+Final digraph constructed
+02909119129180908
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 81865
+---The current starting time is: 02:11:13
+NOMBRE : WB1545 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 648 odd vertices
+this gives us in total: 2096280 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 9481072425842285>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+1188093900680542
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  648
+VARIABLES:  209628
+Solution:
+29510859966278076
+2(c) complete
+006107521057128906
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+09167604446411133
+3(1) - complete
+00015285015106201172
+3(2) - complete
+0015190362930297852
+Minimum Flow cost:  537600
+3(3) - complete
+032794857025146484
+Final digraph constructed
+0319976806640625
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 77396
+---The current starting time is: 02:12:09
+NOMBRE : WB1551 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 812 odd vertices
+this gives us in total: 3292660 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1064970064163208>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+21791638135910034
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  812
+VARIABLES:  329266
+Solution:
+12549065041542053
+2(c) complete
+009763264656066895
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+11138408184051514
+3(1) - complete
+00017926692962646484
+3(2) - complete
+002188849449157715
+Minimum Flow cost:  115500
+3(3) - complete
+03665173053741455
+Final digraph constructed
+0351787805557251
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 107286
+---The current starting time is: 02:14:54
+NOMBRE : WB1552 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 814 odd vertices
+this gives us in total: 3308910 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 10462564706802368>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+2135641622543335
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  814
+VARIABLES:  330891
+Solution:
+8577488112449646
+2(c) complete
+009545159339904785
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+1104931116104126
+3(1) - complete
+00017635822296142578
+3(2) - complete
+0015938282012939453
+Minimum Flow cost:  211200
+3(3) - complete
+035800743103027344
+Final digraph constructed
+034422850608825684
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 104422
+---The current starting time is: 02:16:58
+NOMBRE : WB1555 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 822 odd vertices
+this gives us in total: 3374310 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1141674280166626>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+22280030012130737
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  822
+VARIABLES:  337431
+Solution:
+5486892819404602
+2(c) complete
+010681462287902832
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+11251909732818604
+3(1) - complete
+00018129348754882812
+3(2) - complete
+00166628360748291
+Minimum Flow cost:  588800
+3(3) - complete
+03909485340118408
+Final digraph constructed
+036419200897216797
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 97343
+---The current starting time is: 02:18:33
+NOMBRE : WB1561 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 716 odd vertices
+this gives us in total: 2559700 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 10529235124588013>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+14994828224182129
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  716
+VARIABLES:  255970
+Solution:
+34543785095214844
+2(c) complete
+007666158676147461
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+12957215309143066
+3(1) - complete
+00019490718841552734
+3(2) - complete
+0021231651306152344
+Minimum Flow cost:  100900
+3(3) - complete
+04101533889770508
+Final digraph constructed
+042516088485717773
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 128244
+---The current starting time is: 02:19:41
+NOMBRE : WB1562 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 682 odd vertices
+this gives us in total: 2322210 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 10043621063232422>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+13664039850234985
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  682
+VARIABLES:  232221
+Solution:
+10579405689239502
+2(c) complete
+006749606132507324
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+13122756481170654
+3(1) - complete
+0002012491226196289
+3(2) - complete
+0015367507934570312
+Minimum Flow cost:  238500
+3(3) - complete
+043050408363342285
+Final digraph constructed
+042360854148864746
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 125802
+---The current starting time is: 02:21:58
+NOMBRE : WB1565 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 708 odd vertices
+this gives us in total: 2502780 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 10342084884643555>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+14773838520050049
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  708
+VARIABLES:  250278
+Solution:
+8753811597824097
+2(c) complete
+007205653190612793
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+13375911712646484
+3(1) - complete
+00021245479583740234
+3(2) - complete
+0015619277954101562
+Minimum Flow cost:  595200
+3(3) - complete
+04274728298187256
+Final digraph constructed
+048076510429382324
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 117472
+---The current starting time is: 02:23:59
+NOMBRE : WB2031 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1176 odd vertices
+this gives us in total: 6909000 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1839438819885254>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+5872970199584961
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1176
+VARIABLES:  690900
+Solution:
+30804125463962555
+2(c) complete
+020216822624206543
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+13622117042541504
+3(1) - complete
+00017125606536865234
+3(2) - complete
+002606964111328125
+Minimum Flow cost:  87800
+3(3) - complete
+04608306884765625
+Final digraph constructed
+04975457191467285
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 74559
+---The current starting time is: 03:16:46
+NOMBRE : WB2032 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1224 odd vertices
+this gives us in total: 7484760 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 18957210302352905>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+6670363020896912
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1224
+VARIABLES:  748476
+Solution:
+23896743788719177
+2(c) complete
+02231128215789795
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+1413644552230835
+3(1) - complete
+00017414093017578125
+3(2) - complete
+002163076400756836
+Minimum Flow cost:  236800
+3(3) - complete
+04778780937194824
+Final digraph constructed
+05047376155853271
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 72605
+---The current starting time is: 03:58:11
+NOMBRE : WB2035 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1158 odd vertices
+this gives us in total: 6699030 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 18673064708709717>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+5760457396507263
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1158
+VARIABLES:  669903
+Solution:
+23870812525749207
+2(c) complete
+0201002836227417
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+14492430686950684
+3(1) - complete
+00018389225006103516
+3(2) - complete
+0019956350326538086
+Minimum Flow cost:  571300
+3(3) - complete
+04789237976074219
+Final digraph constructed
+048833775520324707
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 69053
+---The current starting time is: 04:39:25
+NOMBRE : WB2041 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 870 odd vertices
+this gives us in total: 3780150 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 15759146213531494>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+2515551209449768
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  870
+VARIABLES:  378015
+Solution:
+11930582976341248
+2(c) complete
+011305904388427734
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+16714859008789062
+3(1) - complete
+00020706653594970703
+3(2) - complete
+0025478124618530273
+Minimum Flow cost:  150600
+3(3) - complete
+05332441329956055
+Final digraph constructed
+05516438484191895
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 95601
+---The current starting time is: 04:42:14
+NOMBRE : WB2042 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 872 odd vertices
+this gives us in total: 3797560 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 15843354225158691>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+2528516983985901
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  872
+VARIABLES:  379756
+Solution:
+1045679042339325
+2(c) complete
+011083197593688965
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+16608631610870361
+3(1) - complete
+00022330284118652344
+3(2) - complete
+002094125747680664
+Minimum Flow cost:  199700
+3(3) - complete
+05378189086914062
+Final digraph constructed
+05319156646728516
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 92751
+---The current starting time is: 04:44:48
+NOMBRE : WB2045 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 854 odd vertices
+this gives us in total: 3642310 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1615227246284485>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+24361156463623047
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  854
+VARIABLES:  364231
+Solution:
+1958996516942978
+2(c) complete
+01084747314453125
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+1647000789642334
+3(1) - complete
+00019750595092773438
+3(2) - complete
+0016305208206176758
+Minimum Flow cost:  575700
+3(3) - complete
+05601694583892822
+Final digraph constructed
+05448338985443115
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 88691
+---The current starting time is: 05:18:18
+NOMBRE : WB2051 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1100 odd vertices
+this gives us in total: 6044500 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 1867478919029236>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+4862713313102722
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1100
+VARIABLES:  604450
+Solution:
+8119747257232666
+2(c) complete
+01804039478302002
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+2037630319595337
+3(1) - complete
+0002313852310180664
+3(2) - complete
+0032419443130493164
+Minimum Flow cost:  145300
+3(3) - complete
+06575839519500732
+Final digraph constructed
+06862690448760986
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 121672
+---The current starting time is: 05:20:58
+NOMBRE : WB2052 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1090 odd vertices
+this gives us in total: 5935050 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 19069968223571777>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+4815788459777832
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1090
+VARIABLES:  593505
+Solution:
+3115307881832123
+2(c) complete
+017286443710327148
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+20280041694641113
+3(1) - complete
+00023479461669921875
+3(2) - complete
+0024880409240722656
+Minimum Flow cost:  281500
+3(3) - complete
+06680798530578613
+Final digraph constructed
+05803110599517822
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 119566
+---The current starting time is: 05:27:28
+NOMBRE : WB2055 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 1144 odd vertices
+this gives us in total: 6537960 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 19809645175933838>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+551872239112854
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  1144
+VARIABLES:  653796
+Solution:
+4243964006662369
+2(c) complete
+018810677528381348
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+20483360290527344
+3(1) - complete
+0002403736114501953
+3(2) - complete
+0027002573013305664
+Minimum Flow cost:  654600
+3(3) - complete
+06755044460296631
+Final digraph constructed
+06630244255065918
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 111684
+---The current starting time is: 06:39:39
+NOMBRE : WB2061 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 944 odd vertices
+this gives us in total: 4450960 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17514634370803833>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+3217310667037964
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  944
+VARIABLES:  445096
+Solution:
+16781238493919373
+2(c) complete
+012800836563110352
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+22867825031280518
+3(1) - complete
+00025031566619873047
+3(2) - complete
+0025449037551879883
+Minimum Flow cost:  138500
+3(3) - complete
+0753666877746582
+Final digraph constructed
+06808998584747314
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 146803
+---The current starting time is: 07:08:40
+NOMBRE : WB2062 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 900 odd vertices
+this gives us in total: 4045500 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 16868549346923828>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+28343939065933228
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  900
+VARIABLES:  404550
+Solution:
+1983062038898468
+2(c) complete
+011733102798461914
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+2314321756362915
+3(1) - complete
+0002535581588745117
+3(2) - complete
+0020153522491455078
+Minimum Flow cost:  262500
+3(3) - complete
+07562751770019531
+Final digraph constructed
+06852242946624756
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 143992
+---The current starting time is: 07:42:42
+NOMBRE : WB2065 
+
+COMENTARIO :  Chino Windy aleatorio grafico
+
+Graph is NOT eulerian! - Starting the conversion to eulerian proc
+2(a) complete
+2(b) - first part complete, we have: 914 odd vertices
+this gives us in total: 4172410 comparisons
+<<TOTAL-TIME-FOR-SHORTEST-PATH: 17301199674606323>>>>>>>>>>>
+2(b) complete
+
+
+
+
+
+2939790630340576
+<<<Solver Init complete, now starting solver>>
+CONSTRAINTS:  914
+VARIABLES:  417241
+Solution:
+11553221011161804
+2(c) complete
+011947464942932129
+2(d) - complete
+Eulerian conversion complete
+PARSE_TO_FILE
+3(0) - Starting wins_algorithm
+23345534801483154
+3(1) - complete
+0002521991729736328
+3(2) - complete
+002749943733215332
+Minimum Flow cost:  649900
+3(3) - complete
+07425942420959473
+Final digraph constructed
+06549932956695557
+<<<<EULER-TOUR-COMPLETE>>>>
+<<<<WPP-TOUR>>>>
+
+Total cost of: 134195
