@@ -56,38 +56,6 @@ def create_data_model():
     data = matrix
     return data
 
-
-"""
-class NQueenSolutionPrinter(cp_model.CpSolverSolutionCallback):
-
-    def __init__(self, queens):
-        cp_model.CpSolverSolutionCallback.__init__(self)
-        self.__queens = queens
-        self.__solution_count = 0
-        self.__start_time = time.time()
-
-    def solution_count(self):
-        return self.__solution_count
-
-    def on_solution_callback(self):
-        current_time = time.time()
-        print('Solution %i, time = %f s' %
-              (self.__solution_count, current_time - self.__start_time))
-        self.__solution_count += 1
-
-        all_queens = range(len(self.__queens))
-        for i in all_queens:
-            for j in all_queens:
-                if self.Value(self.__queens[j]) == i:
-                    # There is a queen in column j, row i.
-                    print('Q', end=' ')
-                else:
-                    print('_', end=' ')
-            print()
-        print()
-"""
-
-
 def main():
     # Creates the solver.
     model = cp_model.CpModel()
@@ -99,6 +67,7 @@ def main():
     # cs0-begin Adds constraint xij, xji >= 0
     x = []
     for edge in edges:
+        # One should generally increase the '2', as otherwise one cannot be sure if one found the optimal solution - but higher values lead to nearly intractable run times
         x.append(Edge(edge.i, edge.j,  model.NewIntVar(0, 2, 'x' + edge.i + edge.j), model.NewIntVar(0, 2, 'x' + edge.j + edge.i)))
     # cs0-end
 
