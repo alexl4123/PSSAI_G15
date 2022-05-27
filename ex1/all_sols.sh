@@ -1,4 +1,4 @@
-search_dir=instances
+search_dir=../instances
 for entry in "$search_dir"/*
 do
     echo "<<<<<<<<<<NOW-DOING-${entry##*/}>>>>>>>>>>>>>>"
