@@ -51,6 +51,9 @@ class SolutionRepresentation:
 
     def decX(self):
         self._x = self._x - 1
+        
+    def reset(self):
+        self_x = 0
 
     def cost(self):
         return (self._cost * self._x)
@@ -60,6 +63,12 @@ class SolutionRepresentation:
 
     def getX(self):
         return self._x
+
+    def clone(self):
+        new = SolutionRepresentation(self._cost)
+        new._x = self._x
+
+        return new
 
 
 
