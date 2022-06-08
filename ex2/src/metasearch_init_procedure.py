@@ -9,11 +9,11 @@ import random
 import networkx as nx
 import matplotlib.pyplot as plt
 
-from graph_data_structs import *
-from parse_input_file import parse_input_file
-from hierholzer import euler_tour
+from src.graph_data_structs import *
+from src.parse_input_file import parse_input_file
+from src.hierholzer import euler_tour
 
-from metasearch_common_procedures import * 
+from src.metasearch_common_procedures import * 
 
 def generalInitialization(graph):
 
@@ -57,9 +57,6 @@ def generalInitialization(graph):
     # validInit(solL)
     avgPerViolation = 0
     violations = 0
-    bestSolCost = None
-    solL = None
-    solD = None
 
     for i in range(0,100):
         print('Init: ' + str(i))
@@ -73,17 +70,31 @@ def generalInitialization(graph):
         if violations != 0:
             avgPerViolation = avgPerViolation + ((curCost[0][2] - avgPerViolation) / violations)
 
-        if bestSolCost is None:
-            bestSolCost = curCost
-            solL = cSolL
-            solD = cSolD
-        elif curCost[0][3] < bestSolCost[0][3]:
-            bestSolCost = curCost
-            solL = cSolL
-            solD = cSolD
-
     print('Violations: ' + str(violations) + '::' + str(avgPerViolation))
 
-    return (directedEdges, costDict, pathDict, solL, solD, verticesD, avgPerViolation)
+    return (directedEdges, costDict, pathDict, verticesD, avgPerViolation)
+
+
+def validInit(solL):
+    for sol in solL:
+        sol[2].incX()
+
+def randomizedInit(solL):
+    for sol in solL:
+        sol[2].reset()
+        randNum = random.randint(0,1)
+        if randNum == 1:
+            sol[2].incX()
+
+def initSolutions(directedEdges):
+    solL = []
+    solD = {}
+
+    for edge in directedEdges:
+        curSol = SolutionRepresentation(edge.cost)
+        solL.append((edge.i,edge.j,curSol))
+        solD[str(edge.i) + ':' +str(edge.j)] = curSol
+    
+    return(solL, solD)
 
 

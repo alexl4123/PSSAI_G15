@@ -5,35 +5,12 @@ import time
 import copy
 import random
 
-from graph_data_structs import *
-from hierholzer import euler_tour
+from src.graph_data_structs import *
+from src.hierholzer import euler_tour
 
 # ------------------------------------------------------------------------------------
 # - Some Helper Functions                                                            -
 # ------------------------------------------------------------------------------------
-
-def validInit(solL):
-    for sol in solL:
-        sol[2].incX()
-
-def randomizedInit(solL):
-    for sol in solL:
-        sol[2].reset()
-        randNum = random.randint(0,1)
-        if randNum == 1:
-            sol[2].incX()
-
-def initSolutions(directedEdges):
-    solL = []
-    solD = {}
-
-    for edge in directedEdges:
-        curSol = SolutionRepresentation(edge.cost)
-        solL.append((edge.i,edge.j,curSol))
-        solD[str(edge.i) + ':' +str(edge.j)] = curSol
-    
-    return(solL, solD)
-
 def cloneSolutions(solL):
     newSolL = []
     newSolD = {}
@@ -65,66 +42,67 @@ def validWpp(vertices, edges, solD):
 
 # prevCosts: (Basic Costs, CS2 Costs, CS3 Costs, Total Costs)
 # changed: (v1, v2, diff)
-def iterativeCost(solD, solL, verticesD, prevCosts, changed, avgCs3Cost):
+def iterativeCost(solD, solL, verticesD, prevCosts, changedL, avgCs3Cost):
     (ps, pcs2, pcs3, ptotal) = prevCosts[0]
-
-    changedSol = solD[str(changed[0]) + ':' + str(changed[1])]
-    revChangedSol = solD[str(changed[1]) + ':' + str(changed[0])]
-
-    # Basic Cost update
-    ps = ps + (changed[2] * changedSol.singleCost())
-
-    # CS2 Cost update
-    if ((changedSol.getX() + revChangedSol.getX()) == 0):
-        pcs2 = pcs2 + changedSol.singleCost() + revChangedSol.singleCost()
-
-    # CS3 Cost update (first part)
-    vertices = [verticesD[str(changed[0])], verticesD[str(changed[1])]]
-    violationsAfter = 0
-    for vertex in vertices:
-        s = 0
-        for edge in vertex.getEdges():
-            if str(vertex.name) == str(edge.i):
-                s = s + solD[str(edge.i) + ':' + str(edge.j)].getX()
-                s = s - solD[str(edge.j) + ':' + str(edge.i)].getX()
-            else:
-                s = s + solD[str(edge.j) + ':' + str(edge.i)].getX()
-                s = s - solD[str(edge.i) + ':' + str(edge.j)].getX()
-        violationsAfter = violationsAfter + abs(s) 
-
-    # CS3 Cost update (second part)
-    if changed[2] < 0:
-        for i in range(0,abs(changed[2])):
-            changedSol.incX()
-    else:
-        for i in range(0,abs(changed[2])):
-            changedSol.decX()
-
-    vertices = [verticesD[str(changed[0])], verticesD[str(changed[1])]]
-    violationsBefore = 0
-    for vertex in vertices:
-        s = 0
-        for edge in vertex.getEdges():
-            if str(vertex.name) == str(edge.i):
-                s = s + solD[str(edge.i) + ':' + str(edge.j)].getX()
-                s = s - solD[str(edge.j) + ':' + str(edge.i)].getX()
-            else:
-                s = s + solD[str(edge.j) + ':' + str(edge.i)].getX()
-                s = s - solD[str(edge.i) + ':' + str(edge.j)].getX()
-        violationsBefore = violationsBefore + abs(s) 
-
-    if changed[2] < 0:
-        for i in range(0,abs(changed[2])):
-            changedSol.decX()
-    else:
-        for i in range(0,abs(changed[2])):
-            changedSol.incX()
-
-    # CS3 Cost update (final part)
     
-    pcs3 = pcs3 + (violationsAfter - violationsBefore) * avgCs3Cost * 0.1
-    if pcs3 < 0 :
-        pcs3 = 0
+    for changed in changedL:
+        changedSol = solD[str(changed[0]) + ':' + str(changed[1])]
+        revChangedSol = solD[str(changed[1]) + ':' + str(changed[0])]
+
+        # Basic Cost update
+        ps = ps + (changed[2] * changedSol.singleCost())
+
+        # CS2 Cost update
+        if ((changedSol.getX() + revChangedSol.getX()) == 0):
+            pcs2 = pcs2 + changedSol.singleCost() + revChangedSol.singleCost()
+
+        # CS3 Cost update (first part)
+        vertices = [verticesD[str(changed[0])], verticesD[str(changed[1])]]
+        violationsAfter = 0
+        for vertex in vertices:
+            s = 0
+            for edge in vertex.getEdges():
+                if str(vertex.name) == str(edge.i):
+                    s = s + solD[str(edge.i) + ':' + str(edge.j)].getX()
+                    s = s - solD[str(edge.j) + ':' + str(edge.i)].getX()
+                else:
+                    s = s + solD[str(edge.j) + ':' + str(edge.i)].getX()
+                    s = s - solD[str(edge.i) + ':' + str(edge.j)].getX()
+            violationsAfter = violationsAfter + abs(s) 
+
+        # CS3 Cost update (second part)
+        if changed[2] < 0:
+            for i in range(0,abs(changed[2])):
+                changedSol.incX()
+        else:
+            for i in range(0,abs(changed[2])):
+                changedSol.decX()
+
+        vertices = [verticesD[str(changed[0])], verticesD[str(changed[1])]]
+        violationsBefore = 0
+        for vertex in vertices:
+            s = 0
+            for edge in vertex.getEdges():
+                if str(vertex.name) == str(edge.i):
+                    s = s + solD[str(edge.i) + ':' + str(edge.j)].getX()
+                    s = s - solD[str(edge.j) + ':' + str(edge.i)].getX()
+                else:
+                    s = s + solD[str(edge.j) + ':' + str(edge.i)].getX()
+                    s = s - solD[str(edge.i) + ':' + str(edge.j)].getX()
+            violationsBefore = violationsBefore + abs(s) 
+
+        if changed[2] < 0:
+            for i in range(0,abs(changed[2])):
+                changedSol.decX()
+        else:
+            for i in range(0,abs(changed[2])):
+                changedSol.incX()
+
+        # CS3 Cost update (final part)
+        
+        pcs3 = pcs3 + (violationsAfter - violationsBefore) * avgCs3Cost * 0.1
+        if pcs3 < 0 :
+            pcs3 = 0
 
     return ((ps, pcs2, pcs3, (ps + pcs2 + pcs3)), [], [])
 
@@ -219,5 +197,53 @@ def completeCost(solD, solL, vertices, edges, costDict, pathDict):
                 cs3Errors.append((usedVertices[int(splits[0])], usedVertices[int(splits[1])]))
 
     return ((costsTraversals, cs2Costs, cs3Costs, (costsTraversals + cs2Costs + cs3Costs)), cs2Errors, cs3Errors, cs3VerticesAmount)
+
+
+def repair(solD, solL, bestSolCost, inits, graph):
+    (directedEdges, costDict, pathDict, verticesD, avgPerViolation) = inits
+    
+    bestSolCost = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
+
+    cs2Repair = bestSolCost[1]
+
+    for cs2 in cs2Repair:
+        solD[cs2[0] + ':' + cs2[1]].incX()
+
+    cs3Repair = bestSolCost[2]
+
+    for cs3 in cs3Repair:
+        path = pathDict[cs3[0] + ':' + cs3[1]]
+        print(path)
+
+        for index in range(0, len(path) - 1):
+            solD[str(path[index]) + ':' + str(path[index+1])].incX()
+
+    bestSolCost = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
+    print(bestSolCost)
+
+    solverValuesCopy = []
+    for edge in directedEdges:
+        for i in range(0, solD[str(edge.i) + ':' + str(edge.j)].getX()):
+            solverValuesCopy.append((int(edge.i), int(edge.j)))
+
+    wpp_tour = euler_tour(solverValuesCopy.copy(), solverValuesCopy[0][0])
+    print("<<<<<<POSSIBLE_TOUR>>>>>>>>>>>")
+    print(wpp_tour)
+    print("<<<<<<POSSIBLE_TOUR_END>>>>>>>>>>>")
+
+def write_tour_to_file(wpp_tour, name):
+    input_file_path = sys.argv[1]
+    input_file_name = input_file_path.split('/')
+
+    input_file_name = input_file_name[len(input_file_name) - 1]
+
+    output_file_path = 'tours/' + input_file_name + name
+
+    f = open(output_file_path, 'w')
+
+    f.write(str(wpp_tour) + '\n')
+
+    f.close()
+
 
 

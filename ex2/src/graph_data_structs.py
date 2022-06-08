@@ -53,7 +53,10 @@ class SolutionRepresentation:
         self._x = self._x - 1
         
     def reset(self):
-        self_x = 0
+        self._x = 0
+
+    def set(self, number):
+        self._x = number
 
     def cost(self):
         return (self._cost * self._x)

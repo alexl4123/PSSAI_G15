@@ -1,7 +1,7 @@
 # coding=utf-8
 
 import sys
-from graph_data_structs import Edge, Vertice
+from src.graph_data_structs import Edge, Vertice
 
 def parse_input_file():
     def parse_input_line(line, edgeList):
@@ -24,7 +24,7 @@ def parse_input_file():
     cmdargs = str(sys.argv)
 
     if (total != 3 and total != 2):
-        print("Error: synopsis is: program file [full|part]")
+        print("Error: synopsis is: program file")
         quit()
 
     input_file_path = sys.argv[1]
