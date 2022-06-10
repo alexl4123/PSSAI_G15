@@ -29,6 +29,11 @@ class Vertice:
                 string = string + " (" + str(edge.j) + "," + str(edge.i) + "," + str(edge.ji) + "," + str(edge.ij) + ")"
             count = count + 1
         return string
+    def equals(self, vertice):
+        if (self.name == vertice.name):
+            return True
+        else:
+            return False
 
 class DirectedEdge:
     def __init__(self, i, j, cost):
@@ -39,6 +44,12 @@ class DirectedEdge:
     def show(self):
         string = '(' + str(self.i) + ',' + str(self.j) + ') = ' + str(cost)
         return string
+
+    def equals(self, directedEdge):
+        if (directedEdge.i == self.i and directedEdge.j == self.j and directedEdge.cost == self.cost):
+            return True
+        else:
+            return False
 
 
 class SolutionRepresentation:
@@ -55,7 +66,7 @@ class SolutionRepresentation:
     def reset(self):
         self._x = 0
 
-    def set(self, number):
+    def setX(self, number):
         self._x = number
 
     def cost(self):

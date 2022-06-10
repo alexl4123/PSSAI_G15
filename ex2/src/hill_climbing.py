@@ -20,6 +20,8 @@ def hillClimber(graph,
         inits,
         sols,
         maxIter = 1000,
+        startTime = -1,
+        maxTime = 600,
         fullFlag = False,
         approximateCostCalculation = True,
         traceMode = False,
@@ -41,8 +43,12 @@ def hillClimber(graph,
 
     c = 0
     converged = False
-    while (c < maxIter and not converged ):
-       
+
+    if startTime == -1:
+        startTime = time.time()
+
+    while (c < maxIter and not converged and isInTime(startTime, maxTime)):
+        
         index = (0, 'cur')
         curBestSolCost = bestSolCost
 
@@ -51,6 +57,8 @@ def hillClimber(graph,
         converged = True
 
         for sol in solL:
+            if not isInTime(startTime, maxTime):
+                break
             sol[2].incX()
             
             if approximateCostCalculation:

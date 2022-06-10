@@ -15,14 +15,22 @@ bestSolL = []
 bestSolD = {}
 
 print("<<<<<<<<<<<<<<<")
-maxIter = 100
+maxIter = 100000
+
+
+maxTime = 5
+startTime = time.time()
+
 for i in range(0, maxIter):
+    if not isInTime(startTime, maxTime):
+        break
+
     print("Iter " + str(i) + " of " + str(maxIter))
 
     (solL, solD) = initSolutions(inits[0])
     randomizedInit(solL)
 
-    (solD, solL, bestSolCost) = hillClimber(graph, inits, (solL, solD))
+    (solD, solL, bestSolCost) = hillClimber(graph, inits, (solL, solD), startTime = startTime, maxTime = maxTime)
     
     print(">> GOT: " + str(bestSolCost[0][3]) + ", CUR BEST: " + str(curBest) + "<<")
 
@@ -32,7 +40,7 @@ for i in range(0, maxIter):
         bestSolD = solD
 
 print("<<<<<<<<<<<<<<<")
-tour = repair(bestSolD, bestSolL, bestSolCost, inits, graph)
+tour = repair(bestSolD, bestSolL, bestSolCost, inits, graph, verbose = True)
 write_tour_to_file(tour, '_randomized_hill_climber')
 
 

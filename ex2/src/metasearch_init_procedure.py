@@ -97,4 +97,72 @@ def initSolutions(directedEdges):
     
     return(solL, solD)
 
+def initGreedySolutions(inits, graph):
+    vertices = graph[0]
+    (directedEdges, costDict, pathDict, verticesD, avgPerViolation) = inits
+    solL = []
+    solD = {}
+
+    for edge in directedEdges:
+        curSol = SolutionRepresentation(edge.cost)
+        solL.append((edge.i,edge.j,curSol))
+        solD[str(edge.i) + ':' +str(edge.j)] = curSol
+
+    curV = vertices[0]
+
+    # Step 1 - Create initial solution
+    for otherV in vertices:
+        if (curV.equals(otherV)):
+            next
+        
+        pathTo = pathDict[(str(curV.name) + ':' + str(otherV.name))]
+        pathFrom = pathDict[(str(otherV.name) + ':' + str(curV.name))]
+
+        for index in range(1, len(pathTo)):
+            lastPV = pathTo[index-1]
+            curPV = pathTo[index]
+
+            curSol = solD[str(lastPV) + ':' + str(curPV)]
+            if (curSol.getX() == 0):
+                curSol.incX()
+    
+    # Step 2 - If both directions 0 -> Add lower cost one
+    for edgeIndex in range(0, len(directedEdges), 2):
+        to = solL[edgeIndex][2]
+        fr = solL[edgeIndex + 1][2]
+
+        if (to.getX() == 0 and fr.getX() == 0) and (to.singleCost() < fr.singleCost()):
+            to.setX(1)
+        elif (to.getX() == 0 and fr.getX() == 0):
+            fr.setX(1)
+
+    # Step 3 - Repair
+    cost = completeCost(solD, solL, vertices, directedEdges, costDict, pathDict)
+    repair(solD, solL, cost, inits, graph)
+    
+    # Step 4 - Remove simple unnecessary edges
+    for edgeIndex in range(0, len(directedEdges), 2):
+        to = solL[edgeIndex][2]
+        fr = solL[edgeIndex + 1][2]
+
+        min_ = min(to.getX(), fr.getX())
+
+        if (to.getX() == fr.getX()):
+            min_ = min_ - 1
+
+        to.setX(to.getX() - min_)
+        fr.setX(fr.getX() - min_)
+
+    """
+    costDict[str(v1.name) + ':' +str(v2.name)] = p[int(v1.name)][0][int(v2.name)]
+    pathDict[str(v1.name) + ':' +str(v2.name)] = p[int(v1.name)][1][int(v2.name)]
+
+    costDict[str(v2.name) + ':' +str(v1.name)] = p[int(v2.name)][0][int(v1.name)]
+    pathDict[str(v2.name) + ':' +str(v1.name)] = p[int(v2.name)][1][int(v1.name)]
+    """
+
+    
+    return(solL, solD)
+
+
 

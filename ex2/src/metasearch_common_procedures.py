@@ -11,6 +11,10 @@ from src.hierholzer import euler_tour
 # ------------------------------------------------------------------------------------
 # - Some Helper Functions                                                            -
 # ------------------------------------------------------------------------------------
+
+def isInTime(startTime, maxTime):
+    return ((time.time() - startTime) < maxTime)
+
 def cloneSolutions(solL):
     newSolL = []
     newSolD = {}
@@ -106,7 +110,7 @@ def iterativeCost(solD, solL, verticesD, prevCosts, changedL, avgCs3Cost):
 
     return ((ps, pcs2, pcs3, (ps + pcs2 + pcs3)), [], [])
 
-def completeCost(solD, solL, vertices, edges, costDict, pathDict):
+def completeCost(solD, solL, vertices, directedEdges, costDict, pathDict):
    
     # Basic Costs
     costsTraversals = 0
@@ -117,7 +121,7 @@ def completeCost(solD, solL, vertices, edges, costDict, pathDict):
     cs2Costs = 0
     cs2Errors = []
 
-    for edge in edges:
+    for edge in directedEdges:
         s = solD[str(edge.i) + ':' + str(edge.j)].getX() + solD[str(edge.j) + ':' + str(edge.i)].getX()
         if s == 0:
             cs2Costs = cs2Costs + solD[str(edge.i) + ':' + str(edge.j)].singleCost() + solD[str(edge.j) + ':' + str(edge.i)].singleCost()
@@ -199,7 +203,7 @@ def completeCost(solD, solL, vertices, edges, costDict, pathDict):
     return ((costsTraversals, cs2Costs, cs3Costs, (costsTraversals + cs2Costs + cs3Costs)), cs2Errors, cs3Errors, cs3VerticesAmount)
 
 
-def repair(solD, solL, bestSolCost, inits, graph):
+def repair(solD, solL, bestSolCost, inits, graph, verbose = False):
     (directedEdges, costDict, pathDict, verticesD, avgPerViolation) = inits
     
     bestSolCost = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
@@ -213,13 +217,15 @@ def repair(solD, solL, bestSolCost, inits, graph):
 
     for cs3 in cs3Repair:
         path = pathDict[cs3[0] + ':' + cs3[1]]
-        print(path)
+        if verbose == True:
+            print(path)
 
         for index in range(0, len(path) - 1):
             solD[str(path[index]) + ':' + str(path[index+1])].incX()
 
     bestSolCost = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
-    print(bestSolCost)
+    if verbose == True:
+        print(bestSolCost)
 
     solverValuesCopy = []
     for edge in directedEdges:
@@ -227,9 +233,11 @@ def repair(solD, solL, bestSolCost, inits, graph):
             solverValuesCopy.append((int(edge.i), int(edge.j)))
 
     wpp_tour = euler_tour(solverValuesCopy.copy(), solverValuesCopy[0][0])
-    print("<<<<<<POSSIBLE_TOUR>>>>>>>>>>>")
-    print(wpp_tour)
-    print("<<<<<<POSSIBLE_TOUR_END>>>>>>>>>>>")
+    if verbose == True:
+        print("<<<<<<POSSIBLE_TOUR>>>>>>>>>>>")
+        print(wpp_tour)
+        print("<<<<<<POSSIBLE_TOUR_END>>>>>>>>>>>")
+    return wpp_tour
 
 def write_tour_to_file(wpp_tour, name):
     input_file_path = sys.argv[1]
