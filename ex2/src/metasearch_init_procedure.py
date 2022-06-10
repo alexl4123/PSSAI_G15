@@ -26,9 +26,11 @@ def generalInitialization(graph):
 
     for edge in directedEdges:
         G.add_edge(int(edge.i), int(edge.j), weight=edge.cost)
-
+    
+    """
     nx.draw(G, with_labels=True, font_weight='bold')
     plt.savefig('toy-directed.png')
+    """
 
     p = dict(nx.all_pairs_dijkstra(G))
 
@@ -59,7 +61,7 @@ def generalInitialization(graph):
     violations = 0
 
     for i in range(0,100):
-        print('Init: ' + str(i))
+        #print('Init: ' + str(i))
         (cSolL, cSolD) = initSolutions(directedEdges)
 
         randomizedInit(cSolL)
@@ -70,7 +72,8 @@ def generalInitialization(graph):
         if violations != 0:
             avgPerViolation = avgPerViolation + ((curCost[0][2] - avgPerViolation) / violations)
 
-    print('Violations: ' + str(violations) + '::' + str(avgPerViolation))
+    #print('Violations: ' + str(violations) + '::' + str(avgPerViolation))
+    print('<INITIALIZATION-PROCEDURE-COMPLETE>')
 
     return (directedEdges, costDict, pathDict, verticesD, avgPerViolation)
 

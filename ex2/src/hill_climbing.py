@@ -71,8 +71,7 @@ def hillClimber(graph,
                 index = (i, 'incX')
 
                 if traceMode == True:
-                    tmpCost = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
-                    trace.append(tmpCost)
+                    trace.append(curBestSolCost)
             
             # ---------------------------------------------------------------------
             # If better then accept
@@ -99,8 +98,7 @@ def hillClimber(graph,
                     index = (i, 'decX')
 
                     if traceMode == True:
-                        tmpCost = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
-                        trace.append(tmpCost)
+                        trace.append(curBestSolCost)
                 
                 # ---------------------------------------------------------------------
                 # If better then accept
@@ -136,7 +134,11 @@ def hillClimber(graph,
 
     bestSolCost = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
     (solL, solD) = cloneSolutions(solL)
-    return (solD, solL, bestSolCost)
+
+    if not traceMode:
+        return (solD, solL, bestSolCost)
+    else:
+        return (solD, solL, bestSolCost, trace)
 
 
 

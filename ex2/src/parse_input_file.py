@@ -23,11 +23,18 @@ def parse_input_file():
     # Get the arguments list 
     cmdargs = str(sys.argv)
 
-    if (total != 3 and total != 2):
-        print("Error: synopsis is: program file")
+    if (total != 4 and total != 2):
+        print("Error: synopsis is: program [-f tour] file")
         quit()
 
-    input_file_path = sys.argv[1]
+    if (sys.argv[1] == '-f'):
+        tourPath = sys.argv[2]
+        inputFileIndex = 3
+    else:
+        tourPath = None
+        inputFileIndex = 1
+
+    input_file_path = sys.argv[inputFileIndex]
     input_file = open(input_file_path, "r")
 
     for i in range(2):
@@ -63,6 +70,6 @@ def parse_input_file():
 
        
     
-    return (vertices, edgeList)
+    return (vertices, edgeList, tourPath)
 
 

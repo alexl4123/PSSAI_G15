@@ -74,6 +74,43 @@ def generateSolutions(solutions, evals):
         newSolutions.append(newSolution)
         newSolutionsChanges.append(newSolutionChanges)
         newSolutionsEvaluation.append(evals[i])
+    
+    if len(solutions[0][0]) > 100:
+        for i in range(0, len(solutions)):
+
+            newSolution = cloneSolutions(solutions[i][0])
+            newSolutionChanges = []
+
+            fixedRandom = min(len(newSolution[0]), random.randint(4,6))
+            if fixedRandom % 2 == 1:
+                fixedRandom = fixedRandom - 1
+            
+            fixedStart = random.randint(0,len(newSolution[0]) - fixedRandom)
+        
+            #print(str(fixedStart))
+
+            for j in range(fixedStart, fixedRandom + fixedStart, 2):
+                costj = newSolution[0][j][2].singleCost()
+                costj1 = newSolution[0][j+1][2].singleCost()
+
+                if (costj < costj1):
+                    newSolutionChanges.append((newSolution[0][j][0], newSolution[0][j][1], 1  - newSolution[0][j][2].getX()))
+                    newSolutionChanges.append((newSolution[0][j+1][0], newSolution[0][j+1][1], 0  - newSolution[0][j][2].getX()))
+
+                    newSolution[0][j][2].setX(1)
+                    newSolution[0][j+1][2].setX(0)
+                else:
+                    newSolutionChanges.append((newSolution[0][j][0], newSolution[0][j][1], 0  - newSolution[0][j][2].getX()))
+                    newSolutionChanges.append((newSolution[0][j+1][0], newSolution[0][j+1][1], 1  - newSolution[0][j][2].getX()))
+
+                    newSolution[0][j][2].setX(0)
+                    newSolution[0][j+1][2].setX(1)
+
+            newSolutions.append(newSolution)
+            newSolutionsChanges.append(newSolutionChanges)
+            newSolutionsEvaluation.append(evals[i])
+
+    #print('S' + str(len(newSolutions)) + '::' + str(len(newSolutionsChanges)) + '::' + str(len(newSolutionsEvaluation)))
 
     return (newSolutions, newSolutionsChanges, newSolutionsEvaluation)
 
@@ -96,7 +133,9 @@ def evolutionaryAlgorithm(inits,
         maxIter = 100,
         populationSize = 5,
         maxTime = 60,
-        startTime = -1):
+        startTime = -1,
+        traceMode = False,
+        verbose = True):
 
     # Generate Initial Solutions
     (directedEdges, costDict, pathDict, verticesD, avgPerViolation) = inits
@@ -104,20 +143,36 @@ def evolutionaryAlgorithm(inits,
     solutions = []
     evaluations = []
 
+    trace = []
+
+    if (graph[2] is not None):
+        # If specified add the solution
+        sol = loadAndParseSolution(graph[2], directedEdges)
+        (solL, solD) = sol
+        solutions.append(sol)
+        evaluations.append(completeCost(sol[1], sol[0], graph[0], directedEdges, costDict, pathDict))
+
     for i in range(0, populationSize):
         sol = initSolutions(inits[0])
         randomizedInit(sol[0])
-        (solD, solL, solCost) = hillClimber(graph, inits, sol)
+        
+        (solL, solD) = sol
+
+        solCost =  completeCost(sol[1], sol[0], graph[0], directedEdges, costDict, pathDict)
+        # Infeasible for larger solutions
+        # (solD, solL, solCost) = hillClimber(graph, inits, sol)
         repair(solD, solL, solCost, inits, graph)
         solutions.append((solL, solD))
-        evaluations.append(completeCost(sol[1], sol[0], graph[0], directedEdges, costDict, pathDict))
+        evaluations.append(solCost)
 
+    """
     sol = initGreedySolutions(inits, graph)
     solutions.append(sol)
     evaluations.append(completeCost(sol[1], sol[0], graph[0], directedEdges, costDict, pathDict))
-
+    """
 
     zeroSol = initSolutions(inits[0])
+
     oneSol = initSolutions(inits[0])
     validInit(oneSol[0])
 
@@ -151,13 +206,12 @@ def evolutionaryAlgorithm(inits,
         if (i+1) % 15 == 0:
             evaluations.append(curBestEvaluation)
         # -------------------------------MORE-RANDOM-END-----------------
-
         newSols = generateSolutions(solutions, evaluations)
         
         solEvals = evaluateSolutions(newSols, verticesD, avgPerViolation)
 
+        # --------------------------------MOVE-ACCEPT-------------------
         solEvals.sort(key = lambda x: x[0][0][3])
-
 
         solutions = []
         evaluations = []
@@ -166,10 +220,13 @@ def evolutionaryAlgorithm(inits,
             solutions.append(solEvals[j][1])
             evaluations.append(solEvals[j][0])
 
-        if (i+1) % 5 == 0:
-            # Every 5 iterations recalculate the cost exactly
+        if traceMode:
+            trace.append(evaluations[0])
+
+        if (i+1) % 10 == 0:
+            # Every few iterations recalculate the cost exactly
             evaluations = []
-            if (i+1) % 10 == 0:
+            if verbose:
                 print('<<<Iteration ' + str(i))
             for j in range(0, populationSize):
                 sol = solutions[j]
@@ -179,12 +236,15 @@ def evolutionaryAlgorithm(inits,
                     curBestEvaluation = cost
 
                 evaluations.append(cost)
-                if (i+1) % 10 == 0:
+                if verbose:
                     print('    Accepted with cost ' + str(cost[0][3]))
-
-            if (i+1) % 10 == 0:
+    
+            if verbose:
                 print('>>>')
-        
+       
+        # Works quite good for small examples, but too inefficient for larger ones
+ 
+        """
         converged = True
         for j in range(1, populationSize):
             if (evaluations[j][0][3] != evaluations[j-1][0][3]):
@@ -192,8 +252,10 @@ def evolutionaryAlgorithm(inits,
                 break
 
         if converged == True:
-            
             (solD, solL, solCost) = hillClimber(graph, inits, solutions[0])
+            repair(solD, solL, solCost, inits, graph)
+            solCost = (completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict))
+
             solutions[0] = (solL, solD)
             evaluations[0] = solCost
 
@@ -202,5 +264,11 @@ def evolutionaryAlgorithm(inits,
                 randomizedInit(sol[0])
                 solutions[j] = (sol)
                 evaluations[j] = (completeCost(sol[1], sol[0], graph[0], directedEdges, costDict, pathDict))
+        """
+    
+    if traceMode:
+        trace.append(curBestEvaluation)
+        return (curBestSol, solutions, trace)
+    else:
+        return (curBestSol, solutions)
 
-    return (curBestSol, solutions)

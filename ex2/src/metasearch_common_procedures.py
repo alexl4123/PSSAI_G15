@@ -104,14 +104,14 @@ def iterativeCost(solD, solL, verticesD, prevCosts, changedL, avgCs3Cost):
 
         # CS3 Cost update (final part)
         
-        pcs3 = pcs3 + (violationsAfter - violationsBefore) * avgCs3Cost * 0.1
+        pcs3 = pcs3 + (violationsAfter - violationsBefore) * avgCs3Cost * 1
         if pcs3 < 0 :
             pcs3 = 0
 
     return ((ps, pcs2, pcs3, (ps + pcs2 + pcs3)), [], [])
 
-def completeCost(solD, solL, vertices, directedEdges, costDict, pathDict):
-   
+def completeCost(solD, solL, vertices, directedEdges, costDict, pathDict, approximate = True):
+    
     # Basic Costs
     costsTraversals = 0
     for sol in solL:
@@ -135,6 +135,10 @@ def completeCost(solD, solL, vertices, directedEdges, costDict, pathDict):
     eNegCs3Errors = []
     ePosCs3Errors = []
 
+    eNegCs3Errors2 = []
+    ePosCs3Errors2 = []
+    verticeCosts = {}
+
     cs3VerticesAmount = 0
 
     usedVertices = {}
@@ -149,18 +153,41 @@ def completeCost(solD, solL, vertices, directedEdges, costDict, pathDict):
                 s = s + solD[str(edge.j) + ':' + str(edge.i)].getX()
                 s = s - solD[str(edge.i) + ':' + str(edge.j)].getX()
         
-        if s < 0:
-            for i in range(0,abs(s)):
-                eNegCs3Errors.append((vertex.name, cs3VerticesAmount))
-                usedVertices[cs3VerticesAmount] = vertex.name
-                cs3VerticesAmount = cs3VerticesAmount + 1
-        elif s > 0:
-            for i in range(0,abs(s)):
-                ePosCs3Errors.append((vertex.name, cs3VerticesAmount))
-                usedVertices[cs3VerticesAmount] = vertex.name
-                cs3VerticesAmount = cs3VerticesAmount + 1
+        if approximate == True:
+            if s < 0:
+                verticeCosts[vertex.name] = s
+                eNegCs3Errors2.append((vertex.name, s))
+            else:
+                ePosCs3Errors2.append((vertex.name, s))
+                verticeCosts[vertex.name] = s
+        else: 
+            if s < 0:
+               for i in range(0,abs(s)):
+                    eNegCs3Errors.append((vertex.name, cs3VerticesAmount))
+                    usedVertices[cs3VerticesAmount] = vertex.name
+                    cs3VerticesAmount = cs3VerticesAmount + 1
+            elif s > 0:
+               for i in range(0,abs(s)):
+                    ePosCs3Errors.append((vertex.name, cs3VerticesAmount))
+                    usedVertices[cs3VerticesAmount] = vertex.name
+                    cs3VerticesAmount = cs3VerticesAmount + 1
 
-    if len(eNegCs3Errors) > 0 or len(ePosCs3Errors) > 0:
+
+    if approximate == True:
+        mcpm = []
+        for neg in eNegCs3Errors2:
+            for pos in ePosCs3Errors2:
+                mcpm.append((neg[0], pos[0], costDict[str(neg[0]) + ':' + str(pos[0])]))
+
+        mcpm.sort(key = lambda x : x[2])
+
+        for entry in mcpm:
+            while (verticeCosts[entry[0]] < 0 and verticeCosts[entry[1]] > 0):
+                cs3Costs = cs3Costs + entry[2]
+                cs3Errors.append((entry[0], entry[1]))
+                verticeCosts[entry[0]] = verticeCosts[entry[0]] + 1
+                verticeCosts[entry[1]] = verticeCosts[entry[1]] - 1
+    elif len(eNegCs3Errors) > 0 or len(ePosCs3Errors) > 0:
         # If Constraint 3 is violated, compute perfect matching between those violations in terms of minimum repair cost
 
         mcpm = []
@@ -199,7 +226,6 @@ def completeCost(solD, solL, vertices, directedEdges, costDict, pathDict):
                 splits = line.split(' ')
 
                 cs3Errors.append((usedVertices[int(splits[0])], usedVertices[int(splits[1])]))
-
     return ((costsTraversals, cs2Costs, cs3Costs, (costsTraversals + cs2Costs + cs3Costs)), cs2Errors, cs3Errors, cs3VerticesAmount)
 
 
@@ -217,8 +243,6 @@ def repair(solD, solL, bestSolCost, inits, graph, verbose = False):
 
     for cs3 in cs3Repair:
         path = pathDict[cs3[0] + ':' + cs3[1]]
-        if verbose == True:
-            print(path)
 
         for index in range(0, len(path) - 1):
             solD[str(path[index]) + ':' + str(path[index+1])].incX()
@@ -253,5 +277,20 @@ def write_tour_to_file(wpp_tour, name):
 
     f.close()
 
+
+def write_trace_to_file(trace, name):
+    input_file_path = sys.argv[1]
+    input_file_name = input_file_path.split('/')
+
+    input_file_name = input_file_name[len(input_file_name) - 1]
+
+    output_file_path = 'traces/' + input_file_name + name
+
+    f = open(output_file_path, 'w')
+
+    for cost in trace:
+        f.write(str(cost[0]) + '\n')
+
+    f.close()
 
 
