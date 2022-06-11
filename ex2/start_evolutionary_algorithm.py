@@ -8,7 +8,7 @@ from src.metasearch_common_procedures import *
 from src.hill_climbing import * 
 from src.evolutionary_algorithm import evolutionaryAlgorithm
 
-def evolutionary_algorithm(graph, inits, maxTime = 60, traceMode = False, verbose = True):
+def evolutionary_algorithm(graph, inits, maxTime = 6, traceMode = False, verbose = True):
     (directedEdges, costDict, pathDict, verticesD, avgPerViolation) = inits
     trace = []
 
@@ -45,8 +45,6 @@ def start_evolutionary_algorithm():
     graph = parse_input_file()
     inits = generalInitialization(graph)
     evolutionary_algorithm(graph, inits)
-
-
 
 
 

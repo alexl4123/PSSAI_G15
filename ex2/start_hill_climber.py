@@ -16,9 +16,9 @@ def hill_climber(graph, inits, maxTime = 60, traceMode = False, verbose = True):
         sol = loadAndParseSolution(graph[2], directedEdges)
         (solL, solD) = sol
     else:
-        (solL, solD) = initSolutions(inits[0])
-        randomizedInit(solL)
-        #(solL, solD) = initGreedySolutions(inits, graph)
+        #(solL, solD) = initSolutions(inits[0])
+        #randomizedInit(solL)
+        (solL, solD) = initGreedySolutions(inits, graph)
 
     cost = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
     if verbose:

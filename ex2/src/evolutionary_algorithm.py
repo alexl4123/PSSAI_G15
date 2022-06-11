@@ -165,11 +165,10 @@ def evolutionaryAlgorithm(inits,
         solutions.append((solL, solD))
         evaluations.append(solCost)
 
-    """
-    sol = initGreedySolutions(inits, graph)
-    solutions.append(sol)
-    evaluations.append(completeCost(sol[1], sol[0], graph[0], directedEdges, costDict, pathDict))
-    """
+    greedySol = initGreedySolutions(inits, graph)
+    solutions.append(greedySol)
+    greedyCost = completeCost(greedySol[1], greedySol[0], graph[0], directedEdges, costDict, pathDict)
+    evaluations.append(greedyCost)
 
     zeroSol = initSolutions(inits[0])
 
@@ -179,8 +178,12 @@ def evolutionaryAlgorithm(inits,
     zeroSolEvaluation = completeCost(zeroSol[1], zeroSol[0], graph[0], directedEdges, costDict, pathDict)
     oneSolEvaluation = completeCost(oneSol[1], oneSol[0], graph[0], directedEdges, costDict, pathDict)
 
-    curBestSol = cloneSolutions(solutions[0][0])
-    curBestEvaluation = evaluations[0]
+    curBestSol = cloneSolutions(greedySol[0])
+    curBestEvaluation = greedyCost
+
+    curTmpBestSol = cloneSolutions(greedySol[0])
+    curTmpBestEvaluation = greedyCost
+
 
     if startTime == -1:
         startTime = time.time()
@@ -241,6 +244,7 @@ def evolutionaryAlgorithm(inits,
     
             if verbose:
                 print('>>>')
+           
        
         # Works quite good for small examples, but too inefficient for larger ones
  

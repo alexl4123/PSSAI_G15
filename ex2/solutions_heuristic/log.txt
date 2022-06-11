@@ -1,0 +1,617 @@
+
+---The current starting time is: 10:23:17
+
+real	2m0,829s
+user	2m0,710s
+sys	0m0,062s
+---The current starting time is: 10:25:18
+
+real	1m28,390s
+user	1m28,262s
+sys	0m0,073s
+---The current starting time is: 10:26:46
+
+real	2m22,486s
+user	2m22,225s
+sys	0m0,172s
+---The current starting time is: 10:29:09
+
+real	2m21,759s
+user	2m21,550s
+sys	0m0,141s
+---The current starting time is: 10:31:30
+
+real	2m24,364s
+user	2m24,109s
+sys	0m0,177s
+---The current starting time is: 10:33:55
+
+real	2m29,510s
+user	2m29,300s
+sys	0m0,136s
+---The current starting time is: 10:36:24
+
+real	2m28,478s
+user	2m28,292s
+sys	0m0,118s
+---The current starting time is: 10:38:53
+
+real	2m34,033s
+user	2m33,854s
+sys	0m0,124s
+---The current starting time is: 10:41:27
+
+real	2m38,847s
+user	2m38,662s
+sys	0m0,128s
+---The current starting time is: 10:44:06
+
+real	2m36,429s
+user	2m36,229s
+sys	0m0,145s
+---The current starting time is: 10:46:42
+
+real	2m44,785s
+user	2m44,606s
+sys	0m0,122s
+---The current starting time is: 10:49:27
+
+real	2m52,047s
+user	2m51,806s
+sys	0m0,184s
+---The current starting time is: 10:52:19
+
+real	2m46,406s
+user	2m46,204s
+sys	0m0,145s
+---The current starting time is: 10:55:05
+
+real	2m57,178s
+user	2m56,895s
+sys	0m0,225s
+---The current starting time is: 10:58:03
+
+real	3m32,017s
+user	3m31,677s
+sys	0m0,273s
+---The current starting time is: 11:01:35
+
+real	3m29,098s
+user	3m28,755s
+sys	0m0,272s
+---The current starting time is: 11:05:04
+
+real	3m29,979s
+user	3m29,633s
+sys	0m0,280s
+---The current starting time is: 11:08:34
+
+real	3m49,874s
+user	3m49,522s
+sys	0m0,281s
+---The current starting time is: 11:12:23
+
+real	3m51,931s
+user	3m51,551s
+sys	0m0,312s
+---The current starting time is: 11:16:15
+
+real	3m50,932s
+user	3m50,503s
+sys	0m0,361s
+---The current starting time is: 11:20:06
+
+real	3m52,131s
+user	3m51,666s
+sys	0m0,382s
+---The current starting time is: 11:23:58
+
+real	3m53,100s
+user	3m52,707s
+sys	0m0,326s
+---The current starting time is: 11:27:52
+
+real	3m52,692s
+user	3m52,245s
+sys	0m0,376s
+---The current starting time is: 11:31:44
+
+real	3m54,526s
+user	3m54,122s
+sys	0m0,333s
+---The current starting time is: 11:35:39
+
+real	3m53,369s
+user	3m52,872s
+sys	0m0,421s
+---The current starting time is: 11:39:32
+
+real	3m54,088s
+user	3m53,592s
+sys	0m0,426s
+---The current starting time is: 11:43:26
+
+real	4m47,858s
+user	4m47,317s
+sys	0m0,448s
+---The current starting time is: 11:48:14
+
+real	4m48,182s
+user	4m47,592s
+sys	0m0,494s
+---The current starting time is: 11:53:02
+
+real	4m52,456s
+user	4m51,842s
+sys	0m0,518s
+---The current starting time is: 11:57:55
+
+real	4m50,837s
+user	4m50,186s
+sys	0m0,555s
+---The current starting time is: 12:02:46
+
+real	4m49,807s
+user	4m49,064s
+sys	0m0,627s
+---The current starting time is: 12:07:35
+
+real	4m47,859s
+user	4m47,110s
+sys	0m0,656s
+---The current starting time is: 12:12:23
+
+real	4m54,187s
+user	4m53,451s
+sys	0m0,640s
+---The current starting time is: 12:17:17
+
+real	4m57,688s
+user	4m56,942s
+sys	0m0,643s
+---The current starting time is: 12:22:15
+
+real	4m53,003s
+user	4m52,249s
+sys	0m0,659s
+---The current starting time is: 12:27:08
+
+real	4m57,278s
+user	4m56,510s
+sys	0m0,674s
+---The current starting time is: 12:32:05
+
+real	4m57,031s
+user	4m56,190s
+sys	0m0,745s
+---The current starting time is: 12:37:03
+
+real	5m10,231s
+user	5m9,461s
+sys	0m0,675s
+---The current starting time is: 12:42:13
+
+real	6m6,081s
+user	6m5,017s
+sys	0m0,943s
+---The current starting time is: 12:48:19
+
+real	6m7,649s
+user	6m6,599s
+sys	0m0,932s
+---The current starting time is: 12:54:26
+
+real	6m10,319s
+user	6m9,211s
+sys	0m0,984s
+---The current starting time is: 13:00:37
+
+real	6m12,122s
+user	6m11,190s
+sys	0m0,811s
+---The current starting time is: 13:06:49
+
+real	6m14,912s
+user	6m13,937s
+sys	0m0,855s
+---The current starting time is: 13:13:04
+
+real	6m12,207s
+user	6m11,299s
+sys	0m0,787s
+---The current starting time is: 13:19:16
+
+real	6m22,400s
+user	6m21,296s
+sys	0m0,982s
+---The current starting time is: 13:25:38
+
+real	6m23,262s
+user	6m22,155s
+sys	0m0,982s
+---The current starting time is: 13:32:02
+
+real	6m25,109s
+user	6m23,925s
+sys	0m1,059s
+---The current starting time is: 13:38:27
+
+real	6m30,281s
+user	6m29,070s
+sys	0m1,082s
+---The current starting time is: 13:44:57
+
+real	6m25,550s
+user	6m24,428s
+sys	0m0,992s
+---The current starting time is: 13:51:23
+
+real	6m30,676s
+user	6m29,479s
+sys	0m1,071s
+---The current starting time is: 13:57:53
+
+real	10m7,969s
+user	10m4,653s
+sys	0m3,084s
+---The current starting time is: 14:08:01
+
+real	10m12,135s
+user	10m8,848s
+sys	0m3,065s
+---The current starting time is: 14:18:13
+
+real	10m10,015s
+user	10m6,804s
+sys	0m2,991s
+---The current starting time is: 14:28:23
+
+real	10m16,662s
+user	10m13,606s
+sys	0m2,831s
+---The current starting time is: 14:38:40
+
+real	10m18,150s
+user	10m14,892s
+sys	0m3,029s
+---The current starting time is: 14:48:58
+
+real	10m20,964s
+user	10m17,507s
+sys	0m3,226s
+---The current starting time is: 14:59:19
+
+real	10m39,861s
+user	10m36,529s
+sys	0m3,092s
+---The current starting time is: 15:09:59
+
+real	10m39,871s
+user	10m36,089s
+sys	0m3,552s
+---The current starting time is: 15:20:39
+
+real	11m1,633s
+user	10m58,126s
+sys	0m3,266s
+---The current starting time is: 15:31:41
+Traceback (most recent call last):
+  File "start_all.py", line 18, in <module>
+    graph = parse_input_file()
+  File "/home/stationlex/Dropbox/2019_x_Studium/TUWien/6_Sem/03_PSSAI/github/PSSAI_G15/ex2/src/parse_input_file.py", line 44, in parse_input_file
+    vertices = int(vertice_line.split(':')[1])
+IndexError: list index out of range
+
+real	0m0,738s
+user	0m0,704s
+sys	0m0,032s
+---The current starting time is: 15:31:41
+
+real	11m1,649s
+user	10m58,290s
+sys	0m3,107s
+---The current starting time is: 15:42:43
+
+real	11m11,963s
+user	11m8,676s
+sys	0m3,047s
+---The current starting time is: 15:53:55
+
+real	2m22,113s
+user	2m21,904s
+sys	0m0,153s
+---The current starting time is: 15:56:17
+
+real	2m24,837s
+user	2m24,648s
+sys	0m0,133s
+---The current starting time is: 15:58:42
+
+real	2m23,870s
+user	2m23,704s
+sys	0m0,113s
+---The current starting time is: 16:01:06
+
+real	2m29,217s
+user	2m29,009s
+sys	0m0,161s
+---The current starting time is: 16:03:35
+
+real	2m30,394s
+user	2m30,201s
+sys	0m0,135s
+---The current starting time is: 16:06:05
+
+real	2m32,317s
+user	2m32,093s
+sys	0m0,169s
+---The current starting time is: 16:08:38
+
+real	2m39,691s
+user	2m39,458s
+sys	0m0,180s
+---The current starting time is: 16:11:17
+
+real	2m37,151s
+user	2m36,886s
+sys	0m0,206s
+---The current starting time is: 16:13:55
+
+real	2m43,833s
+user	2m43,598s
+sys	0m0,179s
+---The current starting time is: 16:16:38
+
+real	2m52,413s
+user	2m52,189s
+sys	0m0,168s
+---The current starting time is: 16:19:31
+
+real	2m56,873s
+user	2m56,666s
+sys	0m0,154s
+---The current starting time is: 16:22:28
+
+real	3m5,626s
+user	3m5,377s
+sys	0m0,195s
+---The current starting time is: 16:25:33
+
+real	3m28,357s
+user	3m27,893s
+sys	0m0,387s
+---The current starting time is: 16:29:02
+
+real	3m31,545s
+user	3m31,083s
+sys	0m0,388s
+---The current starting time is: 16:32:33
+
+real	3m33,284s
+user	3m32,856s
+sys	0m0,361s
+---The current starting time is: 16:36:07
+
+real	3m52,194s
+user	3m51,790s
+sys	0m0,333s
+---The current starting time is: 16:39:59
+
+real	3m49,558s
+user	3m49,043s
+sys	0m0,442s
+---The current starting time is: 16:43:48
+
+real	3m51,380s
+user	3m50,891s
+sys	0m0,419s
+---The current starting time is: 16:47:40
+
+real	3m53,438s
+user	3m52,947s
+sys	0m0,425s
+---The current starting time is: 16:51:33
+
+real	3m53,308s
+user	3m52,758s
+sys	0m0,480s
+---The current starting time is: 16:55:26
+
+real	3m53,779s
+user	3m53,311s
+sys	0m0,400s
+---The current starting time is: 16:59:20
+
+real	3m56,502s
+user	3m55,953s
+sys	0m0,481s
+---The current starting time is: 17:03:17
+
+real	3m54,777s
+user	3m54,263s
+sys	0m0,442s
+---The current starting time is: 17:07:12
+
+real	3m55,708s
+user	3m55,145s
+sys	0m0,489s
+---The current starting time is: 17:11:07
+
+real	4m52,635s
+user	4m51,696s
+sys	0m0,845s
+---The current starting time is: 17:16:00
+
+real	4m50,867s
+user	4m49,854s
+sys	0m0,923s
+---The current starting time is: 17:20:51
+
+real	4m52,459s
+user	4m51,503s
+sys	0m0,862s
+---The current starting time is: 17:25:43
+
+real	4m51,335s
+user	4m50,466s
+sys	0m0,772s
+---The current starting time is: 17:30:35
+
+real	4m51,340s
+user	4m50,387s
+sys	0m0,865s
+---The current starting time is: 17:35:26
+
+real	4m53,942s
+user	4m53,087s
+sys	0m0,762s
+---The current starting time is: 17:40:20
+
+real	4m57,180s
+user	4m56,317s
+sys	0m0,772s
+---The current starting time is: 17:45:17
+
+real	4m55,766s
+user	4m54,912s
+sys	0m0,761s
+---The current starting time is: 17:50:13
+
+real	5m0,720s
+user	4m59,605s
+sys	0m1,011s
+---The current starting time is: 17:55:14
+
+real	5m1,066s
+user	5m0,089s
+sys	0m0,883s
+---The current starting time is: 18:00:15
+
+real	5m3,549s
+user	5m2,752s
+sys	0m0,700s
+---The current starting time is: 18:05:18
+
+real	5m2,430s
+user	5m1,461s
+sys	0m0,879s
+---The current starting time is: 18:10:21
+
+real	6m14,359s
+user	6m12,793s
+sys	0m1,448s
+---The current starting time is: 18:16:35
+
+real	6m15,846s
+user	6m14,299s
+sys	0m1,424s
+---The current starting time is: 18:22:51
+
+real	6m16,668s
+user	6m15,140s
+sys	0m1,403s
+---The current starting time is: 18:29:07
+
+real	6m24,332s
+user	6m22,886s
+sys	0m1,325s
+---The current starting time is: 18:35:32
+
+real	6m24,114s
+user	6m22,685s
+sys	0m1,306s
+---The current starting time is: 18:41:56
+
+real	6m27,304s
+user	6m25,967s
+sys	0m1,212s
+---The current starting time is: 18:48:23
+
+real	6m29,403s
+user	6m27,940s
+sys	0m1,339s
+---The current starting time is: 18:54:53
+
+real	6m31,703s
+user	6m30,212s
+sys	0m1,369s
+---The current starting time is: 19:01:24
+
+real	6m37,409s
+user	6m35,792s
+sys	0m1,494s
+---The current starting time is: 19:08:02
+
+real	6m36,830s
+user	6m35,369s
+sys	0m1,339s
+---The current starting time is: 19:14:39
+
+real	6m42,171s
+user	6m40,640s
+sys	0m1,404s
+---The current starting time is: 19:21:21
+
+real	6m38,212s
+user	6m36,630s
+sys	0m1,452s
+---The current starting time is: 19:27:59
+
+real	10m26,974s
+user	10m21,755s
+sys	0m4,992s
+---The current starting time is: 19:38:26
+
+real	10m27,137s
+user	10m22,347s
+sys	0m4,560s
+---The current starting time is: 19:48:53
+
+real	10m34,865s
+user	10m29,694s
+sys	0m4,943s
+---The current starting time is: 19:59:28
+
+real	10m38,609s
+user	10m33,398s
+sys	0m4,979s
+---The current starting time is: 20:10:07
+
+real	10m49,656s
+user	10m44,720s
+sys	0m4,689s
+---The current starting time is: 20:20:56
+
+real	11m2,107s
+user	10m57,061s
+sys	0m4,803s
+---The current starting time is: 20:31:58
+
+real	10m52,121s
+user	10m46,933s
+sys	0m4,953s
+---The current starting time is: 20:42:50
+
+real	11m2,873s
+user	10m57,850s
+sys	0m4,786s
+---The current starting time is: 20:53:53
+
+real	11m7,861s
+user	11m2,963s
+sys	0m4,663s
+---The current starting time is: 21:05:01
+
+real	11m5,439s
+user	11m0,642s
+sys	0m4,562s
+---The current starting time is: 21:16:07
+
+real	11m16,553s
+user	11m11,276s
+sys	0m5,037s
+---The current starting time is: 21:27:23
+
+real	11m21,601s
+user	11m16,442s
+sys	0m4,911s

@@ -1,4 +1,4 @@
-from src.graph_data_structs import *
+from src.graph_data_structs import * 
 from src.parse_input_file import parse_input_file
 
 from src.metasearch_init_procedure import *
@@ -19,7 +19,7 @@ graph = parse_input_file()
 inits = generalInitialization(graph)
 
 hill_climber(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
-randomized_hill_climber(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
+#randomized_hill_climber(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
 vdns(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
 evolutionary_algorithm(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
 
