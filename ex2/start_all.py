@@ -11,7 +11,7 @@ from start_vdns import vdns
 from start_evolutionary_algorithm import evolutionary_algorithm
 
 traceMode = True
-maxTime = 2
+maxTime = 60
 verbose = False
 
 # Parse input file (file from args) - only needs to be done once
