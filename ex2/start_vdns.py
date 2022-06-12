@@ -1,5 +1,6 @@
 from src.graph_data_structs import *
 from src.parse_input_file import parse_input_file
+from src.load_solution import loadAndParseSolution
 
 from src.metasearch_init_procedure import *
 from src.metasearch_common_procedures import *
@@ -53,10 +54,10 @@ def vdns(graph, inits, maxTime = 60, traceMode = False, verbose = True):
 
     cost = completeCost(curBestSol[0], curBestSol[1], graph[0], directedEdges, costDict, pathDict)
     tour = repair(curBestSol[0], curBestSol[1], cost, inits, graph, verbose = True)
-    write_tour_to_file(tour, '_vdns')
+    write_tour_to_file(graph, tour, '_vdns')
 
     if traceMode:
-        write_trace_to_file(bestTrace, '_vdns')
+        write_trace_to_file(graph, bestTrace, '_vdns')
 
 def start_vdns():
     # Parse input file (file from args) - only needs to be done once

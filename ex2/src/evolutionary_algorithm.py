@@ -6,6 +6,7 @@ from src.parse_input_file import parse_input_file
 from src.metasearch_init_procedure import *
 from src.metasearch_common_procedures import *
 from src.hill_climbing import * 
+from src.load_solution import loadAndParseSolution
 
 
 

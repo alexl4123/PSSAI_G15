@@ -21,14 +21,14 @@ def evolutionary_algorithm(graph, inits, maxTime = 6, traceMode = False, verbose
 
 
     if traceMode:
-        write_trace_to_file(trace, '_evolutionary')
+        write_trace_to_file(graph, trace, '_evolutionary')
 
 
     curBestEvaluation = completeCost(curBestSol[1], curBestSol[0], graph[0], directedEdges, costDict, pathDict, approximate = False)
     if verbose:
         print('Best found tour has cost: ' + str(curBestEvaluation[0][3]))
     tour = repair(curBestSol[1], curBestSol[0], curBestEvaluation, inits, graph, verbose = True)
-    write_tour_to_file(tour, '_evolutionary_0')
+    write_tour_to_file(graph, tour, '_evolutionary_0')
 
 
     for i in range(0, len(solutions)):
@@ -37,7 +37,7 @@ def evolutionary_algorithm(graph, inits, maxTime = 6, traceMode = False, verbose
 
         tour = repair(sol[1], sol[0], trueCost, inits, graph)
 
-        write_tour_to_file(tour, '_evolutionary_' + str(i+1))
+        write_tour_to_file(graph, tour, '_evolutionary_' + str(i+1))
 
 
 def start_evolutionary_algorithm():

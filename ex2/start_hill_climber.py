@@ -34,10 +34,10 @@ def hill_climber(graph, inits, maxTime = 60, traceMode = False, verbose = True):
     if verbose:
         print('Cur cost 4: ' + str(cost))
     tour = repair(solD, solL, cost, inits, graph, verbose = True)
-    write_tour_to_file(tour, '_hill_climber')
+    write_tour_to_file(graph, tour, '_hill_climber')
 
     if traceMode:
-        write_trace_to_file(trace, '_hill_climber')
+        write_trace_to_file(graph, trace, '_hill_climber')
 
 def start_hill_climber():
     # Parse input file (file from args) - only needs to be done once

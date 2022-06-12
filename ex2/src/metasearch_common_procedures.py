@@ -263,8 +263,12 @@ def repair(solD, solL, bestSolCost, inits, graph, verbose = False):
         print("<<<<<<POSSIBLE_TOUR_END>>>>>>>>>>>")
     return wpp_tour
 
-def write_tour_to_file(wpp_tour, name):
-    input_file_path = sys.argv[1]
+def write_tour_to_file(graph, wpp_tour, name):
+    if graph[2] is None:
+        input_file_path = sys.argv[1]
+    else:
+        input_file_path = sys.argv[3]
+
     input_file_name = input_file_path.split('/')
 
     input_file_name = input_file_name[len(input_file_name) - 1]
@@ -278,8 +282,12 @@ def write_tour_to_file(wpp_tour, name):
     f.close()
 
 
-def write_trace_to_file(trace, name):
-    input_file_path = sys.argv[1]
+def write_trace_to_file(graph, trace, name):
+    if graph[2] is None:
+        input_file_path = sys.argv[1]
+    else:
+        input_file_path = sys.argv[3]
+
     input_file_name = input_file_path.split('/')
 
     input_file_name = input_file_name[len(input_file_name) - 1]

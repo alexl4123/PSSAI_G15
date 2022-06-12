@@ -47,10 +47,10 @@ def randomized_hill_climber(graph, inits, maxTime = 60, traceMode = False, verbo
 
     cost = completeCost(bestSolD, bestSolL, graph[0], directedEdges, costDict, pathDict, approximate = False)
     tour = repair(bestSolD, bestSolL, bestSolCost, inits, graph, verbose = True)
-    write_tour_to_file(tour, '_randomized_hill_climber')
+    write_tour_to_file(graph, tour, '_randomized_hill_climber')
 
     if traceMode:
-        write_trace_to_file(trace, '_randomized_hill_climber')
+        write_trace_to_file(graph, trace, '_randomized_hill_climber')
 
 
 
