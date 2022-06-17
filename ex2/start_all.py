@@ -9,6 +9,8 @@ from start_hill_climber import hill_climber
 from start_random_init_hill_climber import randomized_hill_climber
 from start_vdns import vdns
 from start_evolutionary_algorithm import evolutionary_algorithm
+from start_tabu_search import tabu_search   
+from start_simmulated_annealing import simmulated_annealing
 
 traceMode = True
 maxTime = 6
@@ -22,4 +24,5 @@ hill_climber(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = v
 #randomized_hill_climber(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
 vdns(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
 evolutionary_algorithm(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
-
+tabu_search(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
+simmulated_annealing(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
