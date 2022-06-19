@@ -1,0 +1,17 @@
+
+---The current starting time is: 21:04:34
+
+real	0m11,547s
+user	0m11,492s
+sys	0m0,052s
+---The current starting time is: 21:04:46
+
+real	0m2,921s
+user	0m2,868s
+sys	0m0,052s
+---The current starting time is: 21:04:49
+
+real	1m11,076s
+user	1m10,969s
+sys	0m0,078s
+---The current starting time is: 21:06:00

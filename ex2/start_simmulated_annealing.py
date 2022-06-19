@@ -17,7 +17,7 @@ def simmulated_annealing(graph, inits, maxTime, traceMode=False, verbose=True):
 
     initC = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
 
-    result = simmulated_annealing_algorithm(graph, inits, (solL, solD), maxTime=maxTime, traceMode=traceMode)
+    result = simmulated_annealing_algorithm(graph, inits, (solL, solD), maxTime=maxTime, traceMode=traceMode, debug = verbose)
     (solD, solL, bestSolCost) = result
 
     cost = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
@@ -26,4 +26,4 @@ def simmulated_annealing(graph, inits, maxTime, traceMode=False, verbose=True):
         print("After algo cost: ", cost)
     
     tour = repair(solD, solL, cost, inits, graph, verbose = True)
-    write_tour_to_file(tour, '_simmulated_annealing')
+    write_tour_to_file(graph, tour, '_simmulated_annealing')

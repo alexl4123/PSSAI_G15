@@ -13,16 +13,16 @@ from start_tabu_search import tabu_search
 from start_simmulated_annealing import simmulated_annealing
 
 traceMode = True
-maxTime = 6
+maxTime = 60
 verbose = False
 
 # Parse input file (file from args) - only needs to be done once
 graph = parse_input_file()
 inits = generalInitialization(graph)
 
-hill_climber(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
+#hill_climber(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
 #randomized_hill_climber(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
-vdns(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
-evolutionary_algorithm(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
-tabu_search(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
+#vdns(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
+#evolutionary_algorithm(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
+#tabu_search(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
 simmulated_annealing(graph, inits, maxTime = maxTime, traceMode = traceMode, verbose = verbose)
