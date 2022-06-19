@@ -142,5 +142,30 @@ def checkWpp(graph,wpp_tour):
     print(wpp_tour)
     print("Total cost of: " + str(cost))
 
+
+    input_file_fullpath = sys.argv[2]
+
+
+    input_file_paths = input_file_fullpath.split('/')
+    input_file_name = input_file_paths[len(input_file_paths) - 1]
+
+    input_file_path = ""
+    for i in range(0, len(input_file_paths) - 1):
+        if i > 0:
+            input_file_path = input_file_path + '/' + input_file_paths[i]
+        else:
+            input_file_path = input_file_paths[i]
+    
+
+    output_file_path = input_file_path + '/costs/' + input_file_name
+
+    f = open(output_file_path, 'w')
+
+    f.write(str(cost))
+
+    f.close()
+
+
+
 graph = parse_input_file()
 checkWpp((graph[0], graph[1]),graph[2])
