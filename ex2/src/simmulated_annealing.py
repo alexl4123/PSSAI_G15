@@ -62,7 +62,6 @@ def simmulated_annealing_algorithm(graph, inits, sols, maxTime=5, maxIter=100, t
             T = Tmax * math.e**(-i*r)
 
             for sol in solL:
-                          
                 if random.random() > 0.5:
                     op = "incX"
                     sol[2].incX()
@@ -75,13 +74,13 @@ def simmulated_annealing_algorithm(graph, inits, sols, maxTime=5, maxIter=100, t
                 regress = curCost[0][3] < curBestSolCost[0][3]
 
                 d = curCost[0][3]-curBestSolCost[0][3]
-                fr = d/T    
+                fr = 1/((d/T)+1)   
                 exp = math.e**fr
                 p = 1/(1+exp)
 
                 if debug:
                     print(f"{curCost[0][3]} - {curBestSolCost[0][3]} = {d} | Exp: {exp} | p {p}")
-                
+            
                 if traceMode:
                     trace.append(curBestSolCost)
 
@@ -98,13 +97,13 @@ def simmulated_annealing_algorithm(graph, inits, sols, maxTime=5, maxIter=100, t
                         sol[2].decX()                        
                 elif op =="decX":
                     sol[2].incX()
-                    
+                else:
+                    continue
                 
-                al.append(curCost[0][3])
-                bl.append(curBestSolCost[0][3])
-                cl.append(d)
-                dl.append(exp)
-                el.append(p)
+            
+            al.append(curCost[0][3])
+            bl.append(curBestSolCost[0][3])
+            cl.append(d)
                 
             if curBestSolCost[0][3] < bestSolCost[0][3]:
                 (solL, solD) = cloneSolutions(solL)
