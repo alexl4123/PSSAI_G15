@@ -30,6 +30,9 @@ def simmulated_annealing_algorithm(graph, inits, sols, maxTime=5, maxIter=100, t
         initialcost = bestSolCost[0][3]
         print('Initial cost is: ' + str(bestSolCost[0][3]))
 
+    if traceMode:
+        trace = [bestSolCost]
+
     if startTime == -1:
         startTime = time.time()
 
@@ -79,6 +82,9 @@ def simmulated_annealing_algorithm(graph, inits, sols, maxTime=5, maxIter=100, t
                 if debug:
                     print(f"{curCost[0][3]} - {curBestSolCost[0][3]} = {d} | Exp: {exp} | p {p}")
                 
+                if traceMode:
+                    trace.append(curBestSolCost)
+
                 if regress:
                     fl.append(1)
                     curBestSolCost = curCost
@@ -141,5 +147,8 @@ def simmulated_annealing_algorithm(graph, inits, sols, maxTime=5, maxIter=100, t
 
     bestSolCost = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
     (solL, solD) = cloneSolutions(solL)
-
-    return (solD, solL, bestSolCost)
+    
+    if not traceMode:
+        return (solD, solL, bestSolCost)
+    else:
+        return (solD, solL, bestSolCost, trace)
