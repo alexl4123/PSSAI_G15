@@ -1,4 +1,4 @@
-search_dir=solutions_from_known_best/tours
+search_dir=tours
 
 echo "" > log.txt
 echo "" > log2.txt
