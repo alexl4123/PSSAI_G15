@@ -154,12 +154,13 @@ def evolutionaryAlgorithm(inits,
         evaluations.append(completeCost(sol[1], sol[0], graph[0], directedEdges, costDict, pathDict))
 
     for i in range(0, populationSize):
-        sol = initSolutions(inits[0])
-        randomizedInit(sol[0])
+        #sol = initSolutions(inits[0])
+        #randomizedInit(sol[0])
         
-        (solL, solD) = sol
+        #(solL, solD) = sol
+        (solL, solD) = initGreedySolutions(inits, graph)
 
-        solCost =  completeCost(sol[1], sol[0], graph[0], directedEdges, costDict, pathDict)
+        solCost =  completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
         # Infeasible for larger solutions
         # (solD, solL, solCost) = hillClimber(graph, inits, sol)
         repair(solD, solL, solCost, inits, graph)

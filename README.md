@@ -2,6 +2,12 @@
 
 Problem Solving and Search in Artificial Intelligence - Group 15
 
+Exercise 1 and 2.
+
+# What can be found here
+
+For **exercise 2** consult the README.md in **PSSAI_G15/ex2/README.md**, for **exercise 1 read on**.
+
 # What can be found here?
 
 - Win's algorithm: 'ex1/wins_algorithm.py'

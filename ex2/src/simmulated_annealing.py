@@ -33,6 +33,9 @@ def simmulated_annealing_algorithm(graph, inits, sols, maxTime=5, maxIter=100, t
         initialcost = bestSolCost[0][3]
         print('Initial cost is: ' + str(bestSolCost[0][3]))
 
+    if traceMode:
+        trace = [bestSolCost]
+
     if startTime == -1:
         startTime = time.time()
 
@@ -72,14 +75,17 @@ def simmulated_annealing_algorithm(graph, inits, sols, maxTime=5, maxIter=100, t
                 curCost = completeCost(solD, solL, graph[0], directedEdges, costDict, pathDict)
                 regress = curCost[0][3] < curBestSolCost[0][3]
 
-                d = curCost[0][3]-curBestSolCost[0][3]
-                fr = d/T    
+                d = curBestSolCost[0][3] - curCost[0][3]
+                fr = (d/T)   
                 exp = math.e**fr
-                p = 1/(1+exp)
+                p = exp
 
                 if debug:
                     print(f"{curCost[0][3]} - {curBestSolCost[0][3]} = {d} | Exp: {exp} | p {p}")
-                
+            
+                if traceMode:
+                    trace.append(curBestSolCost)
+
                 if regress:
                     fl.append(1)
                     curBestSolCost = curCost
@@ -165,10 +171,10 @@ def simmulated_annealing_algorithm(graph, inits, sols, maxTime=5, maxIter=100, t
         plt.savefig('hey.png')
         plt.show()
     
-    if traceMode:
-        write_trace_to_file(graph, gl, '_simulated_best')
-        write_trace_to_file(graph, bl, '_simulated_all')
 
     bestSolCost = completeCost(bestSolD, bestSolL, graph[0], directedEdges, costDict, pathDict)
 
-    return (bestSolD, bestSolL, bestSolCost)
+    if traceMode == True:
+        return (bestSolD, bestSolL, bestSolCost, gl, bl)
+    else:
+        return (bestSolD, bestSolL, bestSolCost)
