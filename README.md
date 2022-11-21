@@ -1,8 +1,18 @@
-# PSSAI_G15
+# WINDY_POSTMAN_PROBLEM (WPP) - PSSAI_G15
+
+## General things that can be found here:
+
+In exercise 1 an implementation of the ''Win's algorithm'' was made, which is a heuristic algorithm for the WPP. In exercise 2 we explored various Meta-Heuristics (Genetic Algorithms Simulated Annealing, plain old Local Search) for WPP. 
+
+In general this was a small project for a class in the Summer Term 2022.
+
+## Group Details
 
 Problem Solving and Search in Artificial Intelligence - Group 15
 
 Exercise 1 and 2.
+
+
 
 # What can be found here
 
